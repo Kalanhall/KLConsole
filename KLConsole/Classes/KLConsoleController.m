@@ -17,6 +17,7 @@
 @interface KLConsoleController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *dataSource;
 
 @end
 
@@ -50,6 +51,16 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
+    
+    // 数据源
+    self.dataSource = @[@{@"title" : @"信息", @"infos" : @[
+                            @{@"title" : @"设备信息", @"subtitle" : @"查看设备相关信息"},
+                            @{@"title" : @"崩溃日志", @"subtitle" : @"查看应用崩溃日志"}
+                        ]},
+                        @{@"title" : @"设置", @"infos" : @[
+                            @{@"title" : @"环境配置", @"subtitle" : @"dev / test / prod 等环境配置"}
+                        ]}
+    ];
 }
 
 - (void)cancleCallBack
@@ -59,12 +70,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return self.dataSource.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    NSDictionary *data = self.dataSource[section];
+    return [[data valueForKey:@"infos"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,19 +84,11 @@
 
     KLConsoleCell *cell = [tableView dequeueReusableCellWithIdentifier:KLConsoleCell.description];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
-    switch (indexPath.section) {
-        case 0:
-            cell.titleLabel.text = @"设备信息";
-            cell.infoLabel.text = @"查看设备相关信息";
-            break;
-        case 1:
-            cell.titleLabel.text = @"环境设置";
-            cell.infoLabel.text = @"dev / test / prod 等环境配置";
-        default:
-            break;
-    }
-    
+    NSDictionary *outdata = self.dataSource[indexPath.section];
+    NSArray *infos = [outdata valueForKey:@"infos"];
+    cell.titleLabel.text = [infos[indexPath.row] valueForKey:@"title"];
+    cell.infoLabel.text = [infos[indexPath.row] valueForKey:@"subtitle"];
+
     return cell;
 }
 
@@ -92,7 +96,8 @@
 {
     UIButton *header = UIButton.alloc.init;
     header.titleLabel.font = [UIFont systemFontOfSize:11];
-    [header setTitle:@[@"信息", @"设置"][section] forState:UIControlStateNormal];
+    NSDictionary *outdata = self.dataSource[section];
+    [header setTitle:[outdata valueForKey:@"title"] forState:UIControlStateNormal];
     [header setTitleEdgeInsets:(UIEdgeInsets){0, 15, 0, 0}];
     [header setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
     [header setBackgroundColor:[UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]];
