@@ -1,0 +1,27 @@
+PODS:
+  - KLConsole (1.0.0):
+    - Masonry
+  - Masonry (1.1.0)
+  - YKWoodpecker (1.1.1)
+
+DEPENDENCIES:
+  - KLConsole (from `../`)
+  - YKWoodpecker
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - YKWoodpecker
+
+EXTERNAL SOURCES:
+  KLConsole:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KLConsole: e85ac1a88eebb4e63afcae6bfc0fc69498ab6ac2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YKWoodpecker: 446884788ccf1f1800781d50e503f9bdb0bdaebe
+
+PODFILE CHECKSUM: 4fbc4b9ed05761768ac9770b7a5d1ca9b2ae0f3c
+
+COCOAPODS: 1.8.3
