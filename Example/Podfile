@@ -1,5 +1,8 @@
 use_frameworks!
 
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/Kalanhall/Specs.git'
+
 platform :ios, '9.0'
 
 target 'KLConsole_Example' do

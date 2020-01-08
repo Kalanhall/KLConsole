@@ -161,11 +161,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/KLCategory/KLCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/KLConsole/KLConsole.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YKWoodpecker/YKWoodpecker.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/KLCategory/KLCategory.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/KLConsole/KLConsole.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YKWoodpecker/YKWoodpecker.framework"
