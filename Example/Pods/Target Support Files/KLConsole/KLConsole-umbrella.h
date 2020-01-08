@@ -12,6 +12,7 @@
 
 #import "KLConsole.h"
 #import "KLConsoleCell.h"
+#import "KLConsoleConfig.h"
 #import "KLConsoleController.h"
 #import "KLConsoleInfoController.h"
 

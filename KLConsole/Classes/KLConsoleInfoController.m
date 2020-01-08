@@ -7,6 +7,7 @@
 
 #import "KLConsoleInfoController.h"
 #import "KLConsoleCell.h"
+#import "KLConsoleController.h"
 @import Masonry;
 @import KLCategory;
 
@@ -18,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"设备信息";
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 60;
     [self.tableView registerClass:KLConsoleInfoCell.class forCellReuseIdentifier:KLConsoleInfoCell.description];
@@ -27,16 +27,58 @@
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.fetchSystemInfos.count;
+    switch (self.infoType) {
+        case KLConsoleInfoTypeAddress:
+            return self.config.address.count;
+        case KLConsoleInfoTypeSystemInfo:
+            return self.fetchSystemInfos.count;
+        default:
+            return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     KLConsoleInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:KLConsoleInfoCell.description];
-    NSDictionary *info = self.fetchSystemInfos[indexPath.row];
-    cell.titleLabel.text = [info valueForKey:@"title"];
-    cell.infoLabel.text = [info valueForKey:@"text"];
+    
+    if (self.infoType == KLConsoleInfoTypeAddress) {
+        // 域名地址
+        KLConsoleAddress *info = self.config.address[indexPath.row];
+        cell.titleLabel.text = info.name;
+        cell.infoLabel.text = info.address;
+        
+        if (self.config.addressIndex == indexPath.row) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        } else {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }
+    } else {
+        // 设备应用信息
+        NSDictionary *info = self.fetchSystemInfos[indexPath.row];
+        cell.titleLabel.text = [info valueForKey:@"title"];
+        cell.infoLabel.text = [info valueForKey:@"text"];
+    }
+    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.infoType == KLConsoleInfoTypeAddress) {
+        __block NSArray<KLConsoleConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
+        [cachecgs enumerateObjectsUsingBlock:^(KLConsoleConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if ([obj.title isEqualToString:self.config.title]) {
+                obj.addressIndex = indexPath.row;
+                self.config.addressIndex = obj.addressIndex;
+                [NSKeyedArchiver archiveRootObject:cachecgs toFile:KLConsoleAddressPath];
+                [tableView reloadData];
+                
+                if (self.selectedCallBack) {
+                    self.selectedCallBack();
+                }
+            }
+        }];
+    }
 }
 
 - (NSArray *)fetchSystemInfos
@@ -72,7 +114,7 @@
             },
             @{
                 @"title" : @"分辨率(宽高)",
-                @"text" : [NSString stringWithFormat:@"%.1f x %.1f @scale %.1f", [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].scale]
+                @"text" : [NSString stringWithFormat:@"%.1f x %.1f (%.1f x %.1f) @scale %.1f", UIScreen. mainScreen.currentMode.size.width, UIScreen. mainScreen.currentMode.size.height, UIScreen. mainScreen.bounds.size.width, UIScreen. mainScreen.bounds.size.height, UIScreen. mainScreen.scale]
             }, @{
                 @"title" : @"运营商",
                 @"text" : [UIDevice kl_carrierName]

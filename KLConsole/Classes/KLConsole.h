@@ -6,12 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KLConsoleConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KLConsole : NSObject
 
-+ (void)console;
++ (void)consoleSetup:(void (^)(NSMutableArray<KLConsoleConfig *> *configs))setup;
 
 @end
 
