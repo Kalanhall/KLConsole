@@ -296,14 +296,9 @@ static const char *__jb_app = NULL;
     @[IOS_WIFI @"/" IP_ADDR_IPv6, IOS_WIFI @"/" IP_ADDR_IPv4, IOS_CELLULAR @"/" IP_ADDR_IPv6, IOS_CELLULAR @"/" IP_ADDR_IPv4, IOS_AWDL @"/" IP_ADDR_IPv6, IOS_AWDL @"/" IP_ADDR_IPv4, IOS_LOC @"/" IP_ADDR_IPv6, IOS_LOC @"/" IP_ADDR_IPv4];
 
     NSDictionary *addresses = [self kl_getIPAddresses];
-
-    NSLog(@"addresses: %@", addresses);
-
     __block NSString *address;
-    [searchArray enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL *stop)
-    {
+    [searchArray enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL *stop) {
         address = addresses[key];
-
         if (address) {
             *stop = YES;
         }
