@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     [KLConsole.addressConfigs enumerateObjectsUsingBlock:^(KLConsoleAddressConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSLog(@"域名注释：%@， 域名链接：%@", obj.title, obj.address[obj.addressIndex].address);
+        NSLog(@"域名注释：%@， 域名链接：%@", obj.title, obj.subtitle);
     }];
     
     [KLConsole.configs enumerateObjectsUsingBlock:^(KLConsoleConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

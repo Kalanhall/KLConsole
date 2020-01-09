@@ -205,14 +205,7 @@
         vc.infoType = KLConsoleInfoTypeSystemInfo;
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.section == 2) {
-        // 调试工具开关
-        KLConsoleCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-        [cell.consoleSwitch setOn:!cell.consoleSwitch.on animated:YES];
-        if (cell.consoleSwitch.on) {
-            [YKWoodpeckerManager.sharedInstance show];
-        } else {
-            [YKWoodpeckerManager.sharedInstance hide];
-        }
+        // 不处理点击
     } else {
         // 扩展行点击
         // 1、获取开关
