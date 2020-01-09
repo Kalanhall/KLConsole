@@ -170,9 +170,9 @@
             @{
                 @"title" : @"是否发布版本",
             #ifdef __OPTIMIZE__
-                @"subtitle" : @"否"
-            #else
                 @"subtitle" : @"是"
+            #else
+                @"subtitle" : @"否"
             #endif
             },
             @{
