@@ -47,6 +47,9 @@
     } else {
         [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
     }
+    
+    // 数据挂载在系统单例，留待使用
+    objc_setAssociatedObject(NSNotificationCenter.defaultCenter, @selector(consoleSetup:), cgs, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 + (NSArray<KLConsoleConfig *> *)configs
@@ -74,6 +77,9 @@
     } else {
         [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsoleAddressPath];
     }
+    
+    // 数据挂载在系统单例，留待使用
+    objc_setAssociatedObject(NSNotificationCenter.defaultCenter, @selector(consoleAddressSetup:), cgs, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 + (NSArray<KLConsoleAddressConfig *> *)addressConfigs

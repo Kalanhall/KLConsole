@@ -65,7 +65,20 @@
 {
     // 数据源
     NSArray<KLConsoleAddressConfig *> *addresscgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
-    NSArray<KLConsoleAddressConfig *> *cgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsolePath];
+    if (addresscgs == nil) {
+        // 从系统单例中取出挂载数据
+        addresscgs = objc_getAssociatedObject(NSNotificationCenter.defaultCenter, @selector(consoleAddressSetup:));
+        // 归档
+        [NSKeyedArchiver archiveRootObject:addresscgs toFile:KLConsoleAddressPath];
+    }
+    NSArray<KLConsoleConfig *> *cgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsolePath];
+    if (cgs == nil) {
+        // 从系统单例中取出挂载数据
+        cgs = objc_getAssociatedObject(NSNotificationCenter.defaultCenter, @selector(consoleSetup:));
+        // 归档
+        [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
+    }
+    
     self.dataSource = @[@{@"title" : @"环境配置",
                           @"infos" : addresscgs
                         },
@@ -84,7 +97,7 @@
     ].mutableCopy;
     
     // 添加通用配置
-    if (cgs.count) [self.dataSource addObjectsFromArray:cgs];
+    [self.dataSource addObjectsFromArray:cgs];
     
     [self.tableView reloadData];
 }
@@ -117,7 +130,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         KLConsoleAddressConfig *config = infos[indexPath.row];
         cell.titleLabel.text = [NSString stringWithFormat:@"%@（%@）", config.title, config.address[config.addressIndex].name];
-        cell.infoLabel.text = config.address[config.addressIndex].address;
+        cell.infoLabel.text = config.subtitle;
     } else if (1 == indexPath.section) {
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.titleLabel.text = [infos[indexPath.row] valueForKey:@"title"];

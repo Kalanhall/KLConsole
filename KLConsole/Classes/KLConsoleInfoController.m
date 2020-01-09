@@ -122,6 +122,7 @@
         [cachecgs enumerateObjectsUsingBlock:^(KLConsoleAddressConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj.title isEqualToString:self.config.title]) {
                 obj.addressIndex = indexPath.row;
+                obj.subtitle = obj.address[indexPath.row].address;
                 self.config.addressIndex = obj.addressIndex;
                 [NSKeyedArchiver archiveRootObject:cachecgs toFile:KLConsoleAddressPath];
                 [tableView reloadData];

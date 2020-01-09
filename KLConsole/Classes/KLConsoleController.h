@@ -5,8 +5,8 @@
 //  Created by Logic on 2020/1/6.
 //
 
-#define KLConsolePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"KLConsole.plist"]
-#define KLConsoleAddressPath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"KLConsoleAddress.plist"]
+#define KLConsolePath [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"KLConsole.plist"]
+#define KLConsoleAddressPath [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"KLConsoleAddress.plist"]
 
 #import <UIKit/UIKit.h>
 @import Masonry;
