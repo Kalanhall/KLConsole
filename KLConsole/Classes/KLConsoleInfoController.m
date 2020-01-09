@@ -169,7 +169,7 @@
             },
             @{
                 @"title" : @"是否发布版本",
-            #ifdef DEBUG
+            #ifdef __OPTIMIZE__
                 @"subtitle" : @"否"
             #else
                 @"subtitle" : @"是"
