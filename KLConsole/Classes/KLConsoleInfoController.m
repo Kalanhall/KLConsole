@@ -169,7 +169,11 @@
             },
             @{
                 @"title" : @"是否发布版本",
-                @"subtitle" : DEBUG ? @"是" : @"否"
+            #ifdef DEBUG
+                @"subtitle" : @"否"
+            #else
+                @"subtitle" : @"是"
+            #endif
             },
             @{
                 @"title" : @"设备类型",
@@ -181,9 +185,6 @@
             }, @{
                 @"title" : @"运营商",
                 @"subtitle" : [UIDevice kl_carrierName]
-            }, @{
-                @"title" : @"渠道名称",
-                @"subtitle" : DEBUG ? @"开发包" : @"生产包"
             }, @{
                 @"title" : @"系统语言",
                 @"subtitle" : [UIDevice kl_OSLanguage]
@@ -198,11 +199,11 @@
                 @"subtitle" : [UIDevice kl_IPV6]
             }, @{
                 @"title" : @"系统位数",
-    #ifdef __LP64__
+            #ifdef __LP64__
                 @"subtitle" : @"64位"
-    #else
+            #else
                 @"subtitle" : @"32位"
-    #endif
+            #endif
             }
         ];
 
