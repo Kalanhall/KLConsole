@@ -1,5 +1,5 @@
 //
-//  KLConsoleConfig.m
+//  KLConsoleAddressConfig.m
 //  KLCategory
 //
 //  Created by Kalan on 2020/1/9.
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation KLConsoleConfig
+@implementation KLConsoleAddressConfig
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
@@ -45,6 +45,44 @@
         _subtitle = [aDecoder decodeObjectForKey:@"subtitle"];
         _address = [aDecoder decodeObjectForKey:@"address"];
         _addressIndex = [[aDecoder decodeObjectForKey:@"addressIndex"] integerValue];
+    }
+    return self;
+}
+
+@end
+
+@implementation KLConsoleSecondConfig
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:_title forKey:@"title"];
+    [aCoder encodeObject:_subtitle forKey:@"subtitle"];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init]) {
+        _title = [aDecoder decodeObjectForKey:@"title"];
+        _subtitle = [aDecoder decodeObjectForKey:@"subtitle"];
+    }
+    return self;
+}
+
+@end
+
+@implementation KLConsoleConfig
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:_title forKey:@"title"];
+    [aCoder encodeObject:_infos forKey:@"infos"];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init]) {
+        _title = [aDecoder decodeObjectForKey:@"title"];
+        _infos = [aDecoder decodeObjectForKey:@"infos"];
     }
     return self;
 }

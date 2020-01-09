@@ -19,6 +19,7 @@
         self.titleLabel = UILabel.alloc.init;
         self.titleLabel.font = [UIFont systemFontOfSize:14];
         self.titleLabel.textColor = UIColor.blackColor;
+        self.titleLabel.numberOfLines = 0;
         [self.contentView addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(15);
@@ -37,8 +38,24 @@
             make.right.mas_equalTo(-15);
             make.bottom.mas_equalTo(-10);
         }];
+        
+        self.consoleSwitch = UISwitch.alloc.init;
+        [self.contentView addSubview:self.consoleSwitch];
+        [self.consoleSwitch mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.mas_equalTo(-15);
+            make.centerY.mas_equalTo(0);
+        }];
+        [self.consoleSwitch addTarget:self action:@selector(switchChange:) forControlEvents:UIControlEventValueChanged];
+        self.consoleSwitch.hidden = YES;
     }
     return self;
+}
+
+- (void)switchChange:(UISwitch *)consoleSwitch
+{
+    if (self.switchChangeCallBack) {
+        self.switchChangeCallBack(consoleSwitch.on);
+    }
 }
 
 @end

@@ -1,15 +1,21 @@
 //
-//  UIDevice+KLExtension.h
+//  UIDevice+KLConsole.h
 //  KLCategory
 //
-//  Created by Logic on 2019/12/14.
+//  Created by Logic on 2020/1/9.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIDevice (KLSystemInfo)
+@interface UIDevice (KLConsole)
+
+/// Vindor标示符  (钥匙串保存)
++ (NSString *)kl_deviceIdentifierForKeyChain;
+
+/// Vindor标示符  (钥匙串删除)
++ (BOOL)kl_deleteDeviceIdentifierForKeyChain;
 
 /// 获取操作系统版本号
 + (NSString *)kl_systemVersion;

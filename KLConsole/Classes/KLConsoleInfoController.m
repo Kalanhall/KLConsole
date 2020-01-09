@@ -8,10 +8,14 @@
 #import "KLConsoleInfoController.h"
 #import "KLConsoleCell.h"
 #import "KLConsoleController.h"
+#import "UIDevice+KLConsole.h"
 @import Masonry;
-@import KLCategory;
 
-@interface KLConsoleInfoController ()
+@interface KLConsoleInfoController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UIView *toastView;
+@property (strong, nonatomic) UILabel *toastLabel;
 
 @end
 
@@ -19,9 +23,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView = [UITableView.alloc initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.estimatedRowHeight = 50;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 60;
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.tableView.showsVerticalScrollIndicator = NO;
+    [self.tableView setBackgroundColor:[UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]];
+    [self.tableView registerClass:KLConsoleCell.class forCellReuseIdentifier:KLConsoleCell.description];
     [self.tableView registerClass:KLConsoleInfoCell.class forCellReuseIdentifier:KLConsoleInfoCell.description];
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+    [self.tableView registerClass:KLConsoleInfoCell.class forCellReuseIdentifier:KLConsoleInfoCell.description];
+    
+    self.toastView = UIView.alloc.init;
+    self.toastView.backgroundColor = UIColor.blackColor;
+    [self.view addSubview:self.toastView];
+    [self.toastView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.centerY.mas_equalTo(0);
+    }];
+    self.toastView.alpha = 0;
+    
+    self.toastLabel = UILabel.alloc.init;
+    self.toastLabel.backgroundColor = UIColor.blackColor;
+    self.toastLabel.textColor = UIColor.whiteColor;
+    self.toastLabel.font = [UIFont systemFontOfSize:13];
+    self.toastLabel.textAlignment = NSTextAlignmentCenter;
+    self.toastLabel.numberOfLines = 0;
+    [self.toastView addSubview:self.toastLabel];
+    [self.toastLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsMake(10, 10, 10, 10));
+    }];
+    
+}
+
+- (void)showToast:(NSString *)text
+{
+    self.toastLabel.text = text;
+    self.toastView.alpha = 1;
+    [UIView animateWithDuration:0.25 delay:1.5 options:UIViewAnimationOptionCurveLinear animations:^{
+        self.toastView.alpha = 0;
+    } completion:nil];
 }
 
 #pragma mark - Table view data source
@@ -54,9 +99,17 @@
         }
     } else {
         // 设备应用信息
-        NSDictionary *info = self.fetchSystemInfos[indexPath.row];
+        NSDictionary *info;
+        switch (self.infoType) {
+            case KLConsoleInfoTypeSystemInfo:
+                info = self.fetchSystemInfos[indexPath.row];
+                break;
+            default:
+                break;
+        }
+        
         cell.titleLabel.text = [info valueForKey:@"title"];
-        cell.infoLabel.text = [info valueForKey:@"text"];
+        cell.infoLabel.text = [info valueForKey:@"subtitle"];
     }
     
     return cell;
@@ -65,8 +118,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.infoType == KLConsoleInfoTypeAddress) {
-        __block NSArray<KLConsoleConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
-        [cachecgs enumerateObjectsUsingBlock:^(KLConsoleConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        __block NSArray<KLConsoleAddressConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
+        [cachecgs enumerateObjectsUsingBlock:^(KLConsoleAddressConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj.title isEqualToString:self.config.title]) {
                 obj.addressIndex = indexPath.row;
                 self.config.addressIndex = obj.addressIndex;
@@ -78,6 +131,11 @@
                 }
             }
         }];
+    } else if (self.infoType == KLConsoleInfoTypeSystemInfo) {
+        KLConsoleInfoCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        UIPasteboard *pasteboard = UIPasteboard.generalPasteboard;
+        pasteboard.string = cell.infoLabel.text;
+        [self showToast:[NSString stringWithFormat:@"%@\n已复制", cell.titleLabel.text]];
     }
 }
 
@@ -86,66 +144,68 @@
     NSArray *systemInfos = @[
             @{
                 @"title" : @"应用名称",
-                @"text" : [UIDevice kl_appDisplayName]
+                @"subtitle" : [UIDevice kl_appDisplayName]
             },
             @{
                 @"title" : @"版本号",
-                @"text" : [UIDevice kl_appShortVersion]
+                @"subtitle" : [UIDevice kl_appShortVersion]
             },
             @{
                 @"title" : @"Build号",
-                @"text" : [UIDevice kl_appBuildVersion]
+                @"subtitle" : [UIDevice kl_appBuildVersion]
             },
             @{
                 @"title" : @"Bundle Id",
-                @"text" : [UIDevice kl_appIdentifier]
+                @"subtitle" : [UIDevice kl_appIdentifier]
+            },
+            @{
+                @"title" : @"KeyChain Id",
+                @"subtitle" : [UIDevice kl_deviceIdentifierForKeyChain]
             }
             , @{
                 @"title" : @"手机系统",
-                @"text" : [UIDevice kl_OSVersion]
+                @"subtitle" : [UIDevice kl_OSVersion]
             },
             @{
                 @"title" : @"是否发布版本",
-                @"text" : DEBUG ? @"是" : @"否"
+                @"subtitle" : DEBUG ? @"是" : @"否"
             },
             @{
                 @"title" : @"设备类型",
-                @"text" : [UIDevice kl_currentModel]
+                @"subtitle" : [UIDevice kl_currentModel]
             },
             @{
                 @"title" : @"分辨率(宽高)",
-                @"text" : [NSString stringWithFormat:@"%.1f x %.1f (%.1f x %.1f) @scale %.1f", UIScreen. mainScreen.currentMode.size.width, UIScreen. mainScreen.currentMode.size.height, UIScreen. mainScreen.bounds.size.width, UIScreen. mainScreen.bounds.size.height, UIScreen. mainScreen.scale]
+                @"subtitle" : [NSString stringWithFormat:@"%.1f x %.1f (%.1f x %.1f) @scale %.1f", UIScreen. mainScreen.currentMode.size.width, UIScreen. mainScreen.currentMode.size.height, UIScreen. mainScreen.bounds.size.width, UIScreen. mainScreen.bounds.size.height, UIScreen. mainScreen.scale]
             }, @{
                 @"title" : @"运营商",
-                @"text" : [UIDevice kl_carrierName]
+                @"subtitle" : [UIDevice kl_carrierName]
             }, @{
                 @"title" : @"渠道名称",
-                @"text" : DEBUG ? @"开发包" : @"生产包"
+                @"subtitle" : DEBUG ? @"开发包" : @"生产包"
             }, @{
                 @"title" : @"系统语言",
-                @"text" : [UIDevice kl_OSLanguage]
+                @"subtitle" : [UIDevice kl_OSLanguage]
             }, @{
                 @"title" : @"是否越狱",
-                @"text" : [NSString stringWithFormat:@"%@", [UIDevice kl_isJailBroken] ? @"是" : @"否"]
+                @"subtitle" : [NSString stringWithFormat:@"%@", [UIDevice kl_isJailBroken] ? @"是" : @"否"]
             }, @{
                 @"title" : @"ip地址(ipv4)",
-                @"text" : [UIDevice kl_IPV4]
+                @"subtitle" : [UIDevice kl_IPV4]
             }, @{
                 @"title" : @"ip地址(ipv6)",
-                @"text" : [UIDevice kl_IPV6]
+                @"subtitle" : [UIDevice kl_IPV6]
             }, @{
                 @"title" : @"系统位数",
     #ifdef __LP64__
-                @"text" : @"64位"
+                @"subtitle" : @"64位"
     #else
-                @"text" : @"32位"
+                @"subtitle" : @"32位"
     #endif
             }
         ];
 
     return systemInfos;
 }
-
-
 
 @end

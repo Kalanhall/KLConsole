@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *infoLabel;
+@property (strong, nonatomic) UISwitch *consoleSwitch;
+
+@property (copy, nonatomic) void (^switchChangeCallBack)(BOOL on);
 
 @end
 

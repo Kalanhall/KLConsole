@@ -1,18 +1,14 @@
 PODS:
-  - KLCategory (1.0.9)
   - KLConsole (1.0.0):
-    - KLCategory
     - Masonry
+    - YKWoodpecker
   - Masonry (1.1.0)
   - YKWoodpecker (1.1.1)
 
 DEPENDENCIES:
   - KLConsole (from `../`)
-  - YKWoodpecker
 
 SPEC REPOS:
-  https://github.com/Kalanhall/Specs.git:
-    - KLCategory
   trunk:
     - Masonry
     - YKWoodpecker
@@ -22,11 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KLCategory: c5cce470a3099ce77cc4a801bec4ff7a65509b2a
-  KLConsole: 9eff9ca58e4902ae2e7c87c6f211467226e2dcf2
+  KLConsole: 2e59e9a11b2040655a7fc75a16f45aa2fe882ae4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   YKWoodpecker: 446884788ccf1f1800781d50e503f9bdb0bdaebe
 
-PODFILE CHECKSUM: 2c5bfc57feddfe417c42b04b3760a8c6c2979fd8
+PODFILE CHECKSUM: d367c3f8b5c3048b2aaf2f1f9edcd6e53997921e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.8.3

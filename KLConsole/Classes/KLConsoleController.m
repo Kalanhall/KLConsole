@@ -13,11 +13,14 @@
 #import <arpa/inet.h>
 #import <sys/sysctl.h>
 #import "KLConsoleConfig.h"
+#import "KLConsole.h"
+#import <objc/runtime.h>
+@import YKWoodpecker;
 
 @interface KLConsoleController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) NSArray *dataSource;
+@property (strong, nonatomic) NSMutableArray *dataSource;
 
 @end
 
@@ -46,6 +49,7 @@
     self.tableView.sectionHeaderHeight = 30;
     self.tableView.sectionFooterHeight = 15;
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.tableView.showsVerticalScrollIndicator = NO;
     [self.tableView setBackgroundColor:[UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]];
     [self.tableView registerClass:KLConsoleCell.class forCellReuseIdentifier:KLConsoleCell.description];
     [self.tableView registerClass:KLConsoleInfoCell.class forCellReuseIdentifier:KLConsoleInfoCell.description];
@@ -60,25 +64,28 @@
 - (void)reloadData
 {
     // 数据源
-    NSArray<KLConsoleConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
-    self.dataSource = @[@{@"title" : @"环境设置",
-                          @"infos" : cachecgs
+    NSArray<KLConsoleAddressConfig *> *addresscgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
+    NSArray<KLConsoleAddressConfig *> *cgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsolePath];
+    self.dataSource = @[@{@"title" : @"环境配置",
+                          @"infos" : addresscgs
                         },
                         
-                        @{@"title" : @"设备&App信息",
+                        @{@"title" : @"设备信息",
                           @"infos" : @[
-                            @{@"title" : @"设备信息",
-                              @"subtitle" : @"App相关信息"}
+                            @{@"title" : @"基本信息",
+                              @"subtitle" : @"系统及应用相关信息"}
                         ]},
                         
-                        @{@"title" : @"日志&日志上报&功能测试",
+                        @{@"title" : @"调试工具",
                           @"infos" : @[
-                            @{@"title" : @"崩溃日志",
-                              @"subtitle" : @"Log相关信息"},
-                            @{@"title" : @"功能测试",
-                              @"subtitle" : @"应用崩溃日志"}
+                            @{@"title" : @"YKWoodpecker",
+                              @"subtitle" : @"阿里啄幕鸟"}
                         ]}
-    ];
+    ].mutableCopy;
+    
+    // 添加通用配置
+    if (cgs.count) [self.dataSource addObjectsFromArray:cgs];
+    
     [self.tableView reloadData];
 }
 
@@ -100,15 +107,27 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
     KLConsoleCell *cell = [tableView dequeueReusableCellWithIdentifier:KLConsoleCell.description];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     NSDictionary *outdata = self.dataSource[indexPath.section];
     NSArray *infos = [outdata valueForKey:@"infos"];
+    BOOL result = [[outdata valueForKey:@"title"] isEqual:@"调试工具"];
+    cell.accessoryType = result ? UITableViewCellAccessoryNone : UITableViewCellAccessoryDisclosureIndicator;
+    cell.consoleSwitch.hidden = !result;
+    if (result) {
+        cell.switchChangeCallBack = ^(BOOL on) {
+            if (indexPath.row == 0) {
+                if (on) {
+                    [YKWoodpeckerManager.sharedInstance show];
+                } else {
+                    [YKWoodpeckerManager.sharedInstance hide];
+                }
+            }
+        };
+    }
 
     if (0 == indexPath.section) {
-        KLConsoleConfig *config = infos[indexPath.row];
-        cell.titleLabel.text = config.title;
+        KLConsoleAddressConfig *config = infos[indexPath.row];
+        cell.titleLabel.text = [NSString stringWithFormat:@"%@（%@）", config.title, config.address[config.addressIndex].name];
         cell.infoLabel.text = config.address[config.addressIndex].address;
     } else {
         cell.titleLabel.text = [infos[indexPath.row] valueForKey:@"title"];
@@ -121,11 +140,11 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIButton *header = UIButton.alloc.init;
-    header.titleLabel.font = [UIFont systemFontOfSize:11];
+    header.titleLabel.font = [UIFont boldSystemFontOfSize:11];
     NSDictionary *outdata = self.dataSource[section];
     [header setTitle:[outdata valueForKey:@"title"] forState:UIControlStateNormal];
     [header setTitleEdgeInsets:(UIEdgeInsets){0, 15, 0, 0}];
-    [header setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    [header setTitleColor:[UIColor colorWithRed:40/255.0 green:122/255.0 blue:255/255.0 alpha:1] forState:UIControlStateNormal];
     [header setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     return header;
 }
@@ -137,25 +156,49 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    KLConsoleInfoController *vc = KLConsoleInfoController.alloc.init;
+    NSDictionary *outdata = self.dataSource[indexPath.section];
+    NSArray *infos = [outdata valueForKey:@"infos"];
+    NSString *title = [infos[indexPath.row] valueForKey:@"title"];
+    vc.title = title;
+    
     if (indexPath.section == 0) {
-        KLConsoleInfoController *vc = KLConsoleInfoController.alloc.init;
-        NSDictionary *outdata = self.dataSource[indexPath.section];
-        NSArray<KLConsoleConfig *> *infos = [outdata valueForKey:@"infos"];
-        vc.title = infos[indexPath.row].title;
+        // 环境配置
+        __weak typeof(self) weakself = self;
+        NSArray<KLConsoleAddressConfig *> *infos = [outdata valueForKey:@"infos"];
         vc.config = infos[indexPath.row];
         vc.infoType = KLConsoleInfoTypeAddress;
+        vc.selectedCallBack = ^() { [weakself reloadData]; };
         [self.navigationController pushViewController:vc animated:YES];
-        
-        __weak typeof(self) weakself = self;
-        vc.selectedCallBack = ^(KLConsoleAddress * _Nonnull address) {
-            [weakself reloadData];
-        };
     } else if (indexPath.section == 1) {
-        KLConsoleInfoController *vc = KLConsoleInfoController.alloc.init;
-        vc.title = @"设备信息";
+        // 系统信息
         vc.infoType = KLConsoleInfoTypeSystemInfo;
         [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.section == 2) {
+        // 调试工具开关
+        KLConsoleCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        [cell.consoleSwitch setOn:!cell.consoleSwitch.on animated:YES];
+        if (cell.consoleSwitch.on) {
+            [YKWoodpeckerManager.sharedInstance show];
+        } else {
+            [YKWoodpeckerManager.sharedInstance hide];
+        }
+    } else {
+        // 扩展行点击
+        // 1、获取关联属性
+        void (^callBack)(NSIndexPath *) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
+        if (callBack) {
+            callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3]); // 减去固定section个数
+        }
     }
+}
+
+- (NSMutableArray *)dataSource
+{
+    if (_dataSource == nil) {
+        _dataSource = NSMutableArray.array;
+    }
+    return _dataSource;
 }
 
 @end

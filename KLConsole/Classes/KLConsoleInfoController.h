@@ -7,7 +7,8 @@
 
 typedef NS_ENUM(NSUInteger, KLConsoleInfoType) {
     KLConsoleInfoTypeAddress,
-    KLConsoleInfoTypeSystemInfo
+    KLConsoleInfoTypeSystemInfo,
+    KLConsoleInfoTypeDebugTool
 };
 
 #import <UIKit/UIKit.h>
@@ -15,14 +16,14 @@ typedef NS_ENUM(NSUInteger, KLConsoleInfoType) {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KLConsoleInfoController : UITableViewController
+@interface KLConsoleInfoController : UIViewController
 
 /// 页面类型
 @property (assign, nonatomic) KLConsoleInfoType infoType;
 /// 当前域名配置
-@property (strong, nonatomic) KLConsoleConfig *config;
+@property (strong, nonatomic) KLConsoleAddressConfig *config;
 
-@property (copy, nonatomic) void (^selectedCallBack)();
+@property (copy, nonatomic) void (^selectedCallBack)(void);
 
 @end
 

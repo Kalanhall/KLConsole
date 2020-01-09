@@ -5,11 +5,11 @@
 //  Created by Logic on 2020/1/6.
 //
 
-#define KLConsoleAddressPath [NSString kl_cachePathWithFileName:@"KLConsole.plist"]
+#define KLConsolePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"KLConsole.plist"]
+#define KLConsoleAddressPath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"KLConsoleAddress.plist"]
 
 #import <UIKit/UIKit.h>
 @import Masonry;
-@import KLCategory;
 
 NS_ASSUME_NONNULL_BEGIN
 

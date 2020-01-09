@@ -7,7 +7,6 @@ platform :ios, '9.0'
 
 target 'KLConsole_Example' do
   pod 'KLConsole', :path => '../'
-  pod 'YKWoodpecker'
 
   target 'KLConsole_Tests' do
     inherit! :search_paths

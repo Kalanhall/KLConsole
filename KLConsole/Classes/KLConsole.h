@@ -12,7 +12,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KLConsole : NSObject
 
+/// 通用配置
+/// @param setup 通用配置回调
 + (void)consoleSetup:(void (^)(NSMutableArray<KLConsoleConfig *> *configs))setup;
+
+/// 获取通用配置集合
+/// @return 通用配置集合
++ (NSArray<KLConsoleConfig *> *)configs;
+
+/// 环境配置
+/// @param setup 环境配置回调
++ (void)consoleAddressSetup:(void (^)(NSMutableArray<KLConsoleAddressConfig *> *configs))setup;
+
+/// 获取环境配置集合
+/// @return 环境配置集合
++ (NSArray<KLConsoleAddressConfig *> *)addressConfigs;
+
+/// 调起控制台，并处理扩展配置回调
++ (void)consoleSetupAndSelectedCallBack:(void (^)(NSIndexPath *indexPath))callBack;
 
 @end
 
