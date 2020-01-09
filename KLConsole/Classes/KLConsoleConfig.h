@@ -42,6 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) NSString *title;
 /// row副标题
 @property (copy, nonatomic) NSString *subtitle;
+/// 显示开关
+@property (assign, nonatomic) BOOL switchEnable;
 
 @end
 

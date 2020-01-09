@@ -46,9 +46,9 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [KLConsole consoleSetupAndSelectedCallBack:^(NSIndexPath * _Nonnull indexPath) {
+    [KLConsole consoleSetupAndSelectedCallBack:^(NSIndexPath * _Nonnull indexPath, BOOL switchOn) {
         KLConsoleConfig *config = KLConsole.configs[indexPath.section];
-        NSLog(@"分组名称：%@， 功能名称：%@", config.title, config.infos[indexPath.row].title);
+        NSLog(@"分组名称：%@， 功能名称：%@ switch: %@", config.title, config.infos[indexPath.row].title, @(switchOn));
     }];
 //    id test = NSString.new;
 //    [test objectAtIndex:0];

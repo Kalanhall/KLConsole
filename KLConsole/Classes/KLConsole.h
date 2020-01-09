@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray<KLConsoleAddressConfig *> *)addressConfigs;
 
 /// 调起控制台，并处理扩展配置回调
-+ (void)consoleSetupAndSelectedCallBack:(void (^)(NSIndexPath *indexPath))callBack;
++ (void)consoleSetupAndSelectedCallBack:(void (^)(NSIndexPath *indexPath, BOOL switchOn))callBack;
 
 @end
 

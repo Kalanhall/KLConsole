@@ -108,14 +108,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     KLConsoleCell *cell = [tableView dequeueReusableCellWithIdentifier:KLConsoleCell.description];
+    cell.accessoryType = UITableViewCellAccessoryNone;
     NSDictionary *outdata = self.dataSource[indexPath.section];
     NSArray *infos = [outdata valueForKey:@"infos"];
-    BOOL result = [[outdata valueForKey:@"title"] isEqual:@"调试工具"];
-    cell.accessoryType = result ? UITableViewCellAccessoryNone : UITableViewCellAccessoryDisclosureIndicator;
-    cell.consoleSwitch.hidden = !result;
-    if (result) {
+    cell.consoleSwitch.hidden = YES;
+
+    if (0 == indexPath.section) {
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        KLConsoleAddressConfig *config = infos[indexPath.row];
+        cell.titleLabel.text = [NSString stringWithFormat:@"%@（%@）", config.title, config.address[config.addressIndex].name];
+        cell.infoLabel.text = config.address[config.addressIndex].address;
+    } else if (1 == indexPath.section) {
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.titleLabel.text = [infos[indexPath.row] valueForKey:@"title"];
+        cell.infoLabel.text = [infos[indexPath.row] valueForKey:@"subtitle"];
+    } else if (2 == indexPath.section) {
+        cell.titleLabel.text = [infos[indexPath.row] valueForKey:@"title"];
+        cell.infoLabel.text = [infos[indexPath.row] valueForKey:@"subtitle"];
+        cell.consoleSwitch.hidden = NO;
         cell.switchChangeCallBack = ^(BOOL on) {
-            if (indexPath.row == 0) {
+           if (indexPath.row == 0) {
                 if (on) {
                     [YKWoodpeckerManager.sharedInstance show];
                 } else {
@@ -123,15 +135,20 @@
                 }
             }
         };
-    }
-
-    if (0 == indexPath.section) {
-        KLConsoleAddressConfig *config = infos[indexPath.row];
-        cell.titleLabel.text = [NSString stringWithFormat:@"%@（%@）", config.title, config.address[config.addressIndex].name];
-        cell.infoLabel.text = config.address[config.addressIndex].address;
     } else {
-        cell.titleLabel.text = [infos[indexPath.row] valueForKey:@"title"];
-        cell.infoLabel.text = [infos[indexPath.row] valueForKey:@"subtitle"];
+        KLConsoleSecondConfig *config = infos[indexPath.row];
+        cell.titleLabel.text = config.title;
+        cell.infoLabel.text = config.subtitle;
+        cell.consoleSwitch.hidden = !config.switchEnable;
+        cell.accessoryType = config.switchEnable ? UITableViewCellAccessoryNone : UITableViewCellAccessoryDisclosureIndicator;
+        __weak typeof(cell) weakcell = cell;
+        cell.switchChangeCallBack = ^(BOOL on) {
+            // 1、获取关联属性
+            void (^callBack)(NSIndexPath *, BOOL) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
+            if (callBack) {
+                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3], weakcell.consoleSwitch.on); // 减去固定section个数
+            }
+        };
     }
 
     return cell;
@@ -185,10 +202,13 @@
         }
     } else {
         // 扩展行点击
-        // 1、获取关联属性
-        void (^callBack)(NSIndexPath *) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
-        if (callBack) {
-            callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3]); // 减去固定section个数
+        // 1、获取开关
+        KLConsoleCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        if (cell.consoleSwitch.hidden) {
+            void (^callBack)(NSIndexPath *, BOOL) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
+            if (callBack) {
+                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3], cell.consoleSwitch.on); // 减去固定section个数
+            }
         }
     }
 }

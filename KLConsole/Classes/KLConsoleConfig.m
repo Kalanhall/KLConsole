@@ -57,6 +57,7 @@
 {
     [aCoder encodeObject:_title forKey:@"title"];
     [aCoder encodeObject:_subtitle forKey:@"subtitle"];
+    [aCoder encodeObject:@(_switchEnable) forKey:@"switchEnable"];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -64,6 +65,7 @@
     if (self = [super init]) {
         _title = [aDecoder decodeObjectForKey:@"title"];
         _subtitle = [aDecoder decodeObjectForKey:@"subtitle"];
+        _switchEnable = [[aDecoder decodeObjectForKey:@"switchEnable"] boolValue];
     }
     return self;
 }

@@ -33,7 +33,9 @@
                         *stop = YES;
                     } else {
                         [obj.infos enumerateObjectsUsingBlock:^(KLConsoleSecondConfig * _Nonnull obj2, NSUInteger idx2, BOOL * _Nonnull stop) {
-                            if (![obj2.title isEqualToString:cgs[idx].infos[idx2].title]) {
+                            if (![obj2.title isEqualToString:cgs[idx].infos[idx2].title]
+                                || ![obj2.subtitle isEqualToString:cgs[idx].infos[idx2].subtitle]
+                                || obj2.switchEnable !=  cgs[idx].infos[idx2].switchEnable) {
                                 [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
                                 *stop = YES;
                             }
@@ -80,7 +82,7 @@
     return cachecgs;
 }
 
-+ (void)consoleSetupAndSelectedCallBack:(void (^)(NSIndexPath *indexPath))callBack
++ (void)consoleSetupAndSelectedCallBack:(void (^)(NSIndexPath *indexPath, BOOL switchOn))callBack
 {
     KLConsoleController *vc = KLConsoleController.alloc.init;
     // 关联属性

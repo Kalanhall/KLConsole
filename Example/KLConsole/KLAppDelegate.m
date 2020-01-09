@@ -83,6 +83,7 @@
         KLConsoleSecondConfig *d = KLConsoleSecondConfig.alloc.init;
         d.title = @"引导页测试1";
         d.subtitle = @"点击查看1";
+        d.switchEnable = YES;
         bconfig.infos = @[c, d];
         [configs addObject:bconfig];
     }];
