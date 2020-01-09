@@ -20,6 +20,7 @@
 @interface KLConsoleController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *fixSource;
 @property (strong, nonatomic) NSMutableArray *dataSource;
 
 @end
@@ -79,7 +80,7 @@
         [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
     }
     
-    self.dataSource = @[@{@"title" : @"环境配置",
+    self.fixSource = @[ @{@"title" : @"环境配置",
                           @"infos" : addresscgs
                         },
                         
@@ -92,10 +93,15 @@
                         @{@"title" : @"调试工具",
                           @"infos" : @[
                             @{@"title" : @"YKWoodpecker",
-                              @"subtitle" : @"阿里啄幕鸟"}
+                              @"subtitle" : @"阿里啄幕鸟"
+                            },
+                            @{@"title" : @"刷新率监测",
+                              @"subtitle" : @"FPS监测"}
                         ]}
-    ].mutableCopy;
+    ];
     
+    // 添加固定配置
+    [self.dataSource addObjectsFromArray:self.fixSource];
     // 添加通用配置
     [self.dataSource addObjectsFromArray:cgs];
     
@@ -141,12 +147,20 @@
         cell.consoleSwitch.hidden = NO;
         cell.switchChangeCallBack = ^(BOOL on) {
            if (indexPath.row == 0) {
-                if (on) {
-                    [YKWoodpeckerManager.sharedInstance show];
-                } else {
-                    [YKWoodpeckerManager.sharedInstance hide];
-                }
-            }
+               // YKW
+               if (on) {
+                   [YKWoodpeckerManager.sharedInstance show];
+               } else {
+                   [YKWoodpeckerManager.sharedInstance hide];
+               }
+           } else {
+               // FPS
+               if (on) {
+                   
+               } else {
+                   
+               }
+           }
         };
     } else {
         KLConsoleSecondConfig *config = infos[indexPath.row];
@@ -159,7 +173,7 @@
             // 1、获取关联属性
             void (^callBack)(NSIndexPath *, BOOL) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
             if (callBack) {
-                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3], weakcell.consoleSwitch.on); // 减去固定section个数
+                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - self.fixSource.count], weakcell.consoleSwitch.on); // 减去固定section个数
             }
         };
     }
@@ -213,7 +227,7 @@
         if (cell.consoleSwitch.hidden) {
             void (^callBack)(NSIndexPath *, BOOL) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
             if (callBack) {
-                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3], cell.consoleSwitch.on); // 减去固定section个数
+                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - self.fixSource.count], cell.consoleSwitch.on); // 减去固定section个数
             }
         }
     }
