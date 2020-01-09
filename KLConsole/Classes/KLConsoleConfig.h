@@ -1,5 +1,5 @@
 //
-//  KLConsoleAddressConfig.h
+//  KLConsoleSecondConfig.h
 //  KLCategory
 //
 //  Created by Kalan on 2020/1/9.
@@ -10,17 +10,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // 三级级扩展数据模型
-@interface KLConsoleAddress : NSObject <NSCoding>
+@interface KLConsoleThreeConfig : NSObject <NSCoding>
 
 /// 域名中文注释
-@property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *title;
 /// 域名地址
-@property (copy, nonatomic) NSString *address;
+@property (copy, nonatomic) NSString *text;
 
 @end
 
 // 二级扩展数据模型
-@interface KLConsoleAddressConfig : NSObject <NSCoding>
+@interface KLConsoleSecondConfig : NSObject <NSCoding>
 
 /// 环境版本
 @property (copy, nonatomic) NSString *version;
@@ -29,21 +29,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// 环境当前选中
 @property (copy, nonatomic) NSString *subtitle;
 /// 环境集合
-@property (copy, nonatomic) NSArray<KLConsoleAddress *> *address;
+@property (copy, nonatomic) NSArray<KLConsoleThreeConfig *> *details;
 /// 环境当前选中下标
-@property (assign, nonatomic) NSInteger addressIndex;
-
-@end
-
-// 二级扩展数据模型
-@interface KLConsoleSecondConfig : NSObject <NSCoding>
-
-/// row标题
-@property (copy, nonatomic) NSString *title;
-/// row副标题
-@property (copy, nonatomic) NSString *subtitle;
+@property (assign, nonatomic) NSInteger selectedIndex;
 /// 显示开关
 @property (assign, nonatomic) BOOL switchEnable;
+/// 开关状态
+@property (assign, nonatomic) BOOL switchOn;
 
 @end
 
@@ -54,6 +46,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) NSString *title;
 /// row数组
 @property (copy, nonatomic) NSArray<KLConsoleSecondConfig *> *infos;
+
+/// 归档
++ (BOOL)archiveRootObject:(id<NSCoding>)object toFilePath:(NSString *)filePath;
+
+/// 解档
++ (id)unarchiveObjectWithFilePath:(NSString *)filePath;
 
 @end
 

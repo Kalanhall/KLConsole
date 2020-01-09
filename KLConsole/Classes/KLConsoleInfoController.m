@@ -74,7 +74,7 @@
 {
     switch (self.infoType) {
         case KLConsoleInfoTypeAddress:
-            return self.config.address.count;
+            return self.config.details.count;
         case KLConsoleInfoTypeSystemInfo:
             return self.fetchSystemInfos.count;
         default:
@@ -88,11 +88,11 @@
     
     if (self.infoType == KLConsoleInfoTypeAddress) {
         // 域名地址
-        KLConsoleAddress *info = self.config.address[indexPath.row];
-        cell.titleLabel.text = info.name;
-        cell.infoLabel.text = info.address;
+        KLConsoleThreeConfig *info = self.config.details[indexPath.row];
+        cell.titleLabel.text = info.title;
+        cell.infoLabel.text = info.text;
         
-        if (self.config.addressIndex == indexPath.row) {
+        if (self.config.selectedIndex == indexPath.row) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         } else {
             cell.accessoryType = UITableViewCellAccessoryNone;
@@ -118,12 +118,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.infoType == KLConsoleInfoTypeAddress) {
-        __block NSArray<KLConsoleAddressConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
-        [cachecgs enumerateObjectsUsingBlock:^(KLConsoleAddressConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        __block NSArray<KLConsoleSecondConfig *> *cachecgs = [KLConsoleConfig unarchiveObjectWithFilePath:KLConsoleAddressPath];
+        [cachecgs enumerateObjectsUsingBlock:^(KLConsoleSecondConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj.title isEqualToString:self.config.title]) {
-                obj.addressIndex = indexPath.row;
-                obj.subtitle = obj.address[indexPath.row].address;
-                self.config.addressIndex = obj.addressIndex;
+                obj.selectedIndex = indexPath.row;
+                obj.subtitle = obj.details[indexPath.row].text;
+                self.config.selectedIndex = obj.selectedIndex;
                 [NSKeyedArchiver archiveRootObject:cachecgs toFile:KLConsoleAddressPath];
                 [tableView reloadData];
                 

@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 页面类型
 @property (assign, nonatomic) KLConsoleInfoType infoType;
 /// 当前域名配置
-@property (strong, nonatomic) KLConsoleAddressConfig *config;
+@property (strong, nonatomic) KLConsoleSecondConfig *config;
 
 @property (copy, nonatomic) void (^selectedCallBack)(void);
 

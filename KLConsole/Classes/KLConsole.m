@@ -13,30 +13,30 @@
 
 + (void)consoleSetup:(void (^)(NSMutableArray<KLConsoleConfig *> *configs))setup
 {
-    NSArray<KLConsoleConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsolePath];
+    NSArray<KLConsoleConfig *> *cachecgs = [KLConsoleConfig unarchiveObjectWithFilePath:KLConsolePath];
     __block NSMutableArray<KLConsoleConfig *> *cgs = NSMutableArray.array;
     setup(cgs);
     if (cachecgs) {
         if (cachecgs.count != cgs.count) {
-            [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
+            [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsolePath];
         } else {
             [cachecgs enumerateObjectsUsingBlock:^(KLConsoleConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 // 一级列表检查
                 if (![obj.title isEqualToString:cgs[idx].title]) {
-                    [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
+                    [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsolePath];
                     *stop = YES;
                 }
                 // 二级列表检查
                 else {
                     if (obj.infos.count != cgs[idx].infos.count) {
-                        [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
+                        [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsolePath];
                         *stop = YES;
                     } else {
                         [obj.infos enumerateObjectsUsingBlock:^(KLConsoleSecondConfig * _Nonnull obj2, NSUInteger idx2, BOOL * _Nonnull stop) {
                             if (![obj2.title isEqualToString:cgs[idx].infos[idx2].title]
                                 || ![obj2.subtitle isEqualToString:cgs[idx].infos[idx2].subtitle]
                                 || obj2.switchEnable !=  cgs[idx].infos[idx2].switchEnable) {
-                                [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
+                                [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsolePath];
                                 *stop = YES;
                             }
                         }];
@@ -45,7 +45,7 @@
             }];
         }
     } else {
-        [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsolePath];
+        [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsolePath];
     }
     
     // 数据挂载在系统单例，留待使用
@@ -54,37 +54,37 @@
 
 + (NSArray<KLConsoleConfig *> *)configs
 {
-    NSArray<KLConsoleConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsolePath];
+    NSArray<KLConsoleConfig *> *cachecgs = [KLConsoleConfig unarchiveObjectWithFilePath:KLConsolePath];
     return cachecgs;
 }
 
-+ (void)consoleAddressSetup:(void (^)(NSMutableArray<KLConsoleAddressConfig *> *configs))setup
++ (void)consoleAddressSetup:(void (^)(NSMutableArray<KLConsoleSecondConfig *> *configs))setup
 {
-    NSArray<KLConsoleAddressConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
-    __block NSMutableArray<KLConsoleAddressConfig *> *cgs = NSMutableArray.array;
+    NSArray<KLConsoleSecondConfig *> *cachecgs = [KLConsoleConfig unarchiveObjectWithFilePath:KLConsoleAddressPath];
+    __block NSMutableArray<KLConsoleSecondConfig *> *cgs = NSMutableArray.array;
     setup(cgs);
     if (cachecgs) {
         if (cachecgs.count != cgs.count) {
-            [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsoleAddressPath];
+            [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsoleAddressPath];
         } else {
-            [cachecgs enumerateObjectsUsingBlock:^(KLConsoleAddressConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [cachecgs enumerateObjectsUsingBlock:^(KLConsoleSecondConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 if (![obj.version isEqualToString:cgs[idx].version]) {
-                    [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsoleAddressPath];
+                    [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsoleAddressPath];
                     *stop = YES;
                 }
             }];
         }
     } else {
-        [NSKeyedArchiver archiveRootObject:cgs toFile:KLConsoleAddressPath];
+        [KLConsoleConfig archiveRootObject:cgs toFilePath:KLConsoleAddressPath];
     }
     
     // 数据挂载在系统单例，留待使用
     objc_setAssociatedObject(NSNotificationCenter.defaultCenter, @selector(consoleAddressSetup:), cgs, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-+ (NSArray<KLConsoleAddressConfig *> *)addressConfigs
++ (NSArray<KLConsoleSecondConfig *> *)addressConfigs
 {
-    NSArray<KLConsoleAddressConfig *> *cachecgs = [NSKeyedUnarchiver unarchiveObjectWithFile:KLConsoleAddressPath];
+    NSArray<KLConsoleSecondConfig *> *cachecgs = [KLConsoleConfig unarchiveObjectWithFilePath:KLConsoleAddressPath];
     return cachecgs;
 }
 

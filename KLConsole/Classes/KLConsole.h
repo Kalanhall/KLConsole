@@ -22,11 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 环境配置
 /// @param setup 环境配置回调
-+ (void)consoleAddressSetup:(void (^)(NSMutableArray<KLConsoleAddressConfig *> *configs))setup;
++ (void)consoleAddressSetup:(void (^)(NSMutableArray<KLConsoleSecondConfig *> *configs))setup;
 
 /// 获取环境配置集合
 /// @return 环境配置集合
-+ (NSArray<KLConsoleAddressConfig *> *)addressConfigs;
++ (NSArray<KLConsoleSecondConfig *> *)addressConfigs;
 
 /// 调起控制台，并处理扩展配置回调
 + (void)consoleSetupAndSelectedCallBack:(void (^)(NSIndexPath *indexPath, BOOL switchOn))callBack;

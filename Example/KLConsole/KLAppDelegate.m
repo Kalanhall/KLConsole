@@ -15,77 +15,77 @@
 {
     // Override point for customization after application launch.
     
-    [KLConsole consoleAddressSetup:^(NSMutableArray<KLConsoleAddressConfig *> *configs) {
-        KLConsoleAddressConfig *aconfig = KLConsoleAddressConfig.alloc.init;
-        aconfig.version = @"1.0";
-        aconfig.title = @"商城服务域名";
-        aconfig.subtitle = @"https://www.example.com/prod";
-        aconfig.addressIndex = 0;
+    [KLConsole consoleAddressSetup:^(NSMutableArray<KLConsoleSecondConfig *> *configs) {
+        KLConsoleSecondConfig *A = KLConsoleSecondConfig.alloc.init;
+        A.version = @"1.0";
+        A.title = @"商城服务域名";
+        A.subtitle = @"https://www.example.com/prod";
+        A.selectedIndex = 0;
         
-        KLConsoleAddress *a = KLConsoleAddress.alloc.init;
-        a.name = @"生产环境";
-        a.address = @"https://www.example.com/prod";
-        KLConsoleAddress *b = KLConsoleAddress.alloc.init;
-        b.name = @"开发环境";
-        b.address = @"https://www.example.com/dev";
-        KLConsoleAddress *c = KLConsoleAddress.alloc.init;
-        c.name = @"测试环境";
-        c.address = @"https://www.example.com/test";
-        KLConsoleAddress *d = KLConsoleAddress.alloc.init;
-        d.name = @"预发布环境";
-        d.address = @"https://www.example.com/stadge";
-        aconfig.address = @[a, b, c, d];
-        [configs addObject:aconfig];
+        KLConsoleThreeConfig *Aa = KLConsoleThreeConfig.alloc.init;
+        Aa.title = @"生产环境";
+        Aa.text = @"https://www.example.com/prod";
+        KLConsoleThreeConfig *Ab = KLConsoleThreeConfig.alloc.init;
+        Ab.title = @"开发环境";
+        Ab.text = @"https://www.example.com/dev";
+        KLConsoleThreeConfig *Ac = KLConsoleThreeConfig.alloc.init;
+        Ac.title = @"测试环境";
+        Ac.text = @"https://www.example.com/test";
+        KLConsoleThreeConfig *Ad = KLConsoleThreeConfig.alloc.init;
+        Ad.title = @"预发布环境";
+        Ad.text = @"https://www.example.com/stadge";
+        A.details = @[Aa, Ab, Ac, Ad];
+        [configs addObject:A];
         
-        KLConsoleAddressConfig *bconfig = KLConsoleAddressConfig.alloc.init;
-        bconfig.version = @"1.0";
-        bconfig.title = @"商城H5服务域名";
-        bconfig.subtitle = @"https://www.example.com/prod1";
-        bconfig.addressIndex = 0;
+        KLConsoleSecondConfig *B = KLConsoleSecondConfig.alloc.init;
+        B.version = @"1.0";
+        B.title = @"商城H5服务域名";
+        B.subtitle = @"https://www.example.com/prod1";
+        B.selectedIndex = 0;
         
-        KLConsoleAddress *e = KLConsoleAddress.alloc.init;
-        e.name = @"生产环境";
-        e.address = @"https://www.example.com/prod1";
-        KLConsoleAddress *f = KLConsoleAddress.alloc.init;
-        f.name = @"开发环境";
-        f.address = @"https://www.example.com/dev1";
-        KLConsoleAddress *g = KLConsoleAddress.alloc.init;
-        g.name = @"测试环境";
-        g.address = @"https://www.example.com/test1";
-        KLConsoleAddress *h = KLConsoleAddress.alloc.init;
-        h.name = @"预发布环境";
-        h.address = @"https://www.example.com/stadge1";
-        bconfig.address = @[e, f, g, h];
-        [configs addObject:bconfig];
+        KLConsoleThreeConfig *Ba = KLConsoleThreeConfig.alloc.init;
+        Ba.title = @"生产环境";
+        Ba.text = @"https://www.example.com/prod1";
+        KLConsoleThreeConfig *Bb = KLConsoleThreeConfig.alloc.init;
+        Bb.title = @"开发环境";
+        Bb.text = @"https://www.example.com/dev1";
+        KLConsoleThreeConfig *Bc = KLConsoleThreeConfig.alloc.init;
+        Bc.title = @"测试环境";
+        Bc.text = @"https://www.example.com/test1";
+        KLConsoleThreeConfig *Bd = KLConsoleThreeConfig.alloc.init;
+        Bd.title = @"预发布环境";
+        Bd.text = @"https://www.example.com/stadge1";
+        B.details = @[Ba, Bb, Bc, Bd];
+        [configs addObject:B];
     }];
     
     [KLConsole consoleSetup:^(NSMutableArray<KLConsoleConfig *> * _Nonnull configs) {
-        KLConsoleConfig *aconfig = KLConsoleConfig.alloc.init;
-        aconfig.title = @"功能测试";
+        KLConsoleConfig *A = KLConsoleConfig.alloc.init;
+        A.title = @"功能测试";
         
-        KLConsoleSecondConfig *a = KLConsoleSecondConfig.alloc.init;
-        a.title = @"H5访问测试";
-        a.subtitle = @"点击输入链接访问";
+        KLConsoleSecondConfig *Aa = KLConsoleSecondConfig.alloc.init;
+        Aa.title = @"H5访问测试";
+        Aa.subtitle = @"点击输入链接访问";
         
-        KLConsoleSecondConfig *b = KLConsoleSecondConfig.alloc.init;
-        b.title = @"引导页测试";
-        b.subtitle = @"点击查看";
-        aconfig.infos = @[a, b];
-        [configs addObject:aconfig];
+        KLConsoleSecondConfig *Ab = KLConsoleSecondConfig.alloc.init;
+        Ab.title = @"引导页测试";
+        Ab.subtitle = @"点击查看";
+        A.infos = @[Aa, Ab];
+        [configs addObject:A];
         
-        KLConsoleConfig *bconfig = KLConsoleConfig.alloc.init;
-        bconfig.title = @"功能测试1";
+        KLConsoleConfig *B = KLConsoleConfig.alloc.init;
+        B.title = @"功能测试1";
         
-        KLConsoleSecondConfig *c = KLConsoleSecondConfig.alloc.init;
-        c.title = @"H5访问测试1";
-        c.subtitle = @"点击输入链接访问1";
+        KLConsoleSecondConfig *Ba = KLConsoleSecondConfig.alloc.init;
+        Ba.title = @"H5访问测试1";
+        Ba.subtitle = @"点击输入链接访问1";
         
-        KLConsoleSecondConfig *d = KLConsoleSecondConfig.alloc.init;
-        d.title = @"引导页测试1";
-        d.subtitle = @"点击查看1";
-        d.switchEnable = YES;
-        bconfig.infos = @[c, d];
-        [configs addObject:bconfig];
+        KLConsoleSecondConfig *Bb = KLConsoleSecondConfig.alloc.init;
+        Bb.title = @"引导页测试1";
+        Bb.subtitle = @"点击查看1";
+        Bb.switchEnable = YES;
+        B.infos = @[Ba, Bb];
+        [configs addObject:B];
     }];
     
     return YES;
