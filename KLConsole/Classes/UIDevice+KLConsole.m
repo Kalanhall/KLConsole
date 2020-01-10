@@ -139,7 +139,7 @@ static NSString* const account = @"KLVirtualDeviceIdentifier";
     static NSString *__appName = nil;
 
     if (nil == __appName) {
-        __appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+        __appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
     }
 
     return __appName;
