@@ -1,5 +1,5 @@
 PODS:
-  - KLConsole (1.0.0):
+  - KLConsole (1.0.4):
     - Masonry
     - YKWoodpecker
   - Masonry (1.1.0)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KLConsole: 2e59e9a11b2040655a7fc75a16f45aa2fe882ae4
+  KLConsole: 188b45381aed2f9e48e438196726f32de749c5b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   YKWoodpecker: 446884788ccf1f1800781d50e503f9bdb0bdaebe
 

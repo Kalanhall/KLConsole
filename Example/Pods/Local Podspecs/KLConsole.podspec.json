@@ -1,6 +1,6 @@
 {
   "name": "KLConsole",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "summary": "应用控制台",
   "description": "组件简介：\n   应用控制台；",
   "homepage": "https://github.com/Kalanhall",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Kalanhall/KLConsole.git",
-    "tag": "1.0.0"
+    "tag": "1.0.4"
   },
   "platforms": {
     "ios": "9.0"

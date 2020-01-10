@@ -7,189 +7,198 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004D24F5CDA411C96571AC271CDEB253 /* UIColor+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CC5AE69E28C3FF32B054E5029BD58B /* UIColor+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01B6B1619E6FFE7CFA9AA4F6E3CC55A9 /* YKWJSONGrabManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C24DFB7254420B3C59C8ABE3B6943DD8 /* YKWJSONGrabManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		026ABC807D781E109899C351156A5867 /* Pods-KLConsole_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D0559002100DF694A799CDFF3C7C7A /* Pods-KLConsole_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02EE827FD5992F4E82006152EB2D418C /* YKWFPSPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8495F80D6D067B1A7C05F845878AD396 /* YKWFPSPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		04F1155F105A79B76694143CFE83BACA /* YKWPanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25354BA46556C9C1B2778E4D3C3015B /* YKWPanelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		056D22320907061E614D671248DAD601 /* YKWPluginSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF00FF5BF4FBCDC9B58973C4A2B2334 /* YKWPluginSectionHeader.m */; };
-		0687333B3C4BB4255306E03C0F2BD982 /* YKWPluginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF8DF876E0C10D1EC55043A6FC7ECD8 /* YKWPluginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08827B9BE864826171ADD9FB724AC0CD /* YKWPoCommandPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F872DA300421FAE4ED0799F5D7ADBC27 /* YKWPoCommandPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		08E3547D69AFF3673A685E1065DC6EE1 /* YKWPoCommandCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C29A208DB00851FB1A95B95610D6D7 /* YKWPoCommandCore.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09FB2527CACBF7B7ABD85C54441E82C7 /* YKWJSONGrabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCEBD52F29CC46D5A7B4B84D22A4F5 /* YKWJSONGrabManager.m */; };
-		0C418A3BCE25280BF2A2597A60708A48 /* YKWCmdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 610153FAE245E910E111A710995348D1 /* YKWCmdModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D9BE103AF46C2C2D5C117EEF77CB585 /* YKWSysInfoPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = EE24BDF31F7C7A2A626AC67FDFA3AE38 /* YKWSysInfoPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0DB73404755C66EC4A83BEA2CEEB9BD2 /* YKWDataFlowUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DEBFB6043208578E0CFE53719FCC6C /* YKWDataFlowUtils.m */; };
-		0FF9F1624157096BD39CE78E2284A36C /* YKWAllImagesPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF3E3E64F7055956FFA8E6A83EEAFA /* YKWAllImagesPlugin.m */; };
-		10392E78D0A4DCEB06243F071E652120 /* YKWAllImagesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C15C19F57B2A6D4E3D8FD0B5E74D9890 /* YKWAllImagesViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1066225DF828C138737BA92286885FC5 /* YKWBundleResourcePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F0192B7E45A586BB525642EFF0C05713 /* YKWBundleResourcePlugin.m */; };
-		1572312065F8E562C41DF2E0EF870052 /* YKWoodpecker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DDA017487ADE1C717E7788094A8D83 /* YKWoodpecker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18546DC6B91632E8DE1409C8EAF10524 /* YKWBundleResourcePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F0C4C329BDDA36F93309C46E2BC23144 /* YKWBundleResourcePlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		18DABEF4469F0E7938BD488BB9B732B3 /* YKWChartWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC00C8C10DC18EDEA7782AE784E3AAC /* YKWChartWindow.m */; };
-		1B89F0E41319C1CF1EE1E9939A2F4D84 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 303B93792D821EE7E17FC59C1E6425B0 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C0476CAE966395760ED68200F98654E /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F0BBD346E2A094D492D31A906D002F6 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C0B63EBF2C6F1F03D09BF4E426BDD93 /* YKWoodpeckerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BB6B39E3DD8E06B9D3D37F0105E3AD /* YKWoodpeckerManager.m */; };
-		1CCD45A8423CF52419AB453AE90CE2C8 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DFB4D4E130C375949AE2DF9EF0E1CA /* MASCompositeConstraint.m */; };
-		1D329BBA450E33E3085A5D01EB54E2CA /* YKWPluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BF20DA28DAE2FF9F5FDAD49A2109C6 /* YKWPluginProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EA4611F54C75299717A40968751EAEF /* YKWImageTextPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D0CC56ABA25EC09466934EB4327771 /* YKWImageTextPreview.m */; };
-		20D5229B1F362EF828EFCB7E53CEDF74 /* YKWPathFileTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 501D67DAADAD57D5B39E5F9C91AAFAD1 /* YKWPathFileTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		21A90E2E9CBACC337ED15A5CEEE0D097 /* YKWCmdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477CD3A7CE6D61709947F5D9B19C6163 /* YKWCmdCollectionViewCell.m */; };
-		21E412A46D6F9A35835B8861E0920438 /* KLConsoleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 732F88EB9B3144651D9EFCE16A01E856 /* KLConsoleCell.m */; };
-		230C96A3BB0CE089A898C681F48B85B0 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4C2A5E24434EE405D6070DCCDC65C6 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		240EC33B65B58AC11522A710637A9911 /* UIColor+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CC5AE69E28C3FF32B054E5029BD58B /* UIColor+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		249B4BCCD55181DDD023BFB6AFDCF3F6 /* YKWFPSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA1A47DCD6A65B18F0F579215082E93 /* YKWFPSUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		24F2A0AAB707B42D97E38705C4558DE5 /* YKWPathFileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B07F60E9B9FDF57E44269BDA3AA6B07 /* YKWPathFileTableViewController.m */; };
-		2514C5303390612ACB460223F187DB21 /* YKWUserDefaultsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FCFAF10CC951AF6221D2D674A565E4C /* YKWUserDefaultsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		25A604EBCB5F15D8FEA5BE83A65270B3 /* YKWCmdCore.h in Headers */ = {isa = PBXBuildFile; fileRef = AC343F4D1CDABF89691D0939A70F0D03 /* YKWCmdCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27B6AB766B8A43D8900E9F43E87078EA /* YKWRulerTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD536BD7AC6F58E90A60561B808D548 /* YKWRulerTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28346E3CBFA24A034BFB7F6AFF2757B7 /* YKWObjectProbeView.h in Headers */ = {isa = PBXBuildFile; fileRef = A690835732960467C77C3D5F33968452 /* YKWObjectProbeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2972EDC99D5F89C219CCA0E53B29ACA5 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86201B57273667B954B7D3889BFC5E9A /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AD0B45917B87C2462B00C81FE837B0A /* YKWLineNoteView.h in Headers */ = {isa = PBXBuildFile; fileRef = 467EE7AAFF5C972EFD45082B34EC73E5 /* YKWLineNoteView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BF8FA6A4D07E6F7A0CA0822C3074F81 /* KLConsoleInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E51217B177EAB844E9E235C57941EA5 /* KLConsoleInfoController.m */; };
-		2D7D3C1095B9EB6E7DC801C7EAB965A6 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CAA0B1A6A0C827C0921EF703EE873E /* MASLayoutConstraint.m */; };
-		2F7C29DAA1060E2607FF8008C6FD4F0B /* YKWTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021FED777A9D7DBC5EF188DC353E122A /* YKWTextViewController.m */; };
+		02B6E670FDC660FB52D73BE61A7F4288 /* YKWBundleResourcePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F0192B7E45A586BB525642EFF0C05713 /* YKWBundleResourcePlugin.m */; };
+		0317FF709978B2989F3B591705737F05 /* UIView+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 075A21E4F97D73AFC149319289A2EB41 /* UIView+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07B56B3DC9146BEF4D8BF9E2D6F69F03 /* YKWLineNoteView.h in Headers */ = {isa = PBXBuildFile; fileRef = 467EE7AAFF5C972EFD45082B34EC73E5 /* YKWLineNoteView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A6F82A2E26E72CCED6E07694600BB60 /* YKWCmdView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FB09D8ECBE046F68E653800405CAE2 /* YKWCmdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AEDB8F83FCD8ACCE87BD8200D759C0B /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86201B57273667B954B7D3889BFC5E9A /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B79414E2883011C7CA3A607E3CCCF30 /* YKWUIComparePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7F01E0573A307A84FC392DFDA561D6 /* YKWUIComparePlugin.m */; };
+		0C3CEF0B03A7EB35D956FC3BAC4C8B28 /* YKWoodpecker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DDA017487ADE1C717E7788094A8D83 /* YKWoodpecker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C842DEB2582B81820F2C7910261F20E /* YKWPluginsWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = A5562628F79179A2BD9C441679112764 /* YKWPluginsWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EB9D4B2084D668B2B55FA99357CACCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
+		0F36AC07CC659DFB48881E92B7AD0DFC /* ykwoodpecker_cn.json in Resources */ = {isa = PBXBuildFile; fileRef = 08FD5F8718FEDCA62BED328FA4F534A4 /* ykwoodpecker_cn.json */; };
+		0F3F5B8AA6CC18C15F3BC48374D35615 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DFB4D4E130C375949AE2DF9EF0E1CA /* MASCompositeConstraint.m */; };
+		1070DB07240A379324D57C6044437EAC /* YKWPluginSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF00FF5BF4FBCDC9B58973C4A2B2334 /* YKWPluginSectionHeader.m */; };
+		10D954F6D30B99258B8378EBE167EDEC /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4C2A5E24434EE405D6070DCCDC65C6 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		121F965B148C312DD30BCD7F7291115E /* YKWoodpeckerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BB6B39E3DD8E06B9D3D37F0105E3AD /* YKWoodpeckerManager.m */; };
+		164D914E0FD32BC7930B9556F051B3A3 /* YKWProbeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 123EC18DBCC1B04F94DE214CE6D1BFCD /* YKWProbeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18651289D3E8130D0B4DB42770B940FA /* NSObject+KLConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6E197F904A583CBED98648D26C49AE /* NSObject+KLConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18FF78B21F42B6DDC711422C6A5A5E12 /* YKWClearDataPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 86709BB0E287E50E434E635698A32D45 /* YKWClearDataPlugin.m */; };
+		196BEDD348CB7CAC64536D12329FC95F /* YKWCmdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 477CD3A7CE6D61709947F5D9B19C6163 /* YKWCmdCollectionViewCell.m */; };
+		1A833DF2937418785E8596BC55DA9456 /* YKWoodpeckerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF413B4A2EB07FB95B0C51C1015EB85 /* YKWoodpeckerUtils.m */; };
+		2074BD6BDD1B227A0323F8C772C1406B /* YKWCommandPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B4E0D7B103F9EB04AB18E6A7A28BAB /* YKWCommandPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		248A575F4050BC40E09F42179F420354 /* YKWCmdCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F670D1BF58816B7F2FB8E6BCA5327 /* YKWCmdCore.m */; };
+		2696915097477C74A22FAE280ADD20C6 /* YKWPoCommandPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D5FDFBD3BF90AE618388726DCDC1A8 /* YKWPoCommandPlugin.m */; };
+		27F1BC48F3FB5DE443511CC78333093B /* YKWPluginSectionHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F27C9B8C9B72227D8AE0D7BD90A9E307 /* YKWPluginSectionHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		289DA3D61D2A8CDB531387CE129BF6B1 /* YKWObjcMethodHook.h in Headers */ = {isa = PBXBuildFile; fileRef = BBBA6FC58E3042B1A05D68C6E3B21EF5 /* YKWObjcMethodHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29A8F9B0F590BE3D0ED259A17CA3A02F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E47488C7FF58566C4F86F677337AF0A /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		2A1CD2A079359157180B4E2085231EEE /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 303B93792D821EE7E17FC59C1E6425B0 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AEBEF01428E44849819A5D1232EEAE1 /* KLConsoleController.h in Headers */ = {isa = PBXBuildFile; fileRef = E933A40F7C8FF71AB2FE8954C192095E /* KLConsoleController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE6DBE911F3ACE0798EB956517FE793 /* UIDevice+KLConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 199F4AD63B6A7E627C626B7B018B99C1 /* UIDevice+KLConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E48868054931F69FA2A963DCF1BCD2B /* NSArray+YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD090FC471430066C2C1290ECB9694C /* NSArray+YKWoodpeckerAdditions.m */; };
+		2E55187CF12B0C0DC1A6EAC80C19CB97 /* YKWBundleResourcePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F0C4C329BDDA36F93309C46E2BC23144 /* YKWBundleResourcePlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FE74FD5E71E2575E029A4A66E621C48 /* YKWPathFileTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 501D67DAADAD57D5B39E5F9C91AAFAD1 /* YKWPathFileTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		30FFA3B1DC2F16364DD89CFD1EE63300 /* YKWImageTextPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = BA72F2B8BA5725076A48278F693082E3 /* YKWImageTextPreview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31E6F1885102F4ADB0C112AA63D8CE01 /* Pods-KLConsole_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF000A44EC41141DCAB616EBED90AE08 /* Pods-KLConsole_Example-dummy.m */; };
-		31FB0BEB54837445B61378598B505345 /* KLConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D57C2FEE3C64849FE37779097459EDF /* KLConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32A5022A22C3613DECE5FCACD6878474 /* YKWScreenLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F225CF0F661B2D31BFEE773FF85C0BF6 /* YKWScreenLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35054025F2B3AA1F052A5DAA55A2A2EE /* YKWJSONGrabPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A458EC2C3B3A498F00CFD3B90C1F8DB9 /* YKWJSONGrabPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3524654A0FEBE848690CDF3A1E2415D2 /* YKWPluginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDCC221AB60E3DD0B15C9D92655775 /* YKWPluginModel.m */; };
-		36DECC4448635C83FD0B5F09505A42E9 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D708FC1EA6477214009587CA21760E /* NSArray+MASAdditions.m */; };
-		3736BA1ABA3C78DCFD732B330F47F4CB /* KLConsoleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B4EC9A62031D315EEF0C5E29E055F2B6 /* KLConsoleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37D83D8F40854A029E5955C758337D84 /* YKWCPUPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D2CA3F701A6F109D671DF2DA00DDF3 /* YKWCPUPlugin.m */; };
-		3BCC452C9AA25B090A0F4B3FD72A1F53 /* YKWSysInfoPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7662E9C3E3A80BFD53768D32E52448 /* YKWSysInfoPlugin.m */; };
-		3C81880AD4BEF89B12277175717B5E57 /* KLConsoleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6B91ACD64A0E6D1F287054434AF1DD /* KLConsoleController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E533CFABB74AF82F7534606BC982C2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08CBBDC100CC0C3653EE0C94829060D /* UIKit.framework */; };
-		3EEFC2DE91C440F1CC368E57E3DF36AA /* YKWPluginSectionHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F27C9B8C9B72227D8AE0D7BD90A9E307 /* YKWPluginSectionHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F573009F32F0D06B2C5BEBBD3FB4339 /* YKWFollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A66AB5044E48187D05C8DE539CAC2 /* YKWFollowView.m */; };
-		3FF04B0332067269DE3BE9AD7559C8DF /* NSObject+YKWoodpeckerRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E273E27A24F221EBFE2BF2DD805F759 /* NSObject+YKWoodpeckerRuntime.m */; };
-		422343865A3AE52E276D768189770824 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9532806F9227001EC47BA8DC8DB241B6 /* View+MASAdditions.m */; };
-		459EBD355E3C7473FE69C724307DD871 /* woodpecker_plugin_list_cn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5003C50AFB96813FD90F730183D3E3E9 /* woodpecker_plugin_list_cn.plist */; };
-		473C644575BF2BCFC1F9D4663E4A1EE8 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 24323B49AB2685F3165DA4C22F1AED5B /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48E3BAB1A6333EF63EE7F43C74C29241 /* YKWoodpeckerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82045D89AA622709C34311D2AEB424F7 /* YKWoodpeckerMessage.m */; };
-		4B2C60ED74120609712BCD9F802AAD6E /* YKWMemoryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F4F4FA9DAC4F78D0D101B5DBE878A6 /* YKWMemoryUtils.m */; };
-		4BD2DD43CE448D44D2B9A16DD723D030 /* YKWFPSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0696252AB516EC990F765A27A0C64018 /* YKWFPSUtils.m */; };
-		4D2ED5FEDBC7A94B86F76CEF6ECA28CA /* YKWClearDataPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 86709BB0E287E50E434E635698A32D45 /* YKWClearDataPlugin.m */; };
-		4F651F790E1FCA3FC799F46612713A4B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 217143AAA44F0F3765265997117F2E76 /* ViewController+MASAdditions.m */; };
-		529AAE9CAF2DC0E5D58B4078305A7914 /* YKWProbeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 123EC18DBCC1B04F94DE214CE6D1BFCD /* YKWProbeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52C1023B03FD3CEEE80C5B9ED1358577 /* YKWUserDefaultsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1F2C1DBE2C9DFDE37F71AD6B66CC69 /* YKWUserDefaultsPlugin.m */; };
-		539CF9916DD85D867F83E87B5B0D707B /* YKWUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2167F57A2D6E3B801090FCDC90E /* YKWUserDefaultsViewController.m */; };
-		556E2896B165D9FC87544308C3792F60 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0672920D5147312309D59963D3A058E0 /* MASViewConstraint.m */; };
-		55FAA0C9C9FE988D68FF86B56BF624BC /* YKWScreenLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02A49B80DE96AB2808B0E1BA69E9F /* YKWScreenLog.m */; };
-		5BEA5DAA066BD48BD84D920627153DB0 /* YKWCPUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DC081DD8805C91069C105F3FA93C2 /* YKWCPUUtils.m */; };
-		5C8941813943B8298417BA1450D73897 /* YKWObjectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC3509DA147E06BB757393F854F55CD /* YKWObjectTableView.m */; };
-		5D7CD61FD33DA2C9FACD11B2D6150EFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
-		5D91B38717D458C94F49B7BCD4463BF3 /* YKWProbeRulerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9B737E1492F3434F79126853B35BD1 /* YKWProbeRulerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E13779AADB4F156B97AA847C58AA519 /* YKWChartLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D53402ADA98B346842CFD0BCF0EDA2 /* YKWChartLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5ED5703EDF16C094176399234E03AD52 /* YKWAllImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7DF72210303945B49630EDD91FC25 /* YKWAllImagesViewController.m */; };
-		62358E3D154AFBA4F0519FEB695AE83A /* YKWCmdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E63EB603CB11DA513461BF3A1BD3220D /* YKWCmdModel.m */; };
-		644A471F8CEAF27A370061227167E42F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08CBBDC100CC0C3653EE0C94829060D /* UIKit.framework */; };
+		320F12E6891371AD8ED7DAFA42B6B94B /* YKWoodpecker.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1729405E1893D93D4EE2BF2417A55F /* YKWoodpecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34CEA0DC7B21A68F7F46395C367EB678 /* YKWFPSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA1A47DCD6A65B18F0F579215082E93 /* YKWFPSUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		35C5F30A2A771945E7D8B934472E8B49 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 217143AAA44F0F3765265997117F2E76 /* ViewController+MASAdditions.m */; };
+		3600CDD41B2CBBE41DA606D674C858B0 /* YKWoodpecker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B828C59E955F3ED07BDF545B74EC67 /* YKWoodpecker-dummy.m */; };
+		3796EE1C0431B9650850EDE712B2B2F6 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA880DA27A0CD2A1761D2E64837148D3 /* Masonry-dummy.m */; };
+		37EC42143575200DED165C7B864FB5CF /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E0203E284F72240356165060BA6B00 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39578139D03FF030280BD05B283A6946 /* KLConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BD3CDDA3D105C3EB4ECBD0C11C1BD /* KLConsoleController.m */; };
+		39E2019DBA996E0CA93EB154071F1AFC /* KLConsoleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2347C962341E9FD3662C561D57AA8C62 /* KLConsoleConfig.m */; };
+		3AAE3B754595DB4F566A8142998E44C1 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B5B56F6BEC4DE82F41767C0BA12A4F /* Masonry.framework */; };
+		3AF1CBFC81ACE7A1A4F6256F98987740 /* YKWUIComparePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 65CFAC34E283E4C0241BA265213A0ECF /* YKWUIComparePanel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C32EA0E64D6C1FDD8012C1B30621419 /* YKWTouchIndicatorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A1A8BDD647D2188074F52C8B2AED03 /* YKWTouchIndicatorPlugin.m */; };
+		3CE83B87B6EFE33DB993D2F826784012 /* woodpecker_plugin_list_cn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5003C50AFB96813FD90F730183D3E3E9 /* woodpecker_plugin_list_cn.plist */; };
+		3E2487E663F30E52340E9E84D01B3F9F /* YKWoodpeckerMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D56308544DF4FF2268D543967AB15E43 /* YKWoodpeckerMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E4D1692FBF859CD2AFB2BBFD2081897 /* YKWJSONGrabPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E97DA2DE31D7BCA8CA4F001F89CCC /* YKWJSONGrabPlugin.m */; };
+		41B8CE3B26B4358AE33A29EDC3CDCCA2 /* YKWAllImagesPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF3E3E64F7055956FFA8E6A83EEAFA /* YKWAllImagesPlugin.m */; };
+		41EA579ACA3AFC38A4D579FDEE534894 /* YKWUserDefaultsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1F2C1DBE2C9DFDE37F71AD6B66CC69 /* YKWUserDefaultsPlugin.m */; };
+		43AAE9509EB1A2706CC7AE05DC4623AA /* YKWPluginsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE492D9D27308F23FFC7D8B2D26CC1D /* YKWPluginsWindow.m */; };
+		43CA89A6852345BA9AA97DF4AC9B782B /* YKWPluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BF20DA28DAE2FF9F5FDAD49A2109C6 /* YKWPluginProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		441EFCFB8D81F061FF53C5FBD8FF9C4C /* KLConsoleInfoController.h in Headers */ = {isa = PBXBuildFile; fileRef = D22A5D5F391B07ECDD6827A737D56B4C /* KLConsoleInfoController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44BD2274038AFCE5862BA80299C4AD22 /* YKWoodpeckerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 295357936F58D91C9C8DE3E4BB386546 /* YKWoodpeckerUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4539606B0924D9F91D67C00163B45967 /* YKWoodpeckerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D758FC8AD332DB8BCF0040E255B6AF6 /* YKWoodpeckerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4569405E5112FDD79CAA62C49E06CD56 /* YKWUIComparePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F733A12ED9604ED88510074580D1D6F /* YKWUIComparePanel.m */; };
+		48207EFB74855E20A9BA3D7718B680D8 /* YKWSysInfoPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7662E9C3E3A80BFD53768D32E52448 /* YKWSysInfoPlugin.m */; };
+		48A61061AC3865626720F148AAB933F1 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 855D7D1C43A4AEB265127A16E679AF36 /* MASViewAttribute.m */; };
+		48E63A095B4BCEDAE6432E367BBB8B63 /* YKWCmdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E63EB603CB11DA513461BF3A1BD3220D /* YKWCmdModel.m */; };
+		48F6E1CB0316EE75DA2A7925F2966808 /* YKWProbeRulerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9B737E1492F3434F79126853B35BD1 /* YKWProbeRulerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49C0D9C22141006E1BF3B0067C5C5A3B /* YKWSysInfoPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = EE24BDF31F7C7A2A626AC67FDFA3AE38 /* YKWSysInfoPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		49CDB24615AB0E450D62DEDF23965698 /* YKWMemoryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A09A2630B0297A1C913DC871B3EA2AC /* YKWMemoryUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A89BD76F10F7D4254CB5B75738D6F51 /* YKWObjectProbeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0411F88CBF0FCD7042F7FF5EE3BF461 /* YKWObjectProbeView.m */; };
+		52609C129F088B7A8595178D5A47D8F7 /* YKWDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E1C8F8CA851474B391C9DBAF775EC6 /* YKWDrawView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		535D7D07F6538FE32C0B592F58F5E324 /* YKWSandBoxPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 33129B368D1B73A54CA83D9A23898487 /* YKWSandBoxPlugin.m */; };
+		53C25489CEBC75DF00345AA915203A53 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D60E47F7F1174EFA0BF593C2FDEF46 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5565B50F2308045F9D88E3ADD68A7C80 /* YKWObjectTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A4D55E984492A4AADDBD0A4CD0A4C7 /* YKWObjectTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55DB72B85DCF0C6536121C4B0977BD70 /* YKWLineNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CC36DE8BF8E0795B3844120431EBF /* YKWLineNoteView.m */; };
+		5BC04F4DB8130D51D55AFAD742953334 /* YKWTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B98FF23729F44BC869021D5AA3E7156E /* YKWTextViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D4A9523FE153200316E3957161874F4 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CAD9821814A750E57533D93261626CB8 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D7A93935914962DBEC09C38467A941E /* YKWPluginModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CDCC1E0DB46D6AA95B30FA3E46A37 /* YKWPluginModelCell.m */; };
+		5E9D19E89DEE9E1E18D684D2B350311E /* YKWJSONGrabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCEBD52F29CC46D5A7B4B84D22A4F5 /* YKWJSONGrabManager.m */; };
+		5FB76F157B006367A65A2AE7E563A5B3 /* YKWCmdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 610153FAE245E910E111A710995348D1 /* YKWCmdModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61C32434F05AD12AE50EF9F2D841FAB4 /* YKWDataFlowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FDB65D3C6C387A443F1C551E2DFC84A /* YKWDataFlowPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		62560F1A4B604FB370E767ABBF2ADA22 /* YKWClearDataPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D7F3D4ED8D47E5272DF5AF082B46F4 /* YKWClearDataPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66ABA8E67C6554B52A1C1425ED572499 /* UIImage +YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E32A14D262496D211B21D38D12DF477 /* UIImage +YKWoodpeckerAdditions.m */; };
 		66F0CFCDABE18067E8CD0C070420AB2C /* Pods-KLConsole_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B99D3EA8DF474034AE1E4FD5FC5D603 /* Pods-KLConsole_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		684CB00368780D72F8CDF10E4CEBB31E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 14908042CCABEF252394F9100E252E4E /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		693E6AA78460CE153A6E8FBCE8268205 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D04895A08FF812AB343A85BC19E4E47A /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		694B604775B02C4ACED1E49C3385ECA5 /* YKWSandBoxPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 33129B368D1B73A54CA83D9A23898487 /* YKWSandBoxPlugin.m */; };
-		6A1809747B6B02CE530FF92C39A501BD /* KLConsoleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE2AFF7753D64426DCD40651086E680 /* KLConsoleConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B3D1AC4BCAAE102C83E2BE3A73FB975 /* KLConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D0AA748ECD901384A485865E7B9EE4 /* KLConsoleController.m */; };
-		6BBB866A44FFC738D096F41AA63AD552 /* YKWDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E1C8F8CA851474B391C9DBAF775EC6 /* YKWDrawView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7298CB159BDB542BDC0B83D3DB5CDA38 /* YKWObjectProbeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0411F88CBF0FCD7042F7FF5EE3BF461 /* YKWObjectProbeView.m */; };
-		72A4BF58074710723B6FCBF9BD568D6D /* YKWUIComparePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F733A12ED9604ED88510074580D1D6F /* YKWUIComparePanel.m */; };
-		73942DD69344EC3E4B773C61C255397C /* YKWMemoryPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 308D102BD74A2AEAEC8E6EFF4AD6A1BA /* YKWMemoryPlugin.m */; };
-		75492DB95C86598507A63F359CAADF00 /* YKWoodpeckerMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D56308544DF4FF2268D543967AB15E43 /* YKWoodpeckerMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6901D49BDD26766240F2547D562D6D5A /* YKWCmdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61B49D9B22B514FAA3493F1A51DEED /* YKWCmdView.m */; };
+		6943B36194C6378AC860F17584E29AA0 /* YKWCPUUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AA7DE8A56633EDDAF2DAD5CDCCFA5E /* YKWCPUUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		698919959F88EDD119F8816507FF5ABD /* UIView+YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EC9117BF589135BB1CA1D409F62FE7 /* UIView+YKWoodpeckerAdditions.m */; };
+		6B8EDA46073F74C4DE277F577B501AD8 /* YKWSandBoxPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D5CF6C442EBB9442A6A44E2683BC691 /* YKWSandBoxPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CB5662336BD73DA17A8B873131787D1 /* YKWCmdCore.h in Headers */ = {isa = PBXBuildFile; fileRef = AC343F4D1CDABF89691D0939A70F0D03 /* YKWCmdCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D2BD429952A33C4D9777AD206E4A67B /* KLConsole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E94286CE470A1B0927D6D05610FB7ACD /* KLConsole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F1BF6ECCB800351D33E3CDF28B006C9 /* KLConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 4318D457D5A2DF384FCB46D646B0D3FC /* KLConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70F3CDB63833EE4934CD08EB3F8C6AFE /* YKWDataFlowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BD879AD397F062A9B7D5488D52DDE /* YKWDataFlowPlugin.m */; };
+		7104A279A044D5A537B90AB4A74A5FD6 /* YKWObjcMethodHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED14467E3FBE03B8469C59C8CEA1E6F /* YKWObjcMethodHook.m */; };
+		72B1D8743D299587874E5C725473D8A7 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC8ABABE3BB7964C53C361068B35313 /* MASConstraint.m */; };
+		73961A94B0B370159B270C28C9F4FA65 /* NSObject+YKWoodpeckerRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D69776CEC189CB9985C2369903AFDBB /* NSObject+YKWoodpeckerRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		75B59A169C7CF25423E28A5D1104178A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
-		7783F886920827C91FDC24B837448BA1 /* YKWPoCommandCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 572A979EECB7081DC6F148BC2DA05004 /* YKWPoCommandCore.m */; };
-		7AEE2E3FF846FD50963A16E1BA206653 /* KLConsoleInfoController.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CC4EF897388A2BE18C3978F9B66284 /* KLConsoleInfoController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B8875713115EC1A9654DA22DC551197 /* YKWProbeRulerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D67B67B6424BA29C931B343AAC67530 /* YKWProbeRulerPlugin.m */; };
-		7EA306A9F92649C3BE1DDE1980B21D31 /* YKWClearDataPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D7F3D4ED8D47E5272DF5AF082B46F4 /* YKWClearDataPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8014920211418EB4E904D37AAEE02319 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AC94E7F3EDFFF68A5AAFC21A1E1A5B9E /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87D592764CE06AB231DE93EC0042A175 /* YKWLineNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CC36DE8BF8E0795B3844120431EBF /* YKWLineNoteView.m */; };
-		88EF7289B318C71100B6926A59CDBC69 /* YKWPluginsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE492D9D27308F23FFC7D8B2D26CC1D /* YKWPluginsWindow.m */; };
-		8970BB8F1B026C97BE92039BC0C5189C /* YKWTouchIndicatorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C745274F9C89AFB4E5FA642E3B753520 /* YKWTouchIndicatorPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8A9C05E0F018A97E354A8F1DE89CEB3A /* UIView+YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EC9117BF589135BB1CA1D409F62FE7 /* UIView+YKWoodpeckerAdditions.m */; };
-		8B40A232D3D7AD966ED365CB248F572F /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CAD9821814A750E57533D93261626CB8 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D2676CDDED2A5ECBFC4FF2F0931963D /* YKWDataFlowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BD879AD397F062A9B7D5488D52DDE /* YKWDataFlowPlugin.m */; };
-		8F04793466F9C36D95E3FD7AA6C8A1D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
-		8F3F9B727A6D74AF8F1A2A4069FA6A7D /* YKWCrashLogPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A0725F23FB57C02CA924ED70C9FFFFFB /* YKWCrashLogPlugin.m */; };
+		79101B9D632B33FD1AD99C419ECC3C34 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CAA0B1A6A0C827C0921EF703EE873E /* MASLayoutConstraint.m */; };
+		7A0286BC40B8CD0162674F935B3AD419 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B4164B086654DA8D0DEFFAD35B85793E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A724C8807DD42CC1FE85463AEF220E9 /* YKWoodpecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D81ECE16B93F28CCA27A035DA8F3AA /* YKWoodpecker.framework */; };
+		7B658E111FC66D749593CC812846F9F2 /* YKWUserDefaultsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E00C9B1772A0D9B0FF968F4328F9663 /* YKWUserDefaultsPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C1D9AA23BA7F0BC1E5DD1D6684E12ED /* YKWRulerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC7F494F32F9658BB4BD271FC5FCF0D /* YKWRulerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CF5694B1C36FF678187CD2272AA9582 /* YKWFollowView.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C47A93B106A8F00D59F3C9A80F55AB /* YKWFollowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DF36598DEAEB7ECE466B7E1759AA232 /* UIImage+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEC9B885B13ABD171764A4873EB14CA /* UIImage+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DF45F7E34F5548321D3A43F53F86429 /* YKWPluginModelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD1D9DE524942D0432BB69F3BFBBB5D /* YKWPluginModelCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F381507D6C1D83C453F94DB3711508D /* UIDevice+KLConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 051BF731919577A521E6C6A7A7D5FB1E /* UIDevice+KLConsole.m */; };
+		822359D5C34805C82A54037E2E74F3DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
+		827256155BCC3C5363974B563547E864 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AC94E7F3EDFFF68A5AAFC21A1E1A5B9E /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83A7A37842E7DE704231747EC756B238 /* YKWJSONGrabPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A458EC2C3B3A498F00CFD3B90C1F8DB9 /* YKWJSONGrabPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8567A4FE68E9652C4F61B4CE1570C6A6 /* KLConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D34D2E48660857A6C2C16F2A37DB1 /* KLConsole.m */; };
+		89868FE915307320582D24EE78E2C1B3 /* YKWRulerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7230C9EFD63F330B2C9F8D8984ACA54C /* YKWRulerTool.m */; };
+		8B4406750F569BF24CE130FB227F37B2 /* YKWChartLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D53402ADA98B346842CFD0BCF0EDA2 /* YKWChartLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7F8E0ABA8C785BE82D2AC197838B0F /* YKWUserDefaultsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FCFAF10CC951AF6221D2D674A565E4C /* YKWUserDefaultsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FC7C8B0AEF650A3931BBBE1700C8350 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B7158F48704E40A9494A2D4B9081247F /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FF2788C2BF4AA6EB8FD897D319FFBBC /* YKWCPUPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8090217025E4D0F4ACF7D7ACF15792D0 /* YKWCPUPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90FC933F67C1A726E1B9296071609136 /* YKWAllImagesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C15C19F57B2A6D4E3D8FD0B5E74D9890 /* YKWAllImagesViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92A685EAC579551F628221ECBBB3E262 /* KLConsoleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09026A63D9CB13104049BF246C01D6AE /* KLConsoleCell.m */; };
 		935FB5661A3BFE6BE2921FE04D8C9371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
-		93E14D811F4FA4211149BE85409B3E30 /* YKWFPSPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4247DA1EEB23008898C37E8C7A64CA /* YKWFPSPlugin.m */; };
-		96069CF01B9506D5AFF7E7D39B4A42C1 /* YKWoodpecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D81ECE16B93F28CCA27A035DA8F3AA /* YKWoodpecker.framework */; };
-		98EB6A4CD00D06A617F3495EC397859E /* KLConsole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4204251C5F91711A5D1AC27816A49AB /* KLConsole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		990296B8DAFE937A20271F3CE68AAB56 /* YKWChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0147CB16DEB859D9421A70C3666B002F /* YKWChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		995E0B7B1F7F968F1EA82A15D2E4FC1C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE13AEC53755796BF9C3799D9AC9082 /* MASConstraintMaker.m */; };
-		99F8C895886A51AE013A83B2E2C58847 /* NSArray+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEA5EAD4BB91DEE760A4D0FCA67AC75 /* NSArray+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9AC7E8B370DBC00F640D8583D9CA7941 /* UIDevice+KLConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCE76F080E2CE4A721E548F67D5DB22 /* UIDevice+KLConsole.m */; };
-		9C34291C8DF14616C136E27FADBC1886 /* YKWMemoryUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A09A2630B0297A1C913DC871B3EA2AC /* YKWMemoryUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9DA7024CBAFAABDD8D58F44502E200B8 /* YKWoodpecker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B828C59E955F3ED07BDF545B74EC67 /* YKWoodpecker-dummy.m */; };
-		9E51799F1C4D738200144DB531DF7C3A /* YKWCmdView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FB09D8ECBE046F68E653800405CAE2 /* YKWCmdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ECC18DB897E7CF0B04DC8736B7B4859 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E47488C7FF58566C4F86F677337AF0A /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		9F38DDA3E34AE1144C4030B3D4AD1AB1 /* YKWPluginsWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = A5562628F79179A2BD9C441679112764 /* YKWPluginsWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A06AD0D980A2A0F255A442DF981672D5 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B7158F48704E40A9494A2D4B9081247F /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A11995EBDF1363DD43410EE184ADD80B /* YKWUserDefaultsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E00C9B1772A0D9B0FF968F4328F9663 /* YKWUserDefaultsPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A2237D4FD732CC6525F0D09ECD60C025 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B5B56F6BEC4DE82F41767C0BA12A4F /* Masonry.framework */; };
-		A237F85609AA9D58D210B89C979FFF30 /* YKWCommandPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BDE9D96236077D82F6B1DF81D71D1 /* YKWCommandPlugin.m */; };
-		A299A28280BE15B43F0AC684A8E03666 /* YKWPluginModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CDCC1E0DB46D6AA95B30FA3E46A37 /* YKWPluginModelCell.m */; };
-		A30F800AF08AC2F3014D78A4CEEC1128 /* YKWJSONGrabManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C24DFB7254420B3C59C8ABE3B6943DD8 /* YKWJSONGrabManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A360B67423FD9505A7D2FB0C87152680 /* YKWSandBoxPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D5CF6C442EBB9442A6A44E2683BC691 /* YKWSandBoxPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A44122680051C29A7BAD972B4AB043E4 /* YKWCPUPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8090217025E4D0F4ACF7D7ACF15792D0 /* YKWCPUPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A65DE7B6D339441455F4F822BA1F5007 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D60E47F7F1174EFA0BF593C2FDEF46 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8AA8D49C4D65F6ADD38E696104D64BB /* YKWoodpeckerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF413B4A2EB07FB95B0C51C1015EB85 /* YKWoodpeckerUtils.m */; };
-		AA2C871FE0D85DC6DB72DA73CD0C827B /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9043C3D6BC244C99BFAD99183EBFE2 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB0D3F46327F6053B1AF9C0443AB5982 /* YKWDataFlowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FDB65D3C6C387A443F1C551E2DFC84A /* YKWDataFlowPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AC083843E2CDB3AC5B20A2B8E7924BA2 /* UIImage+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEC9B885B13ABD171764A4873EB14CA /* UIImage+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AD210A6BA9116DFD70DFA65C66B217AF /* YKWObjcMethodHook.h in Headers */ = {isa = PBXBuildFile; fileRef = BBBA6FC58E3042B1A05D68C6E3B21EF5 /* YKWObjcMethodHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ADCC73DB86CB2FDD2363F62386D2E1EF /* YKWPoCommandPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D5FDFBD3BF90AE618388726DCDC1A8 /* YKWPoCommandPlugin.m */; };
-		AEF531973522E3682E1AD7CD7BA466C0 /* YKWoodpeckerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 295357936F58D91C9C8DE3E4BB386546 /* YKWoodpeckerUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B30C139DE2661C2D15E80BFA9D582D3F /* KLConsole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 923640964A6579B61E563E1ABF13E8EE /* KLConsole-dummy.m */; };
-		B5844D2EE849A3A4A6B3001FAEB6AFB6 /* NSArray+YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD090FC471430066C2C1290ECB9694C /* NSArray+YKWoodpeckerAdditions.m */; };
-		B5FB65E943889166CBA6699AE5400D0B /* NSObject+YKWoodpeckerRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D69776CEC189CB9985C2369903AFDBB /* NSObject+YKWoodpeckerRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B85AAF74D2032332D125794389D17A10 /* YKWObjcMethodHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED14467E3FBE03B8469C59C8CEA1E6F /* YKWObjcMethodHook.m */; };
-		B90C03C5CD9E970B7FEC8F255E5149B8 /* YKWRulerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC7F494F32F9658BB4BD271FC5FCF0D /* YKWRulerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9EEDF8D29E96ED7647CB2FF8283F78B /* YKWProbeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E3A5C0EF7C3571A556B7736A23354B /* YKWProbeView.m */; };
-		BCBB4B4F2CEBBC8459C4C62CB147A284 /* YKWRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E381A8BF4DAC1B2BD47B911A0D7BB654 /* YKWRulerView.m */; };
-		C059DF0F36ADA31B25DF83CD4B768B10 /* YKWFollowView.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C47A93B106A8F00D59F3C9A80F55AB /* YKWFollowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0F7466E4B751FBD7E020E44BDC68537 /* YKWUIComparePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7F01E0573A307A84FC392DFDA561D6 /* YKWUIComparePlugin.m */; };
-		C56E422C49951B58DBB872DC003B7D64 /* YKWCmdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61B49D9B22B514FAA3493F1A51DEED /* YKWCmdView.m */; };
-		C6869697F869CEB8B9845F9875F14CF7 /* YKWMemoryPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 9321B26D23C7BEC17084ED034DA39ED1 /* YKWMemoryPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CD26DCEB1D7648AE973FEA9D5B4DAEAE /* UIImage +YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E32A14D262496D211B21D38D12DF477 /* UIImage +YKWoodpeckerAdditions.m */; };
-		CD9698D333853FF6B35ED12DCA56E1B1 /* YKWImageTextPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = BA72F2B8BA5725076A48278F693082E3 /* YKWImageTextPreview.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDFC97527A5B8EDA9AD7122BBED4AE56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2F7D101C1ACCF9772667715B81F54F /* Images.xcassets */; };
-		CE3FAD97D41EBD0F4799F1057F832CCA /* YKWUIComparePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4544DE22A213E1E56B825C265BFA98C8 /* YKWUIComparePlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CEB0A311DE03386C000773F538FFD6A9 /* YKWRulerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7230C9EFD63F330B2C9F8D8984ACA54C /* YKWRulerTool.m */; };
-		CF851F91BFC482DD5571C1FCA6A5F0DD /* YKWCmdCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F670D1BF58816B7F2FB8E6BCA5327 /* YKWCmdCore.m */; };
-		CF8C45A770A0C8A2943DF6BD16225503 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDB297FE4FFE1AEA4907D99B75CC9D9 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1E5A48BCA3B094DCD1F9E265C776DB3 /* YKWCmdCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7417A5D81A3A411E0727A70960CF2E30 /* YKWCmdCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D27F2331FD5C4E300004D2DD49FD0441 /* YKWUIComparePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 65CFAC34E283E4C0241BA265213A0ECF /* YKWUIComparePanel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D62A96C67AE9FFD827FBC72721E15321 /* YKWoodpeckerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D758FC8AD332DB8BCF0040E255B6AF6 /* YKWoodpeckerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D698EF277CA528D755E42851CCF2403C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC8ABABE3BB7964C53C361068B35313 /* MASConstraint.m */; };
-		DA3B2D6E039115B94014E02C83FA9A3A /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA880DA27A0CD2A1761D2E64837148D3 /* Masonry-dummy.m */; };
-		DB5497AF4998EE89FC635C75E4850869 /* YKWPluginModelCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD1D9DE524942D0432BB69F3BFBBB5D /* YKWPluginModelCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBDF19AFEF83CDECCC9ECA70C6F782BB /* YKWTouchIndicatorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A1A8BDD647D2188074F52C8B2AED03 /* YKWTouchIndicatorPlugin.m */; };
-		DCB790A1A7433E26B015A2338515C9CC /* KLConsoleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F71B2E7ABFE0A3F848868DA3723391D /* KLConsoleConfig.m */; };
-		DEEB89C98DFF8636E82525F54C296B78 /* YKWAllImagesPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C91A24932DE7A32DAB0A0F4A09151E49 /* YKWAllImagesPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E0538FB4C5AFBDE2FA7461655B851C57 /* YKWJSONGrabPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4E97DA2DE31D7BCA8CA4F001F89CCC /* YKWJSONGrabPlugin.m */; };
-		E1F2321D70CF852678530EE6DC1A2E06 /* YKWCommandPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B4E0D7B103F9EB04AB18E6A7A28BAB /* YKWCommandPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E53E2EB197F45057CF856A710F709131 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB1547317C428FCA4181FDA7195CCE2 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E56FD367EDE82401D3518CF42AFBB335 /* YKWChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 680379E1B8C76C410BEE6C2DA8DC9A5F /* YKWChartView.m */; };
-		E60A7F2F13ED715AF3F3DA1D0C050E3D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 855D7D1C43A4AEB265127A16E679AF36 /* MASViewAttribute.m */; };
-		E7B14311B2E405D239AE64006B14983D /* YKWChartWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B3780FF584F4DDF271B8CF0C21A18B /* YKWChartWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7D146864C782249B47FDD6D6880CB52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
+		953CF9049E77CABD41B0164C365BE2B8 /* UIColor +YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAD22B7A05A9A3B190950CFDC77162 /* UIColor +YKWoodpeckerAdditions.m */; };
+		96588F06B5DA4DCFC502BFCD38F3C7E5 /* YKWProbeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E3A5C0EF7C3571A556B7736A23354B /* YKWProbeView.m */; };
+		97D76829EAFC97070E4F190BFF614675 /* YKWTouchIndicatorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C745274F9C89AFB4E5FA642E3B753520 /* YKWTouchIndicatorPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98D557401D9C42A27743241C3CE0FDE1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 24323B49AB2685F3165DA4C22F1AED5B /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992395E7D5768E1AA5B4C4F9D16A0D5E /* YKWPoCommandCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C29A208DB00851FB1A95B95610D6D7 /* YKWPoCommandCore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9965AAC095C660D8284FE81AA202DF3F /* YKWRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E381A8BF4DAC1B2BD47B911A0D7BB654 /* YKWRulerView.m */; };
+		9999A4B461CDCC259E7087A78C43338E /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB1547317C428FCA4181FDA7195CCE2 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AE0307D6FEB0F79DB7DA8F4B8F6F511 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9043C3D6BC244C99BFAD99183EBFE2 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D8D1179696852C0BD7AB3532F2F7BA2 /* YKWCrashLogPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BC419B5D4F5D2F7B439A3602655C4E /* YKWCrashLogPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DD950D75BE3594CF5680D05FFBC6EF3 /* NSArray+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEA5EAD4BB91DEE760A4D0FCA67AC75 /* NSArray+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0C99E7E08DFA58C40E6DCC981F769E4 /* YKWMemoryPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 308D102BD74A2AEAEC8E6EFF4AD6A1BA /* YKWMemoryPlugin.m */; };
+		A5D26890ADF69DC8A66F25F7BF7B35B5 /* NSObject+KLConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AF19BA07638B26D8DF2F47483DA364 /* NSObject+KLConsole.m */; };
+		A84AA4551DAD72A6411EA66A3FFE2A75 /* YKWoodpeckerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82045D89AA622709C34311D2AEB424F7 /* YKWoodpeckerMessage.m */; };
+		A8907606A13311545026EFBCDF6C7B58 /* YKWTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021FED777A9D7DBC5EF188DC353E122A /* YKWTextViewController.m */; };
+		A8D89E1E6D559140CDC5305D288C5825 /* YKWDataFlowUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4A9B420D205D4A615DC1500BC08034 /* YKWDataFlowUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A91AC589B851874F9333080911FB7DF2 /* NSObject+YKWoodpeckerRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E273E27A24F221EBFE2BF2DD805F759 /* NSObject+YKWoodpeckerRuntime.m */; };
+		A93F89FCA370CC78B3C71A96C878ADA6 /* YKWCPUPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D2CA3F701A6F109D671DF2DA00DDF3 /* YKWCPUPlugin.m */; };
+		AA28A49C14E3AA4DA382D41ABD23609D /* YKWRulerTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD536BD7AC6F58E90A60561B808D548 /* YKWRulerTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD10399D8F7C6DD46C4B961721ABBE3D /* YKWChartLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF4CE9333BF3719111F4AB95B656CE /* YKWChartLineView.m */; };
+		AD39911095592B0484F5A5C336E7879D /* YKWMemoryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F4F4FA9DAC4F78D0D101B5DBE878A6 /* YKWMemoryUtils.m */; };
+		ADB37B12DA1F7B79B53E88ED93279B87 /* YKWFPSPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8495F80D6D067B1A7C05F845878AD396 /* YKWFPSPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B40F566413EAEBC03AEAB102779C5CAF /* KLConsole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6FD85006EDC16DCCDC65342334237 /* KLConsole-dummy.m */; };
+		B49A79DD7F9AAC5C38214AD9267C61A3 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0672920D5147312309D59963D3A058E0 /* MASViewConstraint.m */; };
+		B729D4BFA57652EEFB0199FA5C7B486F /* YKWScreenLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F225CF0F661B2D31BFEE773FF85C0BF6 /* YKWScreenLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B7917E6B0845A9A51FB918996139A2 /* YKWCrashLogPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A0725F23FB57C02CA924ED70C9FFFFFB /* YKWCrashLogPlugin.m */; };
+		BA185F704282D8DA9ED9C86EC9FA1D46 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D04895A08FF812AB343A85BC19E4E47A /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACD45C4E39B018472F3DF9600339A64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08CBBDC100CC0C3653EE0C94829060D /* UIKit.framework */; };
+		BB5EE7C721913B97535A53133C3530D8 /* KLConsoleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A41D768CDC27B017965D724E2DD97A /* KLConsoleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC9700AD730B35E7931B116A2E7B8BAE /* YKWPoCommandCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 572A979EECB7081DC6F148BC2DA05004 /* YKWPoCommandCore.m */; };
+		BFC17323467F6CB337668251A3934735 /* YKWChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0147CB16DEB859D9421A70C3666B002F /* YKWChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C421518C8DAA33B40A58820BF09FC8C8 /* YKWObjectProbeView.h in Headers */ = {isa = PBXBuildFile; fileRef = A690835732960467C77C3D5F33968452 /* YKWObjectProbeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5C1BED0B016AB05D9BCF05A133BB139 /* YKWScreenLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02A49B80DE96AB2808B0E1BA69E9F /* YKWScreenLog.m */; };
+		C6FCEDF6B542CC7E14F365292476A55A /* YKWUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2167F57A2D6E3B801090FCDC90E /* YKWUserDefaultsViewController.m */; };
+		CBBB8C3EBC794536DE244990321FDBCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2F7D101C1ACCF9772667715B81F54F /* Images.xcassets */; };
+		CC447038DC2B2BD97B2F98D8D740F990 /* YKWObjectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC3509DA147E06BB757393F854F55CD /* YKWObjectTableView.m */; };
+		CD91BC8C401EF7F7A69D8435404D3C71 /* YKWChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 680379E1B8C76C410BEE6C2DA8DC9A5F /* YKWChartView.m */; };
+		CDA404EB9BB89835B2E48641587B478D /* YKWPanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25354BA46556C9C1B2778E4D3C3015B /* YKWPanelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D08C47102ACB1A55871EE92EAB5F9EA0 /* YKWPathFileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B07F60E9B9FDF57E44269BDA3AA6B07 /* YKWPathFileTableViewController.m */; };
+		D11D9AC8B7CE1D9312DAE9CFB19E29D4 /* YKWFollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A66AB5044E48187D05C8DE539CAC2 /* YKWFollowView.m */; };
+		D22F62349A5E6F93EE9A6DCE944B73F7 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9532806F9227001EC47BA8DC8DB241B6 /* View+MASAdditions.m */; };
+		D3FB02FFEDCED4E3BC5E7B76AB659E0E /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE13AEC53755796BF9C3799D9AC9082 /* MASConstraintMaker.m */; };
+		D432646E74A580C9FA13A0229A027461 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D708FC1EA6477214009587CA21760E /* NSArray+MASAdditions.m */; };
+		D84CC6B30EEFD179A0E585B4D29560B8 /* YKWPoCommandPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = F872DA300421FAE4ED0799F5D7ADBC27 /* YKWPoCommandPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D8F1678D00D85D9F454F4AD4624B9D47 /* YKWChartWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC00C8C10DC18EDEA7782AE784E3AAC /* YKWChartWindow.m */; };
+		D9AB37644C82D4BAE163389DC915814E /* YKWImageTextPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D0CC56ABA25EC09466934EB4327771 /* YKWImageTextPreview.m */; };
+		D9E65C54CB6E9E8CAD70EF146CB94A5E /* YKWPluginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF8DF876E0C10D1EC55043A6FC7ECD8 /* YKWPluginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC557E1EDE98460E00487E793CE25114 /* YKWFPSPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4247DA1EEB23008898C37E8C7A64CA /* YKWFPSPlugin.m */; };
+		E055BDE0FCAFE593AF52DB358EF22AFD /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 14908042CCABEF252394F9100E252E4E /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E166BBE2DAB86F5DD80C10D1383CD19B /* YKWUIComparePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 4544DE22A213E1E56B825C265BFA98C8 /* YKWUIComparePlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E1A4DEC989F82791B2BB8916E8B1DBC1 /* YKWChartWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B3780FF584F4DDF271B8CF0C21A18B /* YKWChartWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E332118CE986EFB11CC28A140D26F8BC /* YKWAllImagesPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C91A24932DE7A32DAB0A0F4A09151E49 /* YKWAllImagesPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5DF5AB4FE6B4E63FE6E67578024B53A /* YKWPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB727DDAD1B44412CF4EAF65F117A9 /* YKWPanelView.m */; };
+		EB3B332F5079DB54A6E23AD5CD4D98B0 /* KLConsoleInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AF605095F65840BE02A72458DEAC33 /* KLConsoleInfoController.m */; };
+		EBE6C201F60987A5E0D1E57674767987 /* YKWAllImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7DF72210303945B49630EDD91FC25 /* YKWAllImagesViewController.m */; };
 		EC42B2EB598242426CE5C00CB3375156 /* Pods-KLConsole_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F6AF89614563046F37CB34CA95283 /* Pods-KLConsole_Tests-dummy.m */; };
-		ECB3668F864770F5318E64FBFF0877FF /* YKWTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B98FF23729F44BC869021D5AA3E7156E /* YKWTextViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ED66FF0717E97C1EE39EA2F815061044 /* YKWDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B39D054BC2BD07C4BA2E8F8317589E /* YKWDrawView.m */; };
-		F0610747D9E4CF0AA1F29F987EF9C558 /* YKWDataFlowUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4A9B420D205D4A615DC1500BC08034 /* YKWDataFlowUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F1CB4391AAC03EF111C7EDA0989B4B62 /* woodpecker_plugin_list_en.plist in Resources */ = {isa = PBXBuildFile; fileRef = A17FECBB3A877237ACF19819E88FB577 /* woodpecker_plugin_list_en.plist */; };
-		F3802090EBE254D4DD3202EA35083495 /* YKWCrashLogPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BC419B5D4F5D2F7B439A3602655C4E /* YKWCrashLogPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F43CC90B5E4CE0FFCEB95DBFB8F4218D /* YKWCPUUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AA7DE8A56633EDDAF2DAD5CDCCFA5E /* YKWCPUUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F4CEFF5E65DBEC5448C62DBCD4A76A14 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E0203E284F72240356165060BA6B00 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F678F0B1219BD0383AB4660497AF9AC7 /* YKWoodpecker.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1729405E1893D93D4EE2BF2417A55F /* YKWoodpecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7202C7F403D2134E786C45943124515 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B4164B086654DA8D0DEFFAD35B85793E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7893A9DFE13D63D016D49E34B4C665B /* YKWObjectTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A4D55E984492A4AADDBD0A4CD0A4C7 /* YKWObjectTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F908BB558392AB01F98E0D3DA947D831 /* UIColor +YKWoodpeckerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAD22B7A05A9A3B190950CFDC77162 /* UIColor +YKWoodpeckerAdditions.m */; };
-		FA12F91D3AA7ABE27542DC74E07AE9A0 /* UIDevice+KLConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = E2529F82AC3090A07F26336EC2C8AA15 /* UIDevice+KLConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB634100C342B3356C2AF865420090D6 /* YKWPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB727DDAD1B44412CF4EAF65F117A9 /* YKWPanelView.m */; };
-		FB73924DF74895481620FCAB0C7A04BF /* YKWChartLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF4CE9333BF3719111F4AB95B656CE /* YKWChartLineView.m */; };
-		FBB068C1EB745EB7F7E5026A69F6005C /* KLConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 344ADC8FAE8F7F025255F04ED6B279EE /* KLConsole.m */; };
-		FE4CD600D26E40C27368EDB4164145BA /* UIView+YKWoodpeckerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 075A21E4F97D73AFC149319289A2EB41 /* UIView+YKWoodpeckerAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FE5D8339B0B047DE78F776EFA31A5775 /* ykwoodpecker_cn.json in Resources */ = {isa = PBXBuildFile; fileRef = 08FD5F8718FEDCA62BED328FA4F534A4 /* ykwoodpecker_cn.json */; };
+		ECF69C81F759317036CE7B46824FEE19 /* YKWPluginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBDCC221AB60E3DD0B15C9D92655775 /* YKWPluginModel.m */; };
+		EE9F84931F8D1D0E0C5F5281C2B7565C /* KLConsoleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7654FA6E3E10A019D689AFD4BD11E0 /* KLConsoleConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF78EA9D648B5494766A7C093455E500 /* YKWCmdCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7417A5D81A3A411E0727A70960CF2E30 /* YKWCmdCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27412162FA6356E23F3D3225C17589D /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F0BBD346E2A094D492D31A906D002F6 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2E5186DC3C79189F3F875AD40772089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */; };
+		F3DBA642BCF93B1D75842234B48FC2A8 /* YKWFPSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0696252AB516EC990F765A27A0C64018 /* YKWFPSUtils.m */; };
+		F44E61300BA81F48603A1058C1B967DA /* YKWMemoryPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 9321B26D23C7BEC17084ED034DA39ED1 /* YKWMemoryPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6C5D95E55FDBC39E4F4991D177BA5E0 /* YKWCPUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DC081DD8805C91069C105F3FA93C2 /* YKWCPUUtils.m */; };
+		F77F0D9CBE4ED7BF1D24E97F6D9607FC /* YKWDataFlowUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DEBFB6043208578E0CFE53719FCC6C /* YKWDataFlowUtils.m */; };
+		F897556EF4E8D39D315B97B288ECEA4F /* woodpecker_plugin_list_en.plist in Resources */ = {isa = PBXBuildFile; fileRef = A17FECBB3A877237ACF19819E88FB577 /* woodpecker_plugin_list_en.plist */; };
+		F91BE4E1968338290858B8B43D73A975 /* YKWDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B39D054BC2BD07C4BA2E8F8317589E /* YKWDrawView.m */; };
+		F93B1FDD5F5BECE0C72AB9507FFB95E4 /* YKWCommandPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BDE9D96236077D82F6B1DF81D71D1 /* YKWCommandPlugin.m */; };
+		FB05EE3A636A3BD1897C62175EE7D946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08CBBDC100CC0C3653EE0C94829060D /* UIKit.framework */; };
+		FDD1E07C5E2EEDC08B974C4671D3860B /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDB297FE4FFE1AEA4907D99B75CC9D9 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6649ABBA5ACD2D5814AC2B706E28F1 /* YKWProbeRulerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D67B67B6424BA29C931B343AAC67530 /* YKWProbeRulerPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5A5CE795E4846A90C10896CCC37D0CA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
 		5BF773D5CA69128D0EC5563AACAFA4B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -218,14 +227,7 @@
 			remoteGlobalIDString = C1C34213D054660F9B5B416A602165F3;
 			remoteInfo = "Pods-KLConsole_Example";
 		};
-		E7F4481D431DF55E1671F6B1D61DA3BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
-		};
-		EA3AB6C950B6FEB71107AC0A5D806A39 /* PBXContainerItemProxy */ = {
+		B54CAE510C5853B507273EC0FCCB204A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -238,9 +240,8 @@
 		00AA7DE8A56633EDDAF2DAD5CDCCFA5E /* YKWCPUUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWCPUUtils.h; path = YKWoodpecker/Plugins/CPUPlugin/YKWCPUUtils.h; sourceTree = "<group>"; };
 		0147CB16DEB859D9421A70C3666B002F /* YKWChartView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWChartView.h; path = YKWoodpecker/Common/ChartWindow/YKWChartView.h; sourceTree = "<group>"; };
 		021FED777A9D7DBC5EF188DC353E122A /* YKWTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWTextViewController.m; path = YKWoodpecker/Plugins/SandBoxPlugin/YKWTextViewController.m; sourceTree = "<group>"; };
-		0244E6F2FC80175BA5943FD55F13A3FA /* KLConsole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KLConsole.modulemap; sourceTree = "<group>"; };
 		02D5FDFBD3BF90AE618388726DCDC1A8 /* YKWPoCommandPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWPoCommandPlugin.m; path = YKWoodpecker/Plugins/PoCommandPlugin/YKWPoCommandPlugin.m; sourceTree = "<group>"; };
-		03A5C2128C4954D9264F9C48C2A95EF5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		051BF731919577A521E6C6A7A7D5FB1E /* UIDevice+KLConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+KLConsole.m"; path = "KLConsole/Classes/UIDevice+KLConsole.m"; sourceTree = "<group>"; };
 		0596BEDE44E40BF65BA1B5991B17CEF0 /* Pods-KLConsole_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLConsole_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		066BA507B6F64B8E2AA694983675D919 /* YKWoodpecker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YKWoodpecker.xcconfig; sourceTree = "<group>"; };
 		0672920D5147312309D59963D3A058E0 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
@@ -249,25 +250,29 @@
 		075A21E4F97D73AFC149319289A2EB41 /* UIView+YKWoodpeckerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YKWoodpeckerAdditions.h"; path = "YKWoodpecker/Category/UIView+YKWoodpeckerAdditions.h"; sourceTree = "<group>"; };
 		07F1C2167F57A2D6E3B801090FCDC90E /* YKWUserDefaultsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWUserDefaultsViewController.m; path = YKWoodpecker/Plugins/UserDefaultsPlugin/YKWUserDefaultsViewController.m; sourceTree = "<group>"; };
 		08FD5F8718FEDCA62BED328FA4F534A4 /* ykwoodpecker_cn.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ykwoodpecker_cn.json; path = YKWoodpecker/Utils/ykwoodpecker_cn.json; sourceTree = "<group>"; };
+		09026A63D9CB13104049BF246C01D6AE /* KLConsoleCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleCell.m; path = KLConsole/Classes/KLConsoleCell.m; sourceTree = "<group>"; };
 		0D5CF6C442EBB9442A6A44E2683BC691 /* YKWSandBoxPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWSandBoxPlugin.h; path = YKWoodpecker/Plugins/SandBoxPlugin/YKWSandBoxPlugin.h; sourceTree = "<group>"; };
 		0D69776CEC189CB9985C2369903AFDBB /* NSObject+YKWoodpeckerRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YKWoodpeckerRuntime.h"; path = "YKWoodpecker/Category/NSObject+YKWoodpeckerRuntime.h"; sourceTree = "<group>"; };
 		0D929825A60FF8DBF0FD7C64DA9C8486 /* Pods-KLConsole_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KLConsole_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0E51217B177EAB844E9E235C57941EA5 /* KLConsoleInfoController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleInfoController.m; path = KLConsole/Classes/KLConsoleInfoController.m; sourceTree = "<group>"; };
 		0EEAD22B7A05A9A3B190950CFDC77162 /* UIColor +YKWoodpeckerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor +YKWoodpeckerAdditions.m"; path = "YKWoodpecker/Category/UIColor +YKWoodpeckerAdditions.m"; sourceTree = "<group>"; };
 		0FDB65D3C6C387A443F1C551E2DFC84A /* YKWDataFlowPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWDataFlowPlugin.h; path = YKWoodpecker/Plugins/DataFlowPlugin/YKWDataFlowPlugin.h; sourceTree = "<group>"; };
 		123EC18DBCC1B04F94DE214CE6D1BFCD /* YKWProbeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWProbeView.h; path = YKWoodpecker/Plugins/ProbeRulerPlugin/ViewProbe/YKWProbeView.h; sourceTree = "<group>"; };
-		13CC4EF897388A2BE18C3978F9B66284 /* KLConsoleInfoController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleInfoController.h; path = KLConsole/Classes/KLConsoleInfoController.h; sourceTree = "<group>"; };
 		14908042CCABEF252394F9100E252E4E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		199F4AD63B6A7E627C626B7B018B99C1 /* UIDevice+KLConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+KLConsole.h"; path = "KLConsole/Classes/UIDevice+KLConsole.h"; sourceTree = "<group>"; };
 		19C13098AFAC8A0C86D8820A99EBABB1 /* Pods-KLConsole_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLConsole_Example.release.xcconfig"; sourceTree = "<group>"; };
+		19E86EC44A536E1CA75F83EB2EC5A563 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1EF7A294C1AD67864052E0CF7C80E1BE /* Pods-KLConsole_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLConsole_Tests.modulemap"; sourceTree = "<group>"; };
 		1F2F7D101C1ACCF9772667715B81F54F /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = YKWoodpecker/Assets/Images.xcassets; sourceTree = "<group>"; };
 		1FD1D9DE524942D0432BB69F3BFBBB5D /* YKWPluginModelCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPluginModelCell.h; path = YKWoodpecker/Base/PluginManage/YKWPluginModelCell.h; sourceTree = "<group>"; };
 		1FD7DF72210303945B49630EDD91FC25 /* YKWAllImagesViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWAllImagesViewController.m; path = YKWoodpecker/Plugins/AllImagesPlugin/YKWAllImagesViewController.m; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A1A8BDD647D2188074F52C8B2AED03 /* YKWTouchIndicatorPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWTouchIndicatorPlugin.m; path = YKWoodpecker/Plugins/TouchIndicatorPlugin/YKWTouchIndicatorPlugin.m; sourceTree = "<group>"; };
+		20AF605095F65840BE02A72458DEAC33 /* KLConsoleInfoController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleInfoController.m; path = KLConsole/Classes/KLConsoleInfoController.m; sourceTree = "<group>"; };
 		217143AAA44F0F3765265997117F2E76 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		217F6AF89614563046F37CB34CA95283 /* Pods-KLConsole_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLConsole_Tests-dummy.m"; sourceTree = "<group>"; };
+		2347C962341E9FD3662C561D57AA8C62 /* KLConsoleConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleConfig.m; path = KLConsole/Classes/KLConsoleConfig.m; sourceTree = "<group>"; };
 		24323B49AB2685F3165DA4C22F1AED5B /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		26A6FD85006EDC16DCCDC65342334237 /* KLConsole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLConsole-dummy.m"; sourceTree = "<group>"; };
 		271F670D1BF58816B7F2FB8E6BCA5327 /* YKWCmdCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCmdCore.m; path = YKWoodpecker/Plugins/CommandPlugin/CmdCore/YKWCmdCore.m; sourceTree = "<group>"; };
 		28D81ECE16B93F28CCA27A035DA8F3AA /* YKWoodpecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YKWoodpecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DEBFB6043208578E0CFE53719FCC6C /* YKWDataFlowUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWDataFlowUtils.m; path = YKWoodpecker/Plugins/DataFlowPlugin/YKWDataFlowUtils.m; sourceTree = "<group>"; };
@@ -277,36 +282,39 @@
 		2BD536BD7AC6F58E90A60561B808D548 /* YKWRulerTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWRulerTool.h; path = YKWoodpecker/Plugins/ProbeRulerPlugin/RulerTool/YKWRulerTool.h; sourceTree = "<group>"; };
 		2C0BD879AD397F062A9B7D5488D52DDE /* YKWDataFlowPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWDataFlowPlugin.m; path = YKWoodpecker/Plugins/DataFlowPlugin/YKWDataFlowPlugin.m; sourceTree = "<group>"; };
 		2C5BDE9D96236077D82F6B1DF81D71D1 /* YKWCommandPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCommandPlugin.m; path = YKWoodpecker/Plugins/CommandPlugin/YKWCommandPlugin.m; sourceTree = "<group>"; };
+		2D6E197F904A583CBED98648D26C49AE /* NSObject+KLConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KLConsole.h"; path = "KLConsole/Classes/NSObject+KLConsole.h"; sourceTree = "<group>"; };
 		2F1A66AB5044E48187D05C8DE539CAC2 /* YKWFollowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWFollowView.m; path = YKWoodpecker/Common/FollowView/YKWFollowView.m; sourceTree = "<group>"; };
 		2FEA5EAD4BB91DEE760A4D0FCA67AC75 /* NSArray+YKWoodpeckerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+YKWoodpeckerAdditions.h"; path = "YKWoodpecker/Category/NSArray+YKWoodpeckerAdditions.h"; sourceTree = "<group>"; };
 		303B93792D821EE7E17FC59C1E6425B0 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		308D102BD74A2AEAEC8E6EFF4AD6A1BA /* YKWMemoryPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWMemoryPlugin.m; path = YKWoodpecker/Plugins/MemoryPlugin/YKWMemoryPlugin.m; sourceTree = "<group>"; };
 		33129B368D1B73A54CA83D9A23898487 /* YKWSandBoxPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWSandBoxPlugin.m; path = YKWoodpecker/Plugins/SandBoxPlugin/YKWSandBoxPlugin.m; sourceTree = "<group>"; };
-		344ADC8FAE8F7F025255F04ED6B279EE /* KLConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsole.m; path = KLConsole/Classes/KLConsole.m; sourceTree = "<group>"; };
+		39AF19BA07638B26D8DF2F47483DA364 /* NSObject+KLConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KLConsole.m"; path = "KLConsole/Classes/NSObject+KLConsole.m"; sourceTree = "<group>"; };
 		3B2EB8B8DDF08DB1D61F7570A146920E /* Pods-KLConsole_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KLConsole_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3B8CC36DE8BF8E0795B3844120431EBF /* YKWLineNoteView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWLineNoteView.m; path = YKWoodpecker/Plugins/ProbeRulerPlugin/ViewProbe/YKWLineNoteView.m; sourceTree = "<group>"; };
+		3C7654FA6E3E10A019D689AFD4BD11E0 /* KLConsoleConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleConfig.h; path = KLConsole/Classes/KLConsoleConfig.h; sourceTree = "<group>"; };
 		3CC7F494F32F9658BB4BD271FC5FCF0D /* YKWRulerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWRulerView.h; path = YKWoodpecker/Plugins/ProbeRulerPlugin/RulerTool/YKWRulerView.h; sourceTree = "<group>"; };
 		3D942E8818AC6888EBC549803D3D61A7 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		3DF413B4A2EB07FB95B0C51C1015EB85 /* YKWoodpeckerUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWoodpeckerUtils.m; path = YKWoodpecker/Utils/YKWoodpeckerUtils.m; sourceTree = "<group>"; };
 		3E32A14D262496D211B21D38D12DF477 /* UIImage +YKWoodpeckerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage +YKWoodpeckerAdditions.m"; path = "YKWoodpecker/Category/UIImage +YKWoodpeckerAdditions.m"; sourceTree = "<group>"; };
-		3FDB053EB8797217A9691F013DBA3958 /* KLConsole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLConsole-prefix.pch"; sourceTree = "<group>"; };
+		3E72437FEEED37D948E45DD005BEAB19 /* KLConsole.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KLConsole.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4318D457D5A2DF384FCB46D646B0D3FC /* KLConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsole.h; path = KLConsole/Classes/KLConsole.h; sourceTree = "<group>"; };
 		4544DE22A213E1E56B825C265BFA98C8 /* YKWUIComparePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWUIComparePlugin.h; path = YKWoodpecker/Plugins/UIComparePlugin/YKWUIComparePlugin.h; sourceTree = "<group>"; };
 		467EE7AAFF5C972EFD45082B34EC73E5 /* YKWLineNoteView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWLineNoteView.h; path = YKWoodpecker/Plugins/ProbeRulerPlugin/ViewProbe/YKWLineNoteView.h; sourceTree = "<group>"; };
 		477CD3A7CE6D61709947F5D9B19C6163 /* YKWCmdCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCmdCollectionViewCell.m; path = YKWoodpecker/Plugins/CommandPlugin/CmdView/YKWCmdCollectionViewCell.m; sourceTree = "<group>"; };
 		47DA9FCC328641EBE28698625195BA42 /* YKWoodpecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YKWoodpecker.framework; path = YKWoodpecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4C2A5E24434EE405D6070DCCDC65C6 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		4D6B91ACD64A0E6D1F287054434AF1DD /* KLConsoleController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleController.h; path = KLConsole/Classes/KLConsoleController.h; sourceTree = "<group>"; };
 		4E9EEBA0D7CAF9A7C9546C2B08446C1D /* Pods-KLConsole_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLConsole_Example-Info.plist"; sourceTree = "<group>"; };
 		4EC3509DA147E06BB757393F854F55CD /* YKWObjectTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWObjectTableView.m; path = YKWoodpecker/Plugins/ProbeRulerPlugin/ObjectProbe/YKWObjectTableView.m; sourceTree = "<group>"; };
 		5003C50AFB96813FD90F730183D3E3E9 /* woodpecker_plugin_list_cn.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = woodpecker_plugin_list_cn.plist; path = YKWoodpecker/Plugins/woodpecker_plugin_list_cn.plist; sourceTree = "<group>"; };
 		501D67DAADAD57D5B39E5F9C91AAFAD1 /* YKWPathFileTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPathFileTableViewController.h; path = YKWoodpecker/Plugins/SandBoxPlugin/YKWPathFileTableViewController.h; sourceTree = "<group>"; };
+		5463AFF7E5FCCA8BED5B04B801C450BD /* KLConsole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLConsole-prefix.pch"; sourceTree = "<group>"; };
 		54EC9117BF589135BB1CA1D409F62FE7 /* UIView+YKWoodpeckerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YKWoodpeckerAdditions.m"; path = "YKWoodpecker/Category/UIView+YKWoodpeckerAdditions.m"; sourceTree = "<group>"; };
 		572A979EECB7081DC6F148BC2DA05004 /* YKWPoCommandCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWPoCommandCore.m; path = YKWoodpecker/Plugins/PoCommandPlugin/YKWPoCommandCore.m; sourceTree = "<group>"; };
 		57B4E0D7B103F9EB04AB18E6A7A28BAB /* YKWCommandPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWCommandPlugin.h; path = YKWoodpecker/Plugins/CommandPlugin/YKWCommandPlugin.h; sourceTree = "<group>"; };
 		59D2CA3F701A6F109D671DF2DA00DDF3 /* YKWCPUPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCPUPlugin.m; path = YKWoodpecker/Plugins/CPUPlugin/YKWCPUPlugin.m; sourceTree = "<group>"; };
+		5AE3BB89C9D0D75F04BE79637DFF315B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5B99D3EA8DF474034AE1E4FD5FC5D603 /* Pods-KLConsole_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLConsole_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5D2CDCC1E0DB46D6AA95B30FA3E46A37 /* YKWPluginModelCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWPluginModelCell.m; path = YKWoodpecker/Base/PluginManage/YKWPluginModelCell.m; sourceTree = "<group>"; };
-		5D57C2FEE3C64849FE37779097459EDF /* KLConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsole.h; path = KLConsole/Classes/KLConsole.h; sourceTree = "<group>"; };
 		5D758FC8AD332DB8BCF0040E255B6AF6 /* YKWoodpeckerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWoodpeckerManager.h; path = YKWoodpecker/Base/YKWoodpeckerManager.h; sourceTree = "<group>"; };
 		5DF8DF876E0C10D1EC55043A6FC7ECD8 /* YKWPluginModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPluginModel.h; path = YKWoodpecker/Base/PluginManage/YKWPluginModel.h; sourceTree = "<group>"; };
 		5ED14467E3FBE03B8469C59C8CEA1E6F /* YKWObjcMethodHook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWObjcMethodHook.m; path = YKWoodpecker/Plugins/JSONGrabPlugin/YKWObjcMethodHook.m; sourceTree = "<group>"; };
@@ -320,10 +328,8 @@
 		68BB6B39E3DD8E06B9D3D37F0105E3AD /* YKWoodpeckerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWoodpeckerManager.m; path = YKWoodpecker/Base/YKWoodpeckerManager.m; sourceTree = "<group>"; };
 		69E0203E284F72240356165060BA6B00 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		6DDB297FE4FFE1AEA4907D99B75CC9D9 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		6F2C7F7BCD6D2E32DCBF4B19EE6F471D /* KLConsole.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KLConsole.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6F733A12ED9604ED88510074580D1D6F /* YKWUIComparePanel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWUIComparePanel.m; path = YKWoodpecker/Plugins/UIComparePlugin/Panel/YKWUIComparePanel.m; sourceTree = "<group>"; };
 		7230C9EFD63F330B2C9F8D8984ACA54C /* YKWRulerTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWRulerTool.m; path = YKWoodpecker/Plugins/ProbeRulerPlugin/RulerTool/YKWRulerTool.m; sourceTree = "<group>"; };
-		732F88EB9B3144651D9EFCE16A01E856 /* KLConsoleCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleCell.m; path = KLConsole/Classes/KLConsoleCell.m; sourceTree = "<group>"; };
 		73BC419B5D4F5D2F7B439A3602655C4E /* YKWCrashLogPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWCrashLogPlugin.h; path = YKWoodpecker/Plugins/CrashLogPlugin/YKWCrashLogPlugin.h; sourceTree = "<group>"; };
 		7417A5D81A3A411E0727A70960CF2E30 /* YKWCmdCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWCmdCollectionViewCell.h; path = YKWoodpecker/Plugins/CommandPlugin/CmdView/YKWCmdCollectionViewCell.h; sourceTree = "<group>"; };
 		74B3780FF584F4DDF271B8CF0C21A18B /* YKWChartWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWChartWindow.h; path = YKWoodpecker/Common/ChartWindow/YKWChartWindow.h; sourceTree = "<group>"; };
@@ -344,12 +350,12 @@
 		86709BB0E287E50E434E635698A32D45 /* YKWClearDataPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWClearDataPlugin.m; path = YKWoodpecker/Plugins/ClearDataPlugin/YKWClearDataPlugin.m; sourceTree = "<group>"; };
 		8A09A2630B0297A1C913DC871B3EA2AC /* YKWMemoryUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWMemoryUtils.h; path = YKWoodpecker/Plugins/MemoryPlugin/YKWMemoryUtils.h; sourceTree = "<group>"; };
 		8AF00FF5BF4FBCDC9B58973C4A2B2334 /* YKWPluginSectionHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWPluginSectionHeader.m; path = YKWoodpecker/Base/PluginManage/YKWPluginSectionHeader.m; sourceTree = "<group>"; };
+		8B6D34D2E48660857A6C2C16F2A37DB1 /* KLConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsole.m; path = KLConsole/Classes/KLConsole.m; sourceTree = "<group>"; };
 		8CBDCC221AB60E3DD0B15C9D92655775 /* YKWPluginModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWPluginModel.m; path = YKWoodpecker/Base/PluginManage/YKWPluginModel.m; sourceTree = "<group>"; };
 		8DB1547317C428FCA4181FDA7195CCE2 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		8E4A9B420D205D4A615DC1500BC08034 /* YKWDataFlowUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWDataFlowUtils.h; path = YKWoodpecker/Plugins/DataFlowPlugin/YKWDataFlowUtils.h; sourceTree = "<group>"; };
 		91BF20DA28DAE2FF9F5FDAD49A2109C6 /* YKWPluginProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPluginProtocol.h; path = YKWoodpecker/Base/PluginManage/YKWPluginProtocol.h; sourceTree = "<group>"; };
 		91D0CC56ABA25EC09466934EB4327771 /* YKWImageTextPreview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWImageTextPreview.m; path = YKWoodpecker/Common/TextImagePreview/YKWImageTextPreview.m; sourceTree = "<group>"; };
-		923640964A6579B61E563E1ABF13E8EE /* KLConsole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KLConsole-dummy.m"; sourceTree = "<group>"; };
 		9321B26D23C7BEC17084ED034DA39ED1 /* YKWMemoryPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWMemoryPlugin.h; path = YKWoodpecker/Plugins/MemoryPlugin/YKWMemoryPlugin.h; sourceTree = "<group>"; };
 		94E3A5C0EF7C3571A556B7736A23354B /* YKWProbeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWProbeView.m; path = YKWoodpecker/Plugins/ProbeRulerPlugin/ViewProbe/YKWProbeView.m; sourceTree = "<group>"; };
 		9532806F9227001EC47BA8DC8DB241B6 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
@@ -361,7 +367,7 @@
 		9E273E27A24F221EBFE2BF2DD805F759 /* NSObject+YKWoodpeckerRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YKWoodpeckerRuntime.m"; path = "YKWoodpecker/Category/NSObject+YKWoodpeckerRuntime.m"; sourceTree = "<group>"; };
 		9E47488C7FF58566C4F86F677337AF0A /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		9F0BBD346E2A094D492D31A906D002F6 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		9F71B2E7ABFE0A3F848868DA3723391D /* KLConsoleConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleConfig.m; path = KLConsole/Classes/KLConsoleConfig.m; sourceTree = "<group>"; };
+		9F1BD3CDDA3D105C3EB4ECBD0C11C1BD /* KLConsoleController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleController.m; path = KLConsole/Classes/KLConsoleController.m; sourceTree = "<group>"; };
 		9FCFAF10CC951AF6221D2D674A565E4C /* YKWUserDefaultsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWUserDefaultsViewController.h; path = YKWoodpecker/Plugins/UserDefaultsPlugin/YKWUserDefaultsViewController.h; sourceTree = "<group>"; };
 		A0725F23FB57C02CA924ED70C9FFFFFB /* YKWCrashLogPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCrashLogPlugin.m; path = YKWoodpecker/Plugins/CrashLogPlugin/YKWCrashLogPlugin.m; sourceTree = "<group>"; };
 		A17FECBB3A877237ACF19819E88FB577 /* woodpecker_plugin_list_en.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = woodpecker_plugin_list_en.plist; path = YKWoodpecker/Plugins/woodpecker_plugin_list_en.plist; sourceTree = "<group>"; };
@@ -370,6 +376,7 @@
 		A4CFBF718E5F0F3CF2D61EB8F275C435 /* Pods-KLConsole_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLConsole_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A5562628F79179A2BD9C441679112764 /* YKWPluginsWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPluginsWindow.h; path = YKWoodpecker/Base/PluginManage/YKWPluginsWindow.h; sourceTree = "<group>"; };
 		A690835732960467C77C3D5F33968452 /* YKWObjectProbeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWObjectProbeView.h; path = YKWoodpecker/Plugins/ProbeRulerPlugin/ObjectProbe/YKWObjectProbeView.h; sourceTree = "<group>"; };
+		A82688E3BC7A310D89363C3130653CA3 /* KLConsole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLConsole.xcconfig; sourceTree = "<group>"; };
 		A9D0559002100DF694A799CDFF3C7C7A /* Pods-KLConsole_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KLConsole_Example-umbrella.h"; sourceTree = "<group>"; };
 		A9FB09D8ECBE046F68E653800405CAE2 /* YKWCmdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWCmdView.h; path = YKWoodpecker/Plugins/CommandPlugin/CmdView/YKWCmdView.h; sourceTree = "<group>"; };
 		AB7F01E0573A307A84FC392DFDA561D6 /* YKWUIComparePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWUIComparePlugin.m; path = YKWoodpecker/Plugins/UIComparePlugin/YKWUIComparePlugin.m; sourceTree = "<group>"; };
@@ -383,7 +390,6 @@
 		B396FAB99430A8B9B16F591DB2975270 /* Pods-KLConsole_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KLConsole_Example.modulemap"; sourceTree = "<group>"; };
 		B4164B086654DA8D0DEFFAD35B85793E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		B47901D6FA53428BEE2C9092B5481661 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B4EC9A62031D315EEF0C5E29E055F2B6 /* KLConsoleCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleCell.h; path = KLConsole/Classes/KLConsoleCell.h; sourceTree = "<group>"; };
 		B6AF3E3E64F7055956FFA8E6A83EEAFA /* YKWAllImagesPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWAllImagesPlugin.m; path = YKWoodpecker/Plugins/AllImagesPlugin/YKWAllImagesPlugin.m; sourceTree = "<group>"; };
 		B7158F48704E40A9494A2D4B9081247F /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		B98FF23729F44BC869021D5AA3E7156E /* YKWTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWTextViewController.h; path = YKWoodpecker/Plugins/SandBoxPlugin/YKWTextViewController.h; sourceTree = "<group>"; };
@@ -391,6 +397,7 @@
 		BA72F2B8BA5725076A48278F693082E3 /* YKWImageTextPreview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWImageTextPreview.h; path = YKWoodpecker/Common/TextImagePreview/YKWImageTextPreview.h; sourceTree = "<group>"; };
 		BBBA6FC58E3042B1A05D68C6E3B21EF5 /* YKWObjcMethodHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWObjcMethodHook.h; path = YKWoodpecker/Plugins/JSONGrabPlugin/YKWObjcMethodHook.h; sourceTree = "<group>"; };
 		BC9B737E1492F3434F79126853B35BD1 /* YKWProbeRulerPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWProbeRulerPlugin.h; path = YKWoodpecker/Plugins/ProbeRulerPlugin/YKWProbeRulerPlugin.h; sourceTree = "<group>"; };
+		BD14387CFD6C80D186E9AD73E0171E5B /* KLConsole-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLConsole-Info.plist"; sourceTree = "<group>"; };
 		C15C19F57B2A6D4E3D8FD0B5E74D9890 /* YKWAllImagesViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWAllImagesViewController.h; path = YKWoodpecker/Plugins/AllImagesPlugin/YKWAllImagesViewController.h; sourceTree = "<group>"; };
 		C24DFB7254420B3C59C8ABE3B6943DD8 /* YKWJSONGrabManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWJSONGrabManager.h; path = YKWoodpecker/Plugins/JSONGrabPlugin/YKWJSONGrabManager.h; sourceTree = "<group>"; };
 		C3CF4CE9333BF3719111F4AB95B656CE /* YKWChartLineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWChartLineView.m; path = YKWoodpecker/Common/ChartWindow/YKWChartLineView.m; sourceTree = "<group>"; };
@@ -406,8 +413,7 @@
 		CB8DC081DD8805C91069C105F3FA93C2 /* YKWCPUUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCPUUtils.m; path = YKWoodpecker/Plugins/CPUPlugin/YKWCPUUtils.m; sourceTree = "<group>"; };
 		CCA84305D839F4352B9C136ADE6F4557 /* YKWoodpecker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YKWoodpecker-Info.plist"; sourceTree = "<group>"; };
 		D04895A08FF812AB343A85BC19E4E47A /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		D0D0AA748ECD901384A485865E7B9EE4 /* KLConsoleController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLConsoleController.m; path = KLConsole/Classes/KLConsoleController.m; sourceTree = "<group>"; };
-		D10AF07268875D55CF1ED7C16A7C103F /* KLConsole-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KLConsole-Info.plist"; sourceTree = "<group>"; };
+		D22A5D5F391B07ECDD6827A737D56B4C /* KLConsoleInfoController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleInfoController.h; path = KLConsole/Classes/KLConsoleInfoController.h; sourceTree = "<group>"; };
 		D2C29A208DB00851FB1A95B95610D6D7 /* YKWPoCommandCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPoCommandCore.h; path = YKWoodpecker/Plugins/PoCommandPlugin/YKWPoCommandCore.h; sourceTree = "<group>"; };
 		D4E1C8F8CA851474B391C9DBAF775EC6 /* YKWDrawView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWDrawView.h; path = YKWoodpecker/Plugins/UIComparePlugin/Panel/YKWDrawView.h; sourceTree = "<group>"; };
 		D56308544DF4FF2268D543967AB15E43 /* YKWoodpeckerMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWoodpeckerMessage.h; path = YKWoodpecker/Utils/YKWoodpeckerMessage.h; sourceTree = "<group>"; };
@@ -416,15 +422,14 @@
 		DBE13AEC53755796BF9C3799D9AC9082 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		DF61B49D9B22B514FAA3493F1A51DEED /* YKWCmdView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCmdView.m; path = YKWoodpecker/Plugins/CommandPlugin/CmdView/YKWCmdView.m; sourceTree = "<group>"; };
 		DFA1A47DCD6A65B18F0F579215082E93 /* YKWFPSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWFPSUtils.h; path = YKWoodpecker/Plugins/FPSPlugin/YKWFPSUtils.h; sourceTree = "<group>"; };
-		E2529F82AC3090A07F26336EC2C8AA15 /* UIDevice+KLConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+KLConsole.h"; path = "KLConsole/Classes/UIDevice+KLConsole.h"; sourceTree = "<group>"; };
+		E0C2A0691AA790AA55B857F092E06CB3 /* KLConsole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KLConsole.modulemap; sourceTree = "<group>"; };
 		E25354BA46556C9C1B2778E4D3C3015B /* YKWPanelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPanelView.h; path = YKWoodpecker/Plugins/ProbeRulerPlugin/Panel/YKWPanelView.h; sourceTree = "<group>"; };
 		E381A8BF4DAC1B2BD47B911A0D7BB654 /* YKWRulerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWRulerView.m; path = YKWoodpecker/Plugins/ProbeRulerPlugin/RulerTool/YKWRulerView.m; sourceTree = "<group>"; };
 		E63EB603CB11DA513461BF3A1BD3220D /* YKWCmdModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWCmdModel.m; path = YKWoodpecker/Plugins/CommandPlugin/CmdView/YKWCmdModel.m; sourceTree = "<group>"; };
 		E6EB727DDAD1B44412CF4EAF65F117A9 /* YKWPanelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWPanelView.m; path = YKWoodpecker/Plugins/ProbeRulerPlugin/Panel/YKWPanelView.m; sourceTree = "<group>"; };
-		E8E2AB41B5454C262A367C5F74EF4DE5 /* KLConsole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KLConsole.xcconfig; sourceTree = "<group>"; };
+		E933A40F7C8FF71AB2FE8954C192095E /* KLConsoleController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleController.h; path = KLConsole/Classes/KLConsoleController.h; sourceTree = "<group>"; };
+		E94286CE470A1B0927D6D05610FB7ACD /* KLConsole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLConsole-umbrella.h"; sourceTree = "<group>"; };
 		EA880DA27A0CD2A1761D2E64837148D3 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		EAE2AFF7753D64426DCD40651086E680 /* KLConsoleConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleConfig.h; path = KLConsole/Classes/KLConsoleConfig.h; sourceTree = "<group>"; };
-		EDCE76F080E2CE4A721E548F67D5DB22 /* UIDevice+KLConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+KLConsole.m"; path = "KLConsole/Classes/UIDevice+KLConsole.m"; sourceTree = "<group>"; };
 		EDE492D9D27308F23FFC7D8B2D26CC1D /* YKWPluginsWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWPluginsWindow.m; path = YKWoodpecker/Base/PluginManage/YKWPluginsWindow.m; sourceTree = "<group>"; };
 		EE24BDF31F7C7A2A626AC67FDFA3AE38 /* YKWSysInfoPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWSysInfoPlugin.h; path = YKWoodpecker/Plugins/SysInfoPlugin/YKWSysInfoPlugin.h; sourceTree = "<group>"; };
 		EF000A44EC41141DCAB616EBED90AE08 /* Pods-KLConsole_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KLConsole_Example-dummy.m"; sourceTree = "<group>"; };
@@ -435,9 +440,8 @@
 		F21C9D4C203CDD8F0DD96875D1354D87 /* Pods-KLConsole_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KLConsole_Tests-Info.plist"; sourceTree = "<group>"; };
 		F225CF0F661B2D31BFEE773FF85C0BF6 /* YKWScreenLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWScreenLog.h; path = YKWoodpecker/Common/ScreenLog/YKWScreenLog.h; sourceTree = "<group>"; };
 		F27C9B8C9B72227D8AE0D7BD90A9E307 /* YKWPluginSectionHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPluginSectionHeader.h; path = YKWoodpecker/Base/PluginManage/YKWPluginSectionHeader.h; sourceTree = "<group>"; };
-		F4204251C5F91711A5D1AC27816A49AB /* KLConsole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KLConsole-umbrella.h"; sourceTree = "<group>"; };
+		F5A41D768CDC27B017965D724E2DD97A /* KLConsoleCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLConsoleCell.h; path = KLConsole/Classes/KLConsoleCell.h; sourceTree = "<group>"; };
 		F872DA300421FAE4ED0799F5D7ADBC27 /* YKWPoCommandPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWPoCommandPlugin.h; path = YKWoodpecker/Plugins/PoCommandPlugin/YKWPoCommandPlugin.h; sourceTree = "<group>"; };
-		FA30FCAE9220F0A13DB2159701A35F24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		FB1729405E1893D93D4EE2BF2417A55F /* YKWoodpecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKWoodpecker.h; path = YKWoodpecker/YKWoodpecker.h; sourceTree = "<group>"; };
 		FB622018405176545F3B72FCA1E95C65 /* Pods-KLConsole_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KLConsole_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FCFCEBD52F29CC46D5A7B4B84D22A4F5 /* YKWJSONGrabManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKWJSONGrabManager.m; path = YKWoodpecker/Plugins/JSONGrabPlugin/YKWJSONGrabManager.m; sourceTree = "<group>"; };
@@ -447,16 +451,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		15F4F6A24972CD3D62F48FF271442A3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D7CD61FD33DA2C9FACD11B2D6150EFD /* Foundation.framework in Frameworks */,
-				A2237D4FD732CC6525F0D09ECD60C025 /* Masonry.framework in Frameworks */,
-				96069CF01B9506D5AFF7E7D39B4A42C1 /* YKWoodpecker.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		199378399A0B7EFDB5B921390CB2ED0E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,27 +467,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CA19C2FF0DFA05631D48362F859CDF4 /* Frameworks */ = {
+		C3A56DF7B02CC87D31A0B17E42DA9B36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D146864C782249B47FDD6D6880CB52 /* Foundation.framework in Frameworks */,
-				644A471F8CEAF27A370061227167E42F /* UIKit.framework in Frameworks */,
+				F2E5186DC3C79189F3F875AD40772089 /* Foundation.framework in Frameworks */,
+				FB05EE3A636A3BD1897C62175EE7D946 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED8B6F1BFEE65AAE8355F795D589C2B4 /* Frameworks */ = {
+		D6A6CE22793AB4A34D80884FCE726668 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F04793466F9C36D95E3FD7AA6C8A1D6 /* Foundation.framework in Frameworks */,
-				3E533CFABB74AF82F7534606BC982C2E /* UIKit.framework in Frameworks */,
+				822359D5C34805C82A54037E2E74F3DF /* Foundation.framework in Frameworks */,
+				3AAE3B754595DB4F566A8142998E44C1 /* Masonry.framework in Frameworks */,
+				7A724C8807DD42CC1FE85463AEF220E9 /* YKWoodpecker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7EB4E8117A02DB9407DE47CB51F73B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB9D4B2084D668B2B55FA99357CACCB /* Foundation.framework in Frameworks */,
+				BACD45C4E39B018472F3DF9600339A64 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15670AECDC9286655AAE755D0269B500 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				906078327618539ACFB73587BC872C1B /* KLConsole */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		2A6179321EA6AB014F770B9E3DC1A915 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +597,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		69939BF3893F2282548757F4B6E68060 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0C2A0691AA790AA55B857F092E06CB3 /* KLConsole.modulemap */,
+				A82688E3BC7A310D89363C3130653CA3 /* KLConsole.xcconfig */,
+				26A6FD85006EDC16DCCDC65342334237 /* KLConsole-dummy.m */,
+				BD14387CFD6C80D186E9AD73E0171E5B /* KLConsole-Info.plist */,
+				5463AFF7E5FCCA8BED5B04B801C450BD /* KLConsole-prefix.pch */,
+				E94286CE470A1B0927D6D05610FB7ACD /* KLConsole-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KLConsole";
+			sourceTree = "<group>";
+		};
 		7D49A05B7E5E1295C61C1D50DFA89D3E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +636,30 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
+		906078327618539ACFB73587BC872C1B /* KLConsole */ = {
+			isa = PBXGroup;
+			children = (
+				4318D457D5A2DF384FCB46D646B0D3FC /* KLConsole.h */,
+				8B6D34D2E48660857A6C2C16F2A37DB1 /* KLConsole.m */,
+				F5A41D768CDC27B017965D724E2DD97A /* KLConsoleCell.h */,
+				09026A63D9CB13104049BF246C01D6AE /* KLConsoleCell.m */,
+				3C7654FA6E3E10A019D689AFD4BD11E0 /* KLConsoleConfig.h */,
+				2347C962341E9FD3662C561D57AA8C62 /* KLConsoleConfig.m */,
+				E933A40F7C8FF71AB2FE8954C192095E /* KLConsoleController.h */,
+				9F1BD3CDDA3D105C3EB4ECBD0C11C1BD /* KLConsoleController.m */,
+				D22A5D5F391B07ECDD6827A737D56B4C /* KLConsoleInfoController.h */,
+				20AF605095F65840BE02A72458DEAC33 /* KLConsoleInfoController.m */,
+				2D6E197F904A583CBED98648D26C49AE /* NSObject+KLConsole.h */,
+				39AF19BA07638B26D8DF2F47483DA364 /* NSObject+KLConsole.m */,
+				199F4AD63B6A7E627C626B7B018B99C1 /* UIDevice+KLConsole.h */,
+				051BF731919577A521E6C6A7A7D5FB1E /* UIDevice+KLConsole.m */,
+				F07AC8F5EA192B591916C2F0971278A4 /* Pod */,
+				69939BF3893F2282548757F4B6E68060 /* Support Files */,
+			);
+			name = KLConsole;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		A627050B57E54736E4742DCF008D3BF7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -617,30 +667,6 @@
 				D3130433CB301C3A36312FA24A1C63D4 /* YKWoodpecker */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A636876B947017C220E509079D18FF1D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0244E6F2FC80175BA5943FD55F13A3FA /* KLConsole.modulemap */,
-				E8E2AB41B5454C262A367C5F74EF4DE5 /* KLConsole.xcconfig */,
-				923640964A6579B61E563E1ABF13E8EE /* KLConsole-dummy.m */,
-				D10AF07268875D55CF1ED7C16A7C103F /* KLConsole-Info.plist */,
-				3FDB053EB8797217A9691F013DBA3958 /* KLConsole-prefix.pch */,
-				F4204251C5F91711A5D1AC27816A49AB /* KLConsole-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KLConsole";
-			sourceTree = "<group>";
-		};
-		ADAB87C38C59F6AC65D4C94CC26524A8 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6F2C7F7BCD6D2E32DCBF4B19EE6F471D /* KLConsole.podspec */,
-				FA30FCAE9220F0A13DB2159701A35F24 /* LICENSE */,
-				03A5C2128C4954D9264F9C48C2A95EF5 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		AF129B7C73C53D4E0E55A54768894D3A /* iOS */ = {
@@ -664,33 +690,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCAD8E1D03EB34F3CC67FED25ED164C3 /* KLConsole */ = {
-			isa = PBXGroup;
-			children = (
-				5D57C2FEE3C64849FE37779097459EDF /* KLConsole.h */,
-				344ADC8FAE8F7F025255F04ED6B279EE /* KLConsole.m */,
-				B4EC9A62031D315EEF0C5E29E055F2B6 /* KLConsoleCell.h */,
-				732F88EB9B3144651D9EFCE16A01E856 /* KLConsoleCell.m */,
-				EAE2AFF7753D64426DCD40651086E680 /* KLConsoleConfig.h */,
-				9F71B2E7ABFE0A3F848868DA3723391D /* KLConsoleConfig.m */,
-				4D6B91ACD64A0E6D1F287054434AF1DD /* KLConsoleController.h */,
-				D0D0AA748ECD901384A485865E7B9EE4 /* KLConsoleController.m */,
-				13CC4EF897388A2BE18C3978F9B66284 /* KLConsoleInfoController.h */,
-				0E51217B177EAB844E9E235C57941EA5 /* KLConsoleInfoController.m */,
-				E2529F82AC3090A07F26336EC2C8AA15 /* UIDevice+KLConsole.h */,
-				EDCE76F080E2CE4A721E548F67D5DB22 /* UIDevice+KLConsole.m */,
-				ADAB87C38C59F6AC65D4C94CC26524A8 /* Pod */,
-				A636876B947017C220E509079D18FF1D /* Support Files */,
-			);
-			name = KLConsole;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F81B94D80B93A2A14D4226DD4EAEE15E /* Development Pods */,
+				15670AECDC9286655AAE755D0269B500 /* Development Pods */,
 				5E4D9611933C7302BDB6B1DB3A7E2A2A /* Frameworks */,
 				A627050B57E54736E4742DCF008D3BF7 /* Pods */,
 				BD6B62448CE062FB84E1C715C6378173 /* Products */,
@@ -828,12 +832,14 @@
 			path = YKWoodpecker;
 			sourceTree = "<group>";
 		};
-		F81B94D80B93A2A14D4226DD4EAEE15E /* Development Pods */ = {
+		F07AC8F5EA192B591916C2F0971278A4 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CCAD8E1D03EB34F3CC67FED25ED164C3 /* KLConsole */,
+				3E72437FEEED37D948E45DD005BEAB19 /* KLConsole.podspec */,
+				5AE3BB89C9D0D75F04BE79637DFF315B /* LICENSE */,
+				19E86EC44A536E1CA75F83EB2EC5A563 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		F8BEF4B22CFBEDA6BD90EECD71A5EEAB /* Targets Support Files */ = {
@@ -856,95 +862,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DAC97B41B98320931FED7D3F4BF2C7E /* Headers */ = {
+		3E3CB76F3F64A847A6144623FD1026D8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F8C895886A51AE013A83B2E2C58847 /* NSArray+YKWoodpeckerAdditions.h in Headers */,
-				B5FB65E943889166CBA6699AE5400D0B /* NSObject+YKWoodpeckerRuntime.h in Headers */,
-				240EC33B65B58AC11522A710637A9911 /* UIColor+YKWoodpeckerAdditions.h in Headers */,
-				AC083843E2CDB3AC5B20A2B8E7924BA2 /* UIImage+YKWoodpeckerAdditions.h in Headers */,
-				FE4CD600D26E40C27368EDB4164145BA /* UIView+YKWoodpeckerAdditions.h in Headers */,
-				DEEB89C98DFF8636E82525F54C296B78 /* YKWAllImagesPlugin.h in Headers */,
-				10392E78D0A4DCEB06243F071E652120 /* YKWAllImagesViewController.h in Headers */,
-				18546DC6B91632E8DE1409C8EAF10524 /* YKWBundleResourcePlugin.h in Headers */,
-				5E13779AADB4F156B97AA847C58AA519 /* YKWChartLineView.h in Headers */,
-				990296B8DAFE937A20271F3CE68AAB56 /* YKWChartView.h in Headers */,
-				E7B14311B2E405D239AE64006B14983D /* YKWChartWindow.h in Headers */,
-				7EA306A9F92649C3BE1DDE1980B21D31 /* YKWClearDataPlugin.h in Headers */,
-				D1E5A48BCA3B094DCD1F9E265C776DB3 /* YKWCmdCollectionViewCell.h in Headers */,
-				25A604EBCB5F15D8FEA5BE83A65270B3 /* YKWCmdCore.h in Headers */,
-				0C418A3BCE25280BF2A2597A60708A48 /* YKWCmdModel.h in Headers */,
-				9E51799F1C4D738200144DB531DF7C3A /* YKWCmdView.h in Headers */,
-				E1F2321D70CF852678530EE6DC1A2E06 /* YKWCommandPlugin.h in Headers */,
-				A44122680051C29A7BAD972B4AB043E4 /* YKWCPUPlugin.h in Headers */,
-				F43CC90B5E4CE0FFCEB95DBFB8F4218D /* YKWCPUUtils.h in Headers */,
-				F3802090EBE254D4DD3202EA35083495 /* YKWCrashLogPlugin.h in Headers */,
-				AB0D3F46327F6053B1AF9C0443AB5982 /* YKWDataFlowPlugin.h in Headers */,
-				F0610747D9E4CF0AA1F29F987EF9C558 /* YKWDataFlowUtils.h in Headers */,
-				6BBB866A44FFC738D096F41AA63AD552 /* YKWDrawView.h in Headers */,
-				C059DF0F36ADA31B25DF83CD4B768B10 /* YKWFollowView.h in Headers */,
-				02EE827FD5992F4E82006152EB2D418C /* YKWFPSPlugin.h in Headers */,
-				249B4BCCD55181DDD023BFB6AFDCF3F6 /* YKWFPSUtils.h in Headers */,
-				CD9698D333853FF6B35ED12DCA56E1B1 /* YKWImageTextPreview.h in Headers */,
-				A30F800AF08AC2F3014D78A4CEEC1128 /* YKWJSONGrabManager.h in Headers */,
-				35054025F2B3AA1F052A5DAA55A2A2EE /* YKWJSONGrabPlugin.h in Headers */,
-				2AD0B45917B87C2462B00C81FE837B0A /* YKWLineNoteView.h in Headers */,
-				C6869697F869CEB8B9845F9875F14CF7 /* YKWMemoryPlugin.h in Headers */,
-				9C34291C8DF14616C136E27FADBC1886 /* YKWMemoryUtils.h in Headers */,
-				AD210A6BA9116DFD70DFA65C66B217AF /* YKWObjcMethodHook.h in Headers */,
-				28346E3CBFA24A034BFB7F6AFF2757B7 /* YKWObjectProbeView.h in Headers */,
-				F7893A9DFE13D63D016D49E34B4C665B /* YKWObjectTableView.h in Headers */,
-				1572312065F8E562C41DF2E0EF870052 /* YKWoodpecker-umbrella.h in Headers */,
-				F678F0B1219BD0383AB4660497AF9AC7 /* YKWoodpecker.h in Headers */,
-				D62A96C67AE9FFD827FBC72721E15321 /* YKWoodpeckerManager.h in Headers */,
-				75492DB95C86598507A63F359CAADF00 /* YKWoodpeckerMessage.h in Headers */,
-				AEF531973522E3682E1AD7CD7BA466C0 /* YKWoodpeckerUtils.h in Headers */,
-				04F1155F105A79B76694143CFE83BACA /* YKWPanelView.h in Headers */,
-				20D5229B1F362EF828EFCB7E53CEDF74 /* YKWPathFileTableViewController.h in Headers */,
-				0687333B3C4BB4255306E03C0F2BD982 /* YKWPluginModel.h in Headers */,
-				DB5497AF4998EE89FC635C75E4850869 /* YKWPluginModelCell.h in Headers */,
-				1D329BBA450E33E3085A5D01EB54E2CA /* YKWPluginProtocol.h in Headers */,
-				3EEFC2DE91C440F1CC368E57E3DF36AA /* YKWPluginSectionHeader.h in Headers */,
-				9F38DDA3E34AE1144C4030B3D4AD1AB1 /* YKWPluginsWindow.h in Headers */,
-				08E3547D69AFF3673A685E1065DC6EE1 /* YKWPoCommandCore.h in Headers */,
-				08827B9BE864826171ADD9FB724AC0CD /* YKWPoCommandPlugin.h in Headers */,
-				5D91B38717D458C94F49B7BCD4463BF3 /* YKWProbeRulerPlugin.h in Headers */,
-				529AAE9CAF2DC0E5D58B4078305A7914 /* YKWProbeView.h in Headers */,
-				27B6AB766B8A43D8900E9F43E87078EA /* YKWRulerTool.h in Headers */,
-				B90C03C5CD9E970B7FEC8F255E5149B8 /* YKWRulerView.h in Headers */,
-				A360B67423FD9505A7D2FB0C87152680 /* YKWSandBoxPlugin.h in Headers */,
-				32A5022A22C3613DECE5FCACD6878474 /* YKWScreenLog.h in Headers */,
-				0D9BE103AF46C2C2D5C117EEF77CB585 /* YKWSysInfoPlugin.h in Headers */,
-				ECB3668F864770F5318E64FBFF0877FF /* YKWTextViewController.h in Headers */,
-				8970BB8F1B026C97BE92039BC0C5189C /* YKWTouchIndicatorPlugin.h in Headers */,
-				D27F2331FD5C4E300004D2DD49FD0441 /* YKWUIComparePanel.h in Headers */,
-				CE3FAD97D41EBD0F4799F1057F832CCA /* YKWUIComparePlugin.h in Headers */,
-				A11995EBDF1363DD43410EE184ADD80B /* YKWUserDefaultsPlugin.h in Headers */,
-				2514C5303390612ACB460223F187DB21 /* YKWUserDefaultsViewController.h in Headers */,
+				6D2BD429952A33C4D9777AD206E4A67B /* KLConsole-umbrella.h in Headers */,
+				6F1BF6ECCB800351D33E3CDF28B006C9 /* KLConsole.h in Headers */,
+				BB5EE7C721913B97535A53133C3530D8 /* KLConsoleCell.h in Headers */,
+				EE9F84931F8D1D0E0C5F5281C2B7565C /* KLConsoleConfig.h in Headers */,
+				2AEBEF01428E44849819A5D1232EEAE1 /* KLConsoleController.h in Headers */,
+				441EFCFB8D81F061FF53C5FBD8FF9C4C /* KLConsoleInfoController.h in Headers */,
+				18651289D3E8130D0B4DB42770B940FA /* NSObject+KLConsole.h in Headers */,
+				2BE6DBE911F3ACE0798EB956517FE793 /* UIDevice+KLConsole.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41258346DB872CE0396CFFB9644DBDF9 /* Headers */ = {
+		8C98A4AA73D5BA7BA2C185AC40677CD1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7202C7F403D2134E786C45943124515 /* MASCompositeConstraint.h in Headers */,
-				8B40A232D3D7AD966ED365CB248F572F /* MASConstraint+Private.h in Headers */,
-				CF8C45A770A0C8A2943DF6BD16225503 /* MASConstraint.h in Headers */,
-				1C0476CAE966395760ED68200F98654E /* MASConstraintMaker.h in Headers */,
-				693E6AA78460CE153A6E8FBCE8268205 /* MASLayoutConstraint.h in Headers */,
-				230C96A3BB0CE089A898C681F48B85B0 /* Masonry-umbrella.h in Headers */,
-				E53E2EB197F45057CF856A710F709131 /* Masonry.h in Headers */,
-				8014920211418EB4E904D37AAEE02319 /* MASUtilities.h in Headers */,
-				473C644575BF2BCFC1F9D4663E4A1EE8 /* MASViewAttribute.h in Headers */,
-				F4CEFF5E65DBEC5448C62DBCD4A76A14 /* MASViewConstraint.h in Headers */,
-				684CB00368780D72F8CDF10E4CEBB31E /* NSArray+MASAdditions.h in Headers */,
-				A06AD0D980A2A0F255A442DF981672D5 /* NSArray+MASShorthandAdditions.h in Headers */,
-				A65DE7B6D339441455F4F822BA1F5007 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				1B89F0E41319C1CF1EE1E9939A2F4D84 /* View+MASAdditions.h in Headers */,
-				2972EDC99D5F89C219CCA0E53B29ACA5 /* View+MASShorthandAdditions.h in Headers */,
-				AA2C871FE0D85DC6DB72DA73CD0C827B /* ViewController+MASAdditions.h in Headers */,
+				7A0286BC40B8CD0162674F935B3AD419 /* MASCompositeConstraint.h in Headers */,
+				5D4A9523FE153200316E3957161874F4 /* MASConstraint+Private.h in Headers */,
+				FDD1E07C5E2EEDC08B974C4671D3860B /* MASConstraint.h in Headers */,
+				F27412162FA6356E23F3D3225C17589D /* MASConstraintMaker.h in Headers */,
+				BA185F704282D8DA9ED9C86EC9FA1D46 /* MASLayoutConstraint.h in Headers */,
+				10D954F6D30B99258B8378EBE167EDEC /* Masonry-umbrella.h in Headers */,
+				9999A4B461CDCC259E7087A78C43338E /* Masonry.h in Headers */,
+				827256155BCC3C5363974B563547E864 /* MASUtilities.h in Headers */,
+				98D557401D9C42A27743241C3CE0FDE1 /* MASViewAttribute.h in Headers */,
+				37EC42143575200DED165C7B864FB5CF /* MASViewConstraint.h in Headers */,
+				E055BDE0FCAFE593AF52DB358EF22AFD /* NSArray+MASAdditions.h in Headers */,
+				8FC7C8B0AEF650A3931BBBE1700C8350 /* NSArray+MASShorthandAdditions.h in Headers */,
+				53C25489CEBC75DF00345AA915203A53 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				2A1CD2A079359157180B4E2085231EEE /* View+MASAdditions.h in Headers */,
+				0AEDB8F83FCD8ACCE87BD8200D759C0B /* View+MASShorthandAdditions.h in Headers */,
+				9AE0307D6FEB0F79DB7DA8F4B8F6F511 /* ViewController+MASAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,17 +908,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8598959E852D5C0C1D97465D57F5252 /* Headers */ = {
+		C154E74F1476DCFEBA938FC73071FAFE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98EB6A4CD00D06A617F3495EC397859E /* KLConsole-umbrella.h in Headers */,
-				31FB0BEB54837445B61378598B505345 /* KLConsole.h in Headers */,
-				3736BA1ABA3C78DCFD732B330F47F4CB /* KLConsoleCell.h in Headers */,
-				6A1809747B6B02CE530FF92C39A501BD /* KLConsoleConfig.h in Headers */,
-				3C81880AD4BEF89B12277175717B5E57 /* KLConsoleController.h in Headers */,
-				7AEE2E3FF846FD50963A16E1BA206653 /* KLConsoleInfoController.h in Headers */,
-				FA12F91D3AA7ABE27542DC74E07AE9A0 /* UIDevice+KLConsole.h in Headers */,
+				9DD950D75BE3594CF5680D05FFBC6EF3 /* NSArray+YKWoodpeckerAdditions.h in Headers */,
+				73961A94B0B370159B270C28C9F4FA65 /* NSObject+YKWoodpeckerRuntime.h in Headers */,
+				004D24F5CDA411C96571AC271CDEB253 /* UIColor+YKWoodpeckerAdditions.h in Headers */,
+				7DF36598DEAEB7ECE466B7E1759AA232 /* UIImage+YKWoodpeckerAdditions.h in Headers */,
+				0317FF709978B2989F3B591705737F05 /* UIView+YKWoodpeckerAdditions.h in Headers */,
+				E332118CE986EFB11CC28A140D26F8BC /* YKWAllImagesPlugin.h in Headers */,
+				90FC933F67C1A726E1B9296071609136 /* YKWAllImagesViewController.h in Headers */,
+				2E55187CF12B0C0DC1A6EAC80C19CB97 /* YKWBundleResourcePlugin.h in Headers */,
+				8B4406750F569BF24CE130FB227F37B2 /* YKWChartLineView.h in Headers */,
+				BFC17323467F6CB337668251A3934735 /* YKWChartView.h in Headers */,
+				E1A4DEC989F82791B2BB8916E8B1DBC1 /* YKWChartWindow.h in Headers */,
+				62560F1A4B604FB370E767ABBF2ADA22 /* YKWClearDataPlugin.h in Headers */,
+				EF78EA9D648B5494766A7C093455E500 /* YKWCmdCollectionViewCell.h in Headers */,
+				6CB5662336BD73DA17A8B873131787D1 /* YKWCmdCore.h in Headers */,
+				5FB76F157B006367A65A2AE7E563A5B3 /* YKWCmdModel.h in Headers */,
+				0A6F82A2E26E72CCED6E07694600BB60 /* YKWCmdView.h in Headers */,
+				2074BD6BDD1B227A0323F8C772C1406B /* YKWCommandPlugin.h in Headers */,
+				8FF2788C2BF4AA6EB8FD897D319FFBBC /* YKWCPUPlugin.h in Headers */,
+				6943B36194C6378AC860F17584E29AA0 /* YKWCPUUtils.h in Headers */,
+				9D8D1179696852C0BD7AB3532F2F7BA2 /* YKWCrashLogPlugin.h in Headers */,
+				61C32434F05AD12AE50EF9F2D841FAB4 /* YKWDataFlowPlugin.h in Headers */,
+				A8D89E1E6D559140CDC5305D288C5825 /* YKWDataFlowUtils.h in Headers */,
+				52609C129F088B7A8595178D5A47D8F7 /* YKWDrawView.h in Headers */,
+				7CF5694B1C36FF678187CD2272AA9582 /* YKWFollowView.h in Headers */,
+				ADB37B12DA1F7B79B53E88ED93279B87 /* YKWFPSPlugin.h in Headers */,
+				34CEA0DC7B21A68F7F46395C367EB678 /* YKWFPSUtils.h in Headers */,
+				30FFA3B1DC2F16364DD89CFD1EE63300 /* YKWImageTextPreview.h in Headers */,
+				01B6B1619E6FFE7CFA9AA4F6E3CC55A9 /* YKWJSONGrabManager.h in Headers */,
+				83A7A37842E7DE704231747EC756B238 /* YKWJSONGrabPlugin.h in Headers */,
+				07B56B3DC9146BEF4D8BF9E2D6F69F03 /* YKWLineNoteView.h in Headers */,
+				F44E61300BA81F48603A1058C1B967DA /* YKWMemoryPlugin.h in Headers */,
+				49CDB24615AB0E450D62DEDF23965698 /* YKWMemoryUtils.h in Headers */,
+				289DA3D61D2A8CDB531387CE129BF6B1 /* YKWObjcMethodHook.h in Headers */,
+				C421518C8DAA33B40A58820BF09FC8C8 /* YKWObjectProbeView.h in Headers */,
+				5565B50F2308045F9D88E3ADD68A7C80 /* YKWObjectTableView.h in Headers */,
+				0C3CEF0B03A7EB35D956FC3BAC4C8B28 /* YKWoodpecker-umbrella.h in Headers */,
+				320F12E6891371AD8ED7DAFA42B6B94B /* YKWoodpecker.h in Headers */,
+				4539606B0924D9F91D67C00163B45967 /* YKWoodpeckerManager.h in Headers */,
+				3E2487E663F30E52340E9E84D01B3F9F /* YKWoodpeckerMessage.h in Headers */,
+				44BD2274038AFCE5862BA80299C4AD22 /* YKWoodpeckerUtils.h in Headers */,
+				CDA404EB9BB89835B2E48641587B478D /* YKWPanelView.h in Headers */,
+				2FE74FD5E71E2575E029A4A66E621C48 /* YKWPathFileTableViewController.h in Headers */,
+				D9E65C54CB6E9E8CAD70EF146CB94A5E /* YKWPluginModel.h in Headers */,
+				7DF45F7E34F5548321D3A43F53F86429 /* YKWPluginModelCell.h in Headers */,
+				43CA89A6852345BA9AA97DF4AC9B782B /* YKWPluginProtocol.h in Headers */,
+				27F1BC48F3FB5DE443511CC78333093B /* YKWPluginSectionHeader.h in Headers */,
+				0C842DEB2582B81820F2C7910261F20E /* YKWPluginsWindow.h in Headers */,
+				992395E7D5768E1AA5B4C4F9D16A0D5E /* YKWPoCommandCore.h in Headers */,
+				D84CC6B30EEFD179A0E585B4D29560B8 /* YKWPoCommandPlugin.h in Headers */,
+				48F6E1CB0316EE75DA2A7925F2966808 /* YKWProbeRulerPlugin.h in Headers */,
+				164D914E0FD32BC7930B9556F051B3A3 /* YKWProbeView.h in Headers */,
+				AA28A49C14E3AA4DA382D41ABD23609D /* YKWRulerTool.h in Headers */,
+				7C1D9AA23BA7F0BC1E5DD1D6684E12ED /* YKWRulerView.h in Headers */,
+				6B8EDA46073F74C4DE277F577B501AD8 /* YKWSandBoxPlugin.h in Headers */,
+				B729D4BFA57652EEFB0199FA5C7B486F /* YKWScreenLog.h in Headers */,
+				49C0D9C22141006E1BF3B0067C5C5A3B /* YKWSysInfoPlugin.h in Headers */,
+				5BC04F4DB8130D51D55AFAD742953334 /* YKWTextViewController.h in Headers */,
+				97D76829EAFC97070E4F190BFF614675 /* YKWTouchIndicatorPlugin.h in Headers */,
+				3AF1CBFC81ACE7A1A4F6256F98987740 /* YKWUIComparePanel.h in Headers */,
+				E166BBE2DAB86F5DD80C10D1383CD19B /* YKWUIComparePlugin.h in Headers */,
+				7B658E111FC66D749593CC812846F9F2 /* YKWUserDefaultsPlugin.h in Headers */,
+				8D7F8E0ABA8C785BE82D2AC197838B0F /* YKWUserDefaultsViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,18 +982,18 @@
 /* Begin PBXNativeTarget section */
 		1E60C143D5122C2B215E5628D33F0050 /* KLConsole */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6583320935B103988500321CDC2B24F /* Build configuration list for PBXNativeTarget "KLConsole" */;
+			buildConfigurationList = B1A76DF858EB825EDC7E26C98952E128 /* Build configuration list for PBXNativeTarget "KLConsole" */;
 			buildPhases = (
-				C8598959E852D5C0C1D97465D57F5252 /* Headers */,
-				B642B2F5C4312333D75F2A0C4ABD6338 /* Sources */,
-				15F4F6A24972CD3D62F48FF271442A3C /* Frameworks */,
-				EE4E6FDDC9C2F9A9E871B15656649476 /* Resources */,
+				3E3CB76F3F64A847A6144623FD1026D8 /* Headers */,
+				7F1BB1B0D816ECB4DD659CA126731753 /* Sources */,
+				D6A6CE22793AB4A34D80884FCE726668 /* Frameworks */,
+				2A1BCE4AA5D63979A570770C2C49198C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA2B422D89EBF0B25732D1C32C9C55E3 /* PBXTargetDependency */,
-				AD6104C3F2C72654E87BE8B2F591F345 /* PBXTargetDependency */,
+				2DB09E192B4613970F961F4F02B82964 /* PBXTargetDependency */,
+				15255660E4FF37DCE011B7F8DDFE82F7 /* PBXTargetDependency */,
 			);
 			name = KLConsole;
 			productName = KLConsole;
@@ -995,12 +1002,12 @@
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A9FD1D209E3F44A6A9B833A4DBE9D6E /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildConfigurationList = 579EF10A7C830A141A132A81231F4810 /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				41258346DB872CE0396CFFB9644DBDF9 /* Headers */,
-				B69D0CF9F0D80FF827E130E657F32DE1 /* Sources */,
-				ED8B6F1BFEE65AAE8355F795D589C2B4 /* Frameworks */,
-				199B7C2F353DCC68E6580393F1BB4A51 /* Resources */,
+				8C98A4AA73D5BA7BA2C185AC40677CD1 /* Headers */,
+				9890AC1F16B399BDE6C55F17CAE13840 /* Sources */,
+				F7EB4E8117A02DB9407DE47CB51F73B2 /* Frameworks */,
+				8FB2CC99488B75CF88E49A768ED02ACE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1013,12 +1020,12 @@
 		};
 		72017FD5ACD73DA5C51B448D5400D397 /* YKWoodpecker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEE356290257214F5EA16C3E751EDF96 /* Build configuration list for PBXNativeTarget "YKWoodpecker" */;
+			buildConfigurationList = D1EFBBF7A505B5C0FFF8B6933CF45F24 /* Build configuration list for PBXNativeTarget "YKWoodpecker" */;
 			buildPhases = (
-				2DAC97B41B98320931FED7D3F4BF2C7E /* Headers */,
-				801F1133CA740FDDB9722D75F34015C6 /* Sources */,
-				9CA19C2FF0DFA05631D48362F859CDF4 /* Frameworks */,
-				C0E13AB191BC213EC96BB16D9241B5E7 /* Resources */,
+				C154E74F1476DCFEBA938FC73071FAFE /* Headers */,
+				686C2DB16681E34C0420B1FE3CDA53C5 /* Sources */,
+				C3A56DF7B02CC87D31A0B17E42DA9B36 /* Frameworks */,
+				95245CFB9F431E4BEC6549169C44A5B7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1100,17 +1107,35 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		199B7C2F353DCC68E6580393F1BB4A51 /* Resources */ = {
+		1F5777530F626466001BC99629749A55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F5777530F626466001BC99629749A55 /* Resources */ = {
+		2A1BCE4AA5D63979A570770C2C49198C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB2CC99488B75CF88E49A768ED02ACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95245CFB9F431E4BEC6549169C44A5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBB8C3EBC794536DE244990321FDBCE /* Images.xcassets in Resources */,
+				3CE83B87B6EFE33DB993D2F826784012 /* woodpecker_plugin_list_cn.plist in Resources */,
+				F897556EF4E8D39D315B97B288ECEA4F /* woodpecker_plugin_list_en.plist in Resources */,
+				0F36AC07CC659DFB48881E92B7AD0DFC /* ykwoodpecker_cn.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,123 +1146,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0E13AB191BC213EC96BB16D9241B5E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDFC97527A5B8EDA9AD7122BBED4AE56 /* Images.xcassets in Resources */,
-				459EBD355E3C7473FE69C724307DD871 /* woodpecker_plugin_list_cn.plist in Resources */,
-				F1CB4391AAC03EF111C7EDA0989B4B62 /* woodpecker_plugin_list_en.plist in Resources */,
-				FE5D8339B0B047DE78F776EFA31A5775 /* ykwoodpecker_cn.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE4E6FDDC9C2F9A9E871B15656649476 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		801F1133CA740FDDB9722D75F34015C6 /* Sources */ = {
+		686C2DB16681E34C0420B1FE3CDA53C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5844D2EE849A3A4A6B3001FAEB6AFB6 /* NSArray+YKWoodpeckerAdditions.m in Sources */,
-				3FF04B0332067269DE3BE9AD7559C8DF /* NSObject+YKWoodpeckerRuntime.m in Sources */,
-				F908BB558392AB01F98E0D3DA947D831 /* UIColor +YKWoodpeckerAdditions.m in Sources */,
-				CD26DCEB1D7648AE973FEA9D5B4DAEAE /* UIImage +YKWoodpeckerAdditions.m in Sources */,
-				8A9C05E0F018A97E354A8F1DE89CEB3A /* UIView+YKWoodpeckerAdditions.m in Sources */,
-				0FF9F1624157096BD39CE78E2284A36C /* YKWAllImagesPlugin.m in Sources */,
-				5ED5703EDF16C094176399234E03AD52 /* YKWAllImagesViewController.m in Sources */,
-				1066225DF828C138737BA92286885FC5 /* YKWBundleResourcePlugin.m in Sources */,
-				FB73924DF74895481620FCAB0C7A04BF /* YKWChartLineView.m in Sources */,
-				E56FD367EDE82401D3518CF42AFBB335 /* YKWChartView.m in Sources */,
-				18DABEF4469F0E7938BD488BB9B732B3 /* YKWChartWindow.m in Sources */,
-				4D2ED5FEDBC7A94B86F76CEF6ECA28CA /* YKWClearDataPlugin.m in Sources */,
-				21A90E2E9CBACC337ED15A5CEEE0D097 /* YKWCmdCollectionViewCell.m in Sources */,
-				CF851F91BFC482DD5571C1FCA6A5F0DD /* YKWCmdCore.m in Sources */,
-				62358E3D154AFBA4F0519FEB695AE83A /* YKWCmdModel.m in Sources */,
-				C56E422C49951B58DBB872DC003B7D64 /* YKWCmdView.m in Sources */,
-				A237F85609AA9D58D210B89C979FFF30 /* YKWCommandPlugin.m in Sources */,
-				37D83D8F40854A029E5955C758337D84 /* YKWCPUPlugin.m in Sources */,
-				5BEA5DAA066BD48BD84D920627153DB0 /* YKWCPUUtils.m in Sources */,
-				8F3F9B727A6D74AF8F1A2A4069FA6A7D /* YKWCrashLogPlugin.m in Sources */,
-				8D2676CDDED2A5ECBFC4FF2F0931963D /* YKWDataFlowPlugin.m in Sources */,
-				0DB73404755C66EC4A83BEA2CEEB9BD2 /* YKWDataFlowUtils.m in Sources */,
-				ED66FF0717E97C1EE39EA2F815061044 /* YKWDrawView.m in Sources */,
-				3F573009F32F0D06B2C5BEBBD3FB4339 /* YKWFollowView.m in Sources */,
-				93E14D811F4FA4211149BE85409B3E30 /* YKWFPSPlugin.m in Sources */,
-				4BD2DD43CE448D44D2B9A16DD723D030 /* YKWFPSUtils.m in Sources */,
-				1EA4611F54C75299717A40968751EAEF /* YKWImageTextPreview.m in Sources */,
-				09FB2527CACBF7B7ABD85C54441E82C7 /* YKWJSONGrabManager.m in Sources */,
-				E0538FB4C5AFBDE2FA7461655B851C57 /* YKWJSONGrabPlugin.m in Sources */,
-				87D592764CE06AB231DE93EC0042A175 /* YKWLineNoteView.m in Sources */,
-				73942DD69344EC3E4B773C61C255397C /* YKWMemoryPlugin.m in Sources */,
-				4B2C60ED74120609712BCD9F802AAD6E /* YKWMemoryUtils.m in Sources */,
-				B85AAF74D2032332D125794389D17A10 /* YKWObjcMethodHook.m in Sources */,
-				7298CB159BDB542BDC0B83D3DB5CDA38 /* YKWObjectProbeView.m in Sources */,
-				5C8941813943B8298417BA1450D73897 /* YKWObjectTableView.m in Sources */,
-				9DA7024CBAFAABDD8D58F44502E200B8 /* YKWoodpecker-dummy.m in Sources */,
-				1C0B63EBF2C6F1F03D09BF4E426BDD93 /* YKWoodpeckerManager.m in Sources */,
-				48E3BAB1A6333EF63EE7F43C74C29241 /* YKWoodpeckerMessage.m in Sources */,
-				A8AA8D49C4D65F6ADD38E696104D64BB /* YKWoodpeckerUtils.m in Sources */,
-				FB634100C342B3356C2AF865420090D6 /* YKWPanelView.m in Sources */,
-				24F2A0AAB707B42D97E38705C4558DE5 /* YKWPathFileTableViewController.m in Sources */,
-				3524654A0FEBE848690CDF3A1E2415D2 /* YKWPluginModel.m in Sources */,
-				A299A28280BE15B43F0AC684A8E03666 /* YKWPluginModelCell.m in Sources */,
-				056D22320907061E614D671248DAD601 /* YKWPluginSectionHeader.m in Sources */,
-				88EF7289B318C71100B6926A59CDBC69 /* YKWPluginsWindow.m in Sources */,
-				7783F886920827C91FDC24B837448BA1 /* YKWPoCommandCore.m in Sources */,
-				ADCC73DB86CB2FDD2363F62386D2E1EF /* YKWPoCommandPlugin.m in Sources */,
-				7B8875713115EC1A9654DA22DC551197 /* YKWProbeRulerPlugin.m in Sources */,
-				B9EEDF8D29E96ED7647CB2FF8283F78B /* YKWProbeView.m in Sources */,
-				CEB0A311DE03386C000773F538FFD6A9 /* YKWRulerTool.m in Sources */,
-				BCBB4B4F2CEBBC8459C4C62CB147A284 /* YKWRulerView.m in Sources */,
-				694B604775B02C4ACED1E49C3385ECA5 /* YKWSandBoxPlugin.m in Sources */,
-				55FAA0C9C9FE988D68FF86B56BF624BC /* YKWScreenLog.m in Sources */,
-				3BCC452C9AA25B090A0F4B3FD72A1F53 /* YKWSysInfoPlugin.m in Sources */,
-				2F7C29DAA1060E2607FF8008C6FD4F0B /* YKWTextViewController.m in Sources */,
-				DBDF19AFEF83CDECCC9ECA70C6F782BB /* YKWTouchIndicatorPlugin.m in Sources */,
-				72A4BF58074710723B6FCBF9BD568D6D /* YKWUIComparePanel.m in Sources */,
-				C0F7466E4B751FBD7E020E44BDC68537 /* YKWUIComparePlugin.m in Sources */,
-				52C1023B03FD3CEEE80C5B9ED1358577 /* YKWUserDefaultsPlugin.m in Sources */,
-				539CF9916DD85D867F83E87B5B0D707B /* YKWUserDefaultsViewController.m in Sources */,
+				2E48868054931F69FA2A963DCF1BCD2B /* NSArray+YKWoodpeckerAdditions.m in Sources */,
+				A91AC589B851874F9333080911FB7DF2 /* NSObject+YKWoodpeckerRuntime.m in Sources */,
+				953CF9049E77CABD41B0164C365BE2B8 /* UIColor +YKWoodpeckerAdditions.m in Sources */,
+				66ABA8E67C6554B52A1C1425ED572499 /* UIImage +YKWoodpeckerAdditions.m in Sources */,
+				698919959F88EDD119F8816507FF5ABD /* UIView+YKWoodpeckerAdditions.m in Sources */,
+				41B8CE3B26B4358AE33A29EDC3CDCCA2 /* YKWAllImagesPlugin.m in Sources */,
+				EBE6C201F60987A5E0D1E57674767987 /* YKWAllImagesViewController.m in Sources */,
+				02B6E670FDC660FB52D73BE61A7F4288 /* YKWBundleResourcePlugin.m in Sources */,
+				AD10399D8F7C6DD46C4B961721ABBE3D /* YKWChartLineView.m in Sources */,
+				CD91BC8C401EF7F7A69D8435404D3C71 /* YKWChartView.m in Sources */,
+				D8F1678D00D85D9F454F4AD4624B9D47 /* YKWChartWindow.m in Sources */,
+				18FF78B21F42B6DDC711422C6A5A5E12 /* YKWClearDataPlugin.m in Sources */,
+				196BEDD348CB7CAC64536D12329FC95F /* YKWCmdCollectionViewCell.m in Sources */,
+				248A575F4050BC40E09F42179F420354 /* YKWCmdCore.m in Sources */,
+				48E63A095B4BCEDAE6432E367BBB8B63 /* YKWCmdModel.m in Sources */,
+				6901D49BDD26766240F2547D562D6D5A /* YKWCmdView.m in Sources */,
+				F93B1FDD5F5BECE0C72AB9507FFB95E4 /* YKWCommandPlugin.m in Sources */,
+				A93F89FCA370CC78B3C71A96C878ADA6 /* YKWCPUPlugin.m in Sources */,
+				F6C5D95E55FDBC39E4F4991D177BA5E0 /* YKWCPUUtils.m in Sources */,
+				B9B7917E6B0845A9A51FB918996139A2 /* YKWCrashLogPlugin.m in Sources */,
+				70F3CDB63833EE4934CD08EB3F8C6AFE /* YKWDataFlowPlugin.m in Sources */,
+				F77F0D9CBE4ED7BF1D24E97F6D9607FC /* YKWDataFlowUtils.m in Sources */,
+				F91BE4E1968338290858B8B43D73A975 /* YKWDrawView.m in Sources */,
+				D11D9AC8B7CE1D9312DAE9CFB19E29D4 /* YKWFollowView.m in Sources */,
+				DC557E1EDE98460E00487E793CE25114 /* YKWFPSPlugin.m in Sources */,
+				F3DBA642BCF93B1D75842234B48FC2A8 /* YKWFPSUtils.m in Sources */,
+				D9AB37644C82D4BAE163389DC915814E /* YKWImageTextPreview.m in Sources */,
+				5E9D19E89DEE9E1E18D684D2B350311E /* YKWJSONGrabManager.m in Sources */,
+				3E4D1692FBF859CD2AFB2BBFD2081897 /* YKWJSONGrabPlugin.m in Sources */,
+				55DB72B85DCF0C6536121C4B0977BD70 /* YKWLineNoteView.m in Sources */,
+				A0C99E7E08DFA58C40E6DCC981F769E4 /* YKWMemoryPlugin.m in Sources */,
+				AD39911095592B0484F5A5C336E7879D /* YKWMemoryUtils.m in Sources */,
+				7104A279A044D5A537B90AB4A74A5FD6 /* YKWObjcMethodHook.m in Sources */,
+				4A89BD76F10F7D4254CB5B75738D6F51 /* YKWObjectProbeView.m in Sources */,
+				CC447038DC2B2BD97B2F98D8D740F990 /* YKWObjectTableView.m in Sources */,
+				3600CDD41B2CBBE41DA606D674C858B0 /* YKWoodpecker-dummy.m in Sources */,
+				121F965B148C312DD30BCD7F7291115E /* YKWoodpeckerManager.m in Sources */,
+				A84AA4551DAD72A6411EA66A3FFE2A75 /* YKWoodpeckerMessage.m in Sources */,
+				1A833DF2937418785E8596BC55DA9456 /* YKWoodpeckerUtils.m in Sources */,
+				E5DF5AB4FE6B4E63FE6E67578024B53A /* YKWPanelView.m in Sources */,
+				D08C47102ACB1A55871EE92EAB5F9EA0 /* YKWPathFileTableViewController.m in Sources */,
+				ECF69C81F759317036CE7B46824FEE19 /* YKWPluginModel.m in Sources */,
+				5D7A93935914962DBEC09C38467A941E /* YKWPluginModelCell.m in Sources */,
+				1070DB07240A379324D57C6044437EAC /* YKWPluginSectionHeader.m in Sources */,
+				43AAE9509EB1A2706CC7AE05DC4623AA /* YKWPluginsWindow.m in Sources */,
+				BC9700AD730B35E7931B116A2E7B8BAE /* YKWPoCommandCore.m in Sources */,
+				2696915097477C74A22FAE280ADD20C6 /* YKWPoCommandPlugin.m in Sources */,
+				FE6649ABBA5ACD2D5814AC2B706E28F1 /* YKWProbeRulerPlugin.m in Sources */,
+				96588F06B5DA4DCFC502BFCD38F3C7E5 /* YKWProbeView.m in Sources */,
+				89868FE915307320582D24EE78E2C1B3 /* YKWRulerTool.m in Sources */,
+				9965AAC095C660D8284FE81AA202DF3F /* YKWRulerView.m in Sources */,
+				535D7D07F6538FE32C0B592F58F5E324 /* YKWSandBoxPlugin.m in Sources */,
+				C5C1BED0B016AB05D9BCF05A133BB139 /* YKWScreenLog.m in Sources */,
+				48207EFB74855E20A9BA3D7718B680D8 /* YKWSysInfoPlugin.m in Sources */,
+				A8907606A13311545026EFBCDF6C7B58 /* YKWTextViewController.m in Sources */,
+				3C32EA0E64D6C1FDD8012C1B30621419 /* YKWTouchIndicatorPlugin.m in Sources */,
+				4569405E5112FDD79CAA62C49E06CD56 /* YKWUIComparePanel.m in Sources */,
+				0B79414E2883011C7CA3A607E3CCCF30 /* YKWUIComparePlugin.m in Sources */,
+				41EA579ACA3AFC38A4D579FDEE534894 /* YKWUserDefaultsPlugin.m in Sources */,
+				C6FCEDF6B542CC7E14F365292476A55A /* YKWUserDefaultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B642B2F5C4312333D75F2A0C4ABD6338 /* Sources */ = {
+		7F1BB1B0D816ECB4DD659CA126731753 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30C139DE2661C2D15E80BFA9D582D3F /* KLConsole-dummy.m in Sources */,
-				FBB068C1EB745EB7F7E5026A69F6005C /* KLConsole.m in Sources */,
-				21E412A46D6F9A35835B8861E0920438 /* KLConsoleCell.m in Sources */,
-				DCB790A1A7433E26B015A2338515C9CC /* KLConsoleConfig.m in Sources */,
-				6B3D1AC4BCAAE102C83E2BE3A73FB975 /* KLConsoleController.m in Sources */,
-				2BF8FA6A4D07E6F7A0CA0822C3074F81 /* KLConsoleInfoController.m in Sources */,
-				9AC7E8B370DBC00F640D8583D9CA7941 /* UIDevice+KLConsole.m in Sources */,
+				B40F566413EAEBC03AEAB102779C5CAF /* KLConsole-dummy.m in Sources */,
+				8567A4FE68E9652C4F61B4CE1570C6A6 /* KLConsole.m in Sources */,
+				92A685EAC579551F628221ECBBB3E262 /* KLConsoleCell.m in Sources */,
+				39E2019DBA996E0CA93EB154071F1AFC /* KLConsoleConfig.m in Sources */,
+				39578139D03FF030280BD05B283A6946 /* KLConsoleController.m in Sources */,
+				EB3B332F5079DB54A6E23AD5CD4D98B0 /* KLConsoleInfoController.m in Sources */,
+				A5D26890ADF69DC8A66F25F7BF7B35B5 /* NSObject+KLConsole.m in Sources */,
+				7F381507D6C1D83C453F94DB3711508D /* UIDevice+KLConsole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B69D0CF9F0D80FF827E130E657F32DE1 /* Sources */ = {
+		9890AC1F16B399BDE6C55F17CAE13840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CCD45A8423CF52419AB453AE90CE2C8 /* MASCompositeConstraint.m in Sources */,
-				D698EF277CA528D755E42851CCF2403C /* MASConstraint.m in Sources */,
-				995E0B7B1F7F968F1EA82A15D2E4FC1C /* MASConstraintMaker.m in Sources */,
-				2D7D3C1095B9EB6E7DC801C7EAB965A6 /* MASLayoutConstraint.m in Sources */,
-				DA3B2D6E039115B94014E02C83FA9A3A /* Masonry-dummy.m in Sources */,
-				E60A7F2F13ED715AF3F3DA1D0C050E3D /* MASViewAttribute.m in Sources */,
-				556E2896B165D9FC87544308C3792F60 /* MASViewConstraint.m in Sources */,
-				36DECC4448635C83FD0B5F09505A42E9 /* NSArray+MASAdditions.m in Sources */,
-				9ECC18DB897E7CF0B04DC8736B7B4859 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				422343865A3AE52E276D768189770824 /* View+MASAdditions.m in Sources */,
-				4F651F790E1FCA3FC799F46612713A4B /* ViewController+MASAdditions.m in Sources */,
+				0F3F5B8AA6CC18C15F3BC48374D35615 /* MASCompositeConstraint.m in Sources */,
+				72B1D8743D299587874E5C725473D8A7 /* MASConstraint.m in Sources */,
+				D3FB02FFEDCED4E3BC5E7B76AB659E0E /* MASConstraintMaker.m in Sources */,
+				79101B9D632B33FD1AD99C419ECC3C34 /* MASLayoutConstraint.m in Sources */,
+				3796EE1C0431B9650850EDE712B2B2F6 /* Masonry-dummy.m in Sources */,
+				48A61061AC3865626720F148AAB933F1 /* MASViewAttribute.m in Sources */,
+				B49A79DD7F9AAC5C38214AD9267C61A3 /* MASViewConstraint.m in Sources */,
+				D432646E74A580C9FA13A0229A027461 /* NSArray+MASAdditions.m in Sources */,
+				29A8F9B0F590BE3D0ED259A17CA3A02F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				D22F62349A5E6F93EE9A6DCE944B73F7 /* View+MASAdditions.m in Sources */,
+				35C5F30A2A771945E7D8B934472E8B49 /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1260,11 +1268,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		15255660E4FF37DCE011B7F8DDFE82F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YKWoodpecker;
+			target = 72017FD5ACD73DA5C51B448D5400D397 /* YKWoodpecker */;
+			targetProxy = B54CAE510C5853B507273EC0FCCB204A /* PBXContainerItemProxy */;
+		};
 		243879413A87D1862B0F8F8D4707E621 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
 			targetProxy = 838271A5B95840A545D6F0EA7C4630AD /* PBXContainerItemProxy */;
+		};
+		2DB09E192B4613970F961F4F02B82964 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 5A5CE795E4846A90C10896CCC37D0CA9 /* PBXContainerItemProxy */;
 		};
 		70883BE77456ABD3EB27D3419D084C3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1278,18 +1298,6 @@
 			target = 1E60C143D5122C2B215E5628D33F0050 /* KLConsole */;
 			targetProxy = 5BF773D5CA69128D0EC5563AACAFA4B0 /* PBXContainerItemProxy */;
 		};
-		AD6104C3F2C72654E87BE8B2F591F345 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YKWoodpecker;
-			target = 72017FD5ACD73DA5C51B448D5400D397 /* YKWoodpecker */;
-			targetProxy = EA3AB6C950B6FEB71107AC0A5D806A39 /* PBXContainerItemProxy */;
-		};
-		CA2B422D89EBF0B25732D1C32C9C55E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = E7F4481D431DF55E1671F6B1D61DA3BA /* PBXContainerItemProxy */;
-		};
 		FC755617482E324CF06A9383028FD0BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-KLConsole_Example";
@@ -1299,70 +1307,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		146368249C1176C4348F2D496307BC94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 066BA507B6F64B8E2AA694983675D919 /* YKWoodpecker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YKWoodpecker/YKWoodpecker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker.modulemap";
-				PRODUCT_MODULE_NAME = YKWoodpecker;
-				PRODUCT_NAME = YKWoodpecker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1D57DAA23EED2F1542D6913F29F66A99 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D942E8818AC6888EBC549803D3D61A7 /* Masonry.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3BD6D2CC9851A1F8DD9545501E11FC19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B2EB8B8DDF08DB1D61F7570A146920E /* Pods-KLConsole_Tests.release.xcconfig */;
@@ -1397,7 +1341,38 @@
 			};
 			name = Release;
 		};
-		8191CC856CD0EEAEEB94A4DBAD504262 /* Debug */ = {
+		5585871B17A92DD0BA5E402D7C7F26D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82688E3BC7A310D89363C3130653CA3 /* KLConsole.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KLConsole/KLConsole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KLConsole/KLConsole-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KLConsole/KLConsole.modulemap";
+				PRODUCT_MODULE_NAME = KLConsole;
+				PRODUCT_NAME = KLConsole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F94AF435E694403F6500D73AF1A3AAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D942E8818AC6888EBC549803D3D61A7 /* Masonry.xcconfig */;
 			buildSettings = {
@@ -1423,10 +1398,43 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		7F1FA07A50DD9F1C7319C8E8230C72AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82688E3BC7A310D89363C3130653CA3 /* KLConsole.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KLConsole/KLConsole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KLConsole/KLConsole-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KLConsole/KLConsole.modulemap";
+				PRODUCT_MODULE_NAME = KLConsole;
+				PRODUCT_NAME = KLConsole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1485,6 +1493,38 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		908FBEE8FC10B9B207CA9D66BC28EA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066BA507B6F64B8E2AA694983675D919 /* YKWoodpecker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YKWoodpecker/YKWoodpecker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker.modulemap";
+				PRODUCT_MODULE_NAME = YKWoodpecker;
+				PRODUCT_NAME = YKWoodpecker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1552,9 +1592,9 @@
 			};
 			name = Debug;
 		};
-		A6B79968F5CA5BF507E5420D24F44A30 /* Debug */ = {
+		BA6BE6A1937364A10F1A416EF89C8A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8E2AB41B5454C262A367C5F74EF4DE5 /* KLConsole.xcconfig */;
+			baseConfigurationReference = 3D942E8818AC6888EBC549803D3D61A7 /* Masonry.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1565,45 +1605,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KLConsole/KLConsole-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KLConsole/KLConsole-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KLConsole/KLConsole.modulemap";
-				PRODUCT_MODULE_NAME = KLConsole;
-				PRODUCT_NAME = KLConsole;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A9E3FEA495245F7A9E75A17D5009D9D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 066BA507B6F64B8E2AA694983675D919 /* YKWoodpecker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YKWoodpecker/YKWoodpecker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker.modulemap";
-				PRODUCT_MODULE_NAME = YKWoodpecker;
-				PRODUCT_NAME = YKWoodpecker;
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1681,6 +1690,37 @@
 			};
 			name = Release;
 		};
+		D292578EE76AAD3033EB9AC915C14604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066BA507B6F64B8E2AA694983675D919 /* YKWoodpecker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YKWoodpecker/YKWoodpecker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YKWoodpecker/YKWoodpecker.modulemap";
+				PRODUCT_MODULE_NAME = YKWoodpecker;
+				PRODUCT_NAME = YKWoodpecker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		EAEBBBA585B11799B5D2868031B013F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3F2B4B060876CE1B3EBBFAAE49B2062 /* Pods-KLConsole_Tests.debug.xcconfig */;
@@ -1714,38 +1754,6 @@
 			};
 			name = Debug;
 		};
-		EE168A38B2379CCE09C04D82531C8536 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8E2AB41B5454C262A367C5F74EF4DE5 /* KLConsole.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KLConsole/KLConsole-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KLConsole/KLConsole-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KLConsole/KLConsole.modulemap";
-				PRODUCT_MODULE_NAME = KLConsole;
-				PRODUCT_NAME = KLConsole;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1767,6 +1775,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		579EF10A7C830A141A132A81231F4810 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6BE6A1937364A10F1A416EF89C8A18 /* Debug */,
+				5F94AF435E694403F6500D73AF1A3AAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		69021BAA599ACD3F9EA0235EE999C51C /* Build configuration list for PBXNativeTarget "Pods-KLConsole_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1776,29 +1793,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A9FD1D209E3F44A6A9B833A4DBE9D6E /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+		B1A76DF858EB825EDC7E26C98952E128 /* Build configuration list for PBXNativeTarget "KLConsole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8191CC856CD0EEAEEB94A4DBAD504262 /* Debug */,
-				1D57DAA23EED2F1542D6913F29F66A99 /* Release */,
+				5585871B17A92DD0BA5E402D7C7F26D7 /* Debug */,
+				7F1FA07A50DD9F1C7319C8E8230C72AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6583320935B103988500321CDC2B24F /* Build configuration list for PBXNativeTarget "KLConsole" */ = {
+		D1EFBBF7A505B5C0FFF8B6933CF45F24 /* Build configuration list for PBXNativeTarget "YKWoodpecker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6B79968F5CA5BF507E5420D24F44A30 /* Debug */,
-				EE168A38B2379CCE09C04D82531C8536 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EEE356290257214F5EA16C3E751EDF96 /* Build configuration list for PBXNativeTarget "YKWoodpecker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9E3FEA495245F7A9E75A17D5009D9D6 /* Debug */,
-				146368249C1176C4348F2D496307BC94 /* Release */,
+				D292578EE76AAD3033EB9AC915C14604 /* Debug */,
+				908FBEE8FC10B9B207CA9D66BC28EA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
