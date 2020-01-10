@@ -148,14 +148,13 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } else if (2 == indexPath.section) {
         cell.consoleSwitch.hidden = NO;
-        __weak typeof(scg) weakscg = scg;
         cell.switchChangeCallBack = ^(BOOL on) {
             if (on) {
                 [YKWoodpeckerManager.sharedInstance show];
             } else {
                 [YKWoodpeckerManager.sharedInstance hide];
             }
-            weakscg.switchOn = on;
+            scg.switchOn = on;
             // 归档
             [KLConsoleConfig archiveRootObject:config.infos toFilePath:KLConsoleDebugPath];
         };
@@ -163,9 +162,10 @@
         cell.consoleSwitch.hidden = !scg.switchEnable;
         cell.accessoryType = scg.switchEnable ? UITableViewCellAccessoryNone : UITableViewCellAccessoryDisclosureIndicator;
         __weak typeof(cell) weakcell = cell;
+        __weak typeof(self) weakself = self;
         cell.switchChangeCallBack = ^(BOOL on) {
             // 1、获取关联属性
-            void (^callBack)(NSIndexPath *, BOOL) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
+            void (^callBack)(NSIndexPath *, BOOL) = objc_getAssociatedObject(weakself, @selector(consoleSetupAndSelectedCallBack:));
             if (callBack) {
                 callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3], weakcell.consoleSwitch.on); // 减去固定section个数
             }
