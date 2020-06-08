@@ -8,6 +8,8 @@
 
 #import "KLViewController.h"
 @import KLConsole;
+@import YKWoodpecker;
+@import FLEX;
 
 @interface KLViewController ()
 
@@ -19,13 +21,13 @@
 {
     [super viewDidLoad];
     
-    [KLConsole.addressConfigs enumerateObjectsUsingBlock:^(KLConsoleSecondConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [KLConsole.addressConfigs enumerateObjectsUsingBlock:^(KLConsoleRowConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSLog(@"域名注释：%@， 域名链接：%@", obj.title, obj.subtitle);
     }];
     
-    [KLConsole.configs enumerateObjectsUsingBlock:^(KLConsoleConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [KLConsole.configs enumerateObjectsUsingBlock:^(KLConsoleSectionConfig * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSLog(@"分组名称 - %@：%@", @(idx), obj.title);
-        [obj.infos enumerateObjectsUsingBlock:^(KLConsoleSecondConfig *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj.infos enumerateObjectsUsingBlock:^(KLConsoleRowConfig *obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSLog(@"功能名称：%@", obj.title);
         }];
     }];
@@ -47,11 +49,25 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [KLConsole consoleSetupAndSelectedCallBack:^(NSIndexPath * _Nonnull indexPath, BOOL switchOn) {
-        KLConsoleConfig *config = KLConsole.configs[indexPath.section];
+        KLConsoleSectionConfig *config = KLConsole.configs[indexPath.section];
         NSLog(@"分组名称：%@， 功能名称：%@ switch: %@", config.title, config.infos[indexPath.row].title, @(switchOn));
+        
+        NSString *title = config.infos[indexPath.row].title;
+        if ([title isEqual:@"YKWoodpecker"]) {
+            if (switchOn) {
+                [YKWoodpeckerManager.sharedInstance show];
+            } else {
+                [YKWoodpeckerManager.sharedInstance hide];
+            }
+        } else if ([title isEqual:@"FLEX"]) {
+            if (switchOn) {
+                [FLEXManager.sharedManager showExplorer];
+            } else {
+                [FLEXManager.sharedManager hideExplorer];
+            }
+        }
+        
     }];
-//    id test = NSString.new;
-//    [test objectAtIndex:0];
 }
 
 @end
