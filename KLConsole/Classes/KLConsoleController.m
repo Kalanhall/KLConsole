@@ -186,7 +186,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     if (indexPath.section == 0) {
         KLConsoleSectionConfig *config = self.dataSource[indexPath.section];
         KLConsoleRowConfig *scg = config.infos[indexPath.row];
@@ -206,8 +205,6 @@
         // 系统信息
         vc.infoType = KLConsoleInfoTypeSystemInfo;
         [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.section == 2) {
-        // 不处理点击
     } else {
         // 扩展行点击
         // 1、获取开关
@@ -215,7 +212,7 @@
         if (cell.consoleSwitch.hidden) {
             void (^callBack)(NSIndexPath *, BOOL) = objc_getAssociatedObject(self, @selector(consoleSetupAndSelectedCallBack:));
             if (callBack) {
-                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 3], cell.consoleSwitch.on); // 减去固定section个数
+                callBack([NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - 2], cell.consoleSwitch.on); // 减去固定section个数
             }
         }
     }
